@@ -1,0 +1,1777 @@
+{
+  "archive_month": "2025-09",
+  "description": "September 2025 historical events - auto-generated from NOAA archives",
+  "generated_at": "2026-06-10T03:44:51.420Z",
+  "sources": [
+    "NHC ATCF Archive",
+    "SPC Fire Outlook Archive (IEM)",
+    "WPC ERO Archive (IEM)",
+    "SPC Outlook Archive (IEM)",
+    "WPC Winter Archive",
+    "Winter Watch Backfill (IEM VTEC)"
+  ],
+  "events": [
+    {
+      "event_id": "evt_2025_al07_gabrielle",
+      "peril": "tropical",
+      "status": "post_event",
+      "headline": "Major Hurricane Gabrielle",
+      "short_name": "Gabrielle",
+      "primary_region_label": "Atlantic",
+      "valid_start": "2025-09-17T18:00:00.000Z",
+      "valid_end": "2025-09-28T18:00:00.000Z",
+      "severity_score": 3.92,
+      "confidence_score": 0.95,
+      "impact_score": 0.85,
+      "rank_score": 98,
+      "icon_key": "tropical_cyclone",
+      "color_key": "tropical_red",
+      "size_class": "major",
+      "source_badges": [
+        "NHC"
+      ],
+      "subperils": [
+        "tropical_wind",
+        "hurricane_wind",
+        "storm_surge",
+        "freshwater_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-17T00:00:00.000Z",
+          "valid_end": "2025-09-17T23:59:59.000Z",
+          "marker": {
+            "lon": -47.7,
+            "lat": 19
+          },
+          "hover_geometry_id": "geom_evt_2025_al07_gabrielle_d1_hover",
+          "bbox": [
+            -51.900000000000006,
+            15.8,
+            -43.5,
+            22.2
+          ],
+          "valid_label": "09-17 - 45kt"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-09-18T00:00:00.000Z",
+          "valid_end": "2025-09-18T23:59:59.000Z",
+          "marker": {
+            "lon": -52.2,
+            "lat": 20.5
+          },
+          "hover_geometry_id": "geom_evt_2025_al07_gabrielle_d2_hover",
+          "bbox": [
+            -56.400000000000006,
+            17.3,
+            -48,
+            23.7
+          ],
+          "valid_label": "09-18 - 45kt"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2025-09-19T00:00:00.000Z",
+          "valid_end": "2025-09-19T23:59:59.000Z",
+          "marker": {
+            "lon": -56.1,
+            "lat": 22.1
+          },
+          "hover_geometry_id": "geom_evt_2025_al07_gabrielle_d3_hover",
+          "bbox": [
+            -60.300000000000004,
+            18.900000000000002,
+            -51.9,
+            25.3
+          ],
+          "valid_label": "09-19 - 45kt"
+        },
+        {
+          "day_index": 4,
+          "valid_start": "2025-09-20T00:00:00.000Z",
+          "valid_end": "2025-09-20T23:59:59.000Z",
+          "marker": {
+            "lon": -58.6,
+            "lat": 25.2
+          },
+          "hover_geometry_id": "geom_evt_2025_al07_gabrielle_d4_hover",
+          "bbox": [
+            -62.800000000000004,
+            22,
+            -54.4,
+            28.4
+          ],
+          "valid_label": "09-20 - 55kt"
+        },
+        {
+          "day_index": 5,
+          "valid_start": "2025-09-21T00:00:00.000Z",
+          "valid_end": "2025-09-21T23:59:59.000Z",
+          "marker": {
+            "lon": -61.5,
+            "lat": 28.1
+          },
+          "hover_geometry_id": "geom_evt_2025_al07_gabrielle_d5_hover",
+          "bbox": [
+            -66.5,
+            24.1,
+            -56.5,
+            32.1
+          ],
+          "valid_label": "09-21 - 65kt"
+        },
+        {
+          "day_index": 6,
+          "valid_start": "2025-09-22T00:00:00.000Z",
+          "valid_end": "2025-09-22T23:59:59.000Z",
+          "marker": {
+            "lon": -62.1,
+            "lat": 31.3
+          },
+          "hover_geometry_id": "geom_evt_2025_al07_gabrielle_d6_hover",
+          "bbox": [
+            -67.1,
+            27.3,
+            -57.1,
+            35.3
+          ],
+          "valid_label": "09-22 - 115kt"
+        },
+        {
+          "day_index": 7,
+          "valid_start": "2025-09-23T00:00:00.000Z",
+          "valid_end": "2025-09-23T23:59:59.000Z",
+          "marker": {
+            "lon": -57.4,
+            "lat": 34.3
+          },
+          "hover_geometry_id": "geom_evt_2025_al07_gabrielle_d7_hover",
+          "bbox": [
+            -62.4,
+            30.299999999999997,
+            -52.4,
+            38.3
+          ],
+          "valid_label": "09-23 - 115kt"
+        },
+        {
+          "day_index": 8,
+          "valid_start": "2025-09-24T00:00:00.000Z",
+          "valid_end": "2025-09-24T23:59:59.000Z",
+          "marker": {
+            "lon": -47.2,
+            "lat": 35.9
+          },
+          "hover_geometry_id": "geom_evt_2025_al07_gabrielle_d8_hover",
+          "bbox": [
+            -52.2,
+            31.9,
+            -42.2,
+            39.9
+          ],
+          "valid_label": "09-24 - 85kt"
+        },
+        {
+          "day_index": 9,
+          "valid_start": "2025-09-25T00:00:00.000Z",
+          "valid_end": "2025-09-25T23:59:59.000Z",
+          "marker": {
+            "lon": -33.6,
+            "lat": 36.8
+          },
+          "hover_geometry_id": "geom_evt_2025_al07_gabrielle_d9_hover",
+          "bbox": [
+            -37.800000000000004,
+            33.599999999999994,
+            -29.400000000000002,
+            40
+          ],
+          "valid_label": "09-25 - 60kt"
+        },
+        {
+          "day_index": 10,
+          "valid_start": "2025-09-26T00:00:00.000Z",
+          "valid_end": "2025-09-26T23:59:59.000Z",
+          "marker": {
+            "lon": -21.4,
+            "lat": 40.4
+          },
+          "hover_geometry_id": "geom_evt_2025_al07_gabrielle_d10_hover",
+          "bbox": [
+            -25.599999999999998,
+            37.199999999999996,
+            -17.2,
+            43.6
+          ],
+          "valid_label": "09-26 - 60kt"
+        },
+        {
+          "day_index": 11,
+          "valid_start": "2025-09-27T00:00:00.000Z",
+          "valid_end": "2025-09-27T23:59:59.000Z",
+          "marker": {
+            "lon": -11.2,
+            "lat": 41.4
+          },
+          "hover_geometry_id": "geom_evt_2025_al07_gabrielle_d11_hover",
+          "bbox": [
+            -15.399999999999999,
+            38.199999999999996,
+            -7,
+            44.6
+          ],
+          "valid_label": "09-27 - 50kt"
+        },
+        {
+          "day_index": 12,
+          "valid_start": "2025-09-28T00:00:00.000Z",
+          "valid_end": "2025-09-28T23:59:59.000Z",
+          "marker": {
+            "lon": -6.5,
+            "lat": 38.5
+          },
+          "hover_geometry_id": "geom_evt_2025_al07_gabrielle_d12_hover",
+          "bbox": [
+            -10,
+            36,
+            -3,
+            41
+          ],
+          "valid_label": "09-28 - 25kt"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "track",
+            "label": "Track",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "nhc_wind_field",
+              "nhc_34kt_wind_probability"
+            ]
+          },
+          {
+            "tab_id": "satellite",
+            "label": "Satellite",
+            "layers": [
+              "satellite_ir"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "storm_name": "Gabrielle",
+        "classification": "Major Hurricane",
+        "basin": "AL",
+        "storm_number": 7,
+        "max_wind_kt": 120,
+        "min_pressure_mb": 944,
+        "archive_source": "nhc_atcf"
+      }
+    },
+    {
+      "event_id": "evt_2025_al08_humberto",
+      "peril": "tropical",
+      "status": "post_event",
+      "headline": "Major Hurricane Humberto",
+      "short_name": "Humberto",
+      "primary_region_label": "Atlantic",
+      "valid_start": "2025-09-24T12:00:00.000Z",
+      "valid_end": "2025-09-30T18:00:00.000Z",
+      "severity_score": 3.92,
+      "confidence_score": 0.95,
+      "impact_score": 0.85,
+      "rank_score": 98,
+      "icon_key": "tropical_cyclone",
+      "color_key": "tropical_red",
+      "size_class": "major",
+      "source_badges": [
+        "NHC"
+      ],
+      "subperils": [
+        "tropical_wind",
+        "hurricane_wind",
+        "storm_surge",
+        "freshwater_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-24T00:00:00.000Z",
+          "valid_end": "2025-09-24T23:59:59.000Z",
+          "marker": {
+            "lon": -54.5,
+            "lat": 19.8
+          },
+          "hover_geometry_id": "geom_evt_2025_al08_humberto_d1_hover",
+          "bbox": [
+            -58.7,
+            16.6,
+            -50.3,
+            23
+          ],
+          "valid_label": "09-24 - 35kt"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-09-25T00:00:00.000Z",
+          "valid_end": "2025-09-25T23:59:59.000Z",
+          "marker": {
+            "lon": -56.7,
+            "lat": 21.5
+          },
+          "hover_geometry_id": "geom_evt_2025_al08_humberto_d2_hover",
+          "bbox": [
+            -60.900000000000006,
+            18.3,
+            -52.5,
+            24.7
+          ],
+          "valid_label": "09-25 - 55kt"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2025-09-26T00:00:00.000Z",
+          "valid_end": "2025-09-26T23:59:59.000Z",
+          "marker": {
+            "lon": -57.8,
+            "lat": 22.2
+          },
+          "hover_geometry_id": "geom_evt_2025_al08_humberto_d3_hover",
+          "bbox": [
+            -62.8,
+            18.2,
+            -52.8,
+            26.2
+          ],
+          "valid_label": "09-26 - 95kt"
+        },
+        {
+          "day_index": 4,
+          "valid_start": "2025-09-27T00:00:00.000Z",
+          "valid_end": "2025-09-27T23:59:59.000Z",
+          "marker": {
+            "lon": -60.7,
+            "lat": 22.7
+          },
+          "hover_geometry_id": "geom_evt_2025_al08_humberto_d4_hover",
+          "bbox": [
+            -65.7,
+            18.7,
+            -55.7,
+            26.7
+          ],
+          "valid_label": "09-27 - 140kt"
+        },
+        {
+          "day_index": 5,
+          "valid_start": "2025-09-28T00:00:00.000Z",
+          "valid_end": "2025-09-28T23:59:59.000Z",
+          "marker": {
+            "lon": -64.8,
+            "lat": 25.1
+          },
+          "hover_geometry_id": "geom_evt_2025_al08_humberto_d5_hover",
+          "bbox": [
+            -69.8,
+            21.1,
+            -59.8,
+            29.1
+          ],
+          "valid_label": "09-28 - 125kt"
+        },
+        {
+          "day_index": 6,
+          "valid_start": "2025-09-29T00:00:00.000Z",
+          "valid_end": "2025-09-29T23:59:59.000Z",
+          "marker": {
+            "lon": -67.9,
+            "lat": 28.5
+          },
+          "hover_geometry_id": "geom_evt_2025_al08_humberto_d6_hover",
+          "bbox": [
+            -72.9,
+            24.5,
+            -62.900000000000006,
+            32.5
+          ],
+          "valid_label": "09-29 - 115kt"
+        },
+        {
+          "day_index": 7,
+          "valid_start": "2025-09-30T00:00:00.000Z",
+          "valid_end": "2025-09-30T23:59:59.000Z",
+          "marker": {
+            "lon": -69.9,
+            "lat": 33.5
+          },
+          "hover_geometry_id": "geom_evt_2025_al08_humberto_d7_hover",
+          "bbox": [
+            -74.9,
+            29.5,
+            -64.9,
+            37.5
+          ],
+          "valid_label": "09-30 - 70kt"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "track",
+            "label": "Track",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "nhc_wind_field",
+              "nhc_34kt_wind_probability"
+            ]
+          },
+          {
+            "tab_id": "satellite",
+            "label": "Satellite",
+            "layers": [
+              "satellite_ir"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "storm_name": "Humberto",
+        "classification": "Major Hurricane",
+        "basin": "AL",
+        "storm_number": 8,
+        "max_wind_kt": 140,
+        "min_pressure_mb": 918,
+        "archive_source": "nhc_atcf"
+      }
+    },
+    {
+      "event_id": "evt_2025_al09_imelda",
+      "peril": "tropical",
+      "status": "post_event",
+      "headline": "Hurricane Imelda",
+      "short_name": "Imelda",
+      "primary_region_label": "Atlantic",
+      "valid_start": "2025-09-26T18:00:00.000Z",
+      "valid_end": "2025-09-30T18:00:00.000Z",
+      "severity_score": 3.52,
+      "confidence_score": 0.95,
+      "impact_score": 0.85,
+      "rank_score": 88,
+      "icon_key": "tropical_cyclone",
+      "color_key": "tropical_red",
+      "size_class": "major",
+      "source_badges": [
+        "NHC"
+      ],
+      "subperils": [
+        "tropical_wind",
+        "hurricane_wind",
+        "storm_surge",
+        "freshwater_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-26T00:00:00.000Z",
+          "valid_end": "2025-09-26T23:59:59.000Z",
+          "marker": {
+            "lon": -74.9,
+            "lat": 20.9
+          },
+          "hover_geometry_id": "geom_evt_2025_al09_imelda_d1_hover",
+          "bbox": [
+            -78.4,
+            18.4,
+            -71.4,
+            23.4
+          ],
+          "valid_label": "09-26 - 30kt"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-09-27T00:00:00.000Z",
+          "valid_end": "2025-09-27T23:59:59.000Z",
+          "marker": {
+            "lon": -76.4,
+            "lat": 22.1
+          },
+          "hover_geometry_id": "geom_evt_2025_al09_imelda_d2_hover",
+          "bbox": [
+            -79.9,
+            19.6,
+            -72.9,
+            24.6
+          ],
+          "valid_label": "09-27 - 30kt"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2025-09-28T00:00:00.000Z",
+          "valid_end": "2025-09-28T23:59:59.000Z",
+          "marker": {
+            "lon": -77.3,
+            "lat": 23.8
+          },
+          "hover_geometry_id": "geom_evt_2025_al09_imelda_d3_hover",
+          "bbox": [
+            -81.5,
+            20.6,
+            -73.1,
+            27
+          ],
+          "valid_label": "09-28 - 35kt"
+        },
+        {
+          "day_index": 4,
+          "valid_start": "2025-09-29T00:00:00.000Z",
+          "valid_end": "2025-09-29T23:59:59.000Z",
+          "marker": {
+            "lon": -77.3,
+            "lat": 27.3
+          },
+          "hover_geometry_id": "geom_evt_2025_al09_imelda_d4_hover",
+          "bbox": [
+            -81.5,
+            24.1,
+            -73.1,
+            30.5
+          ],
+          "valid_label": "09-29 - 50kt"
+        },
+        {
+          "day_index": 5,
+          "valid_start": "2025-09-30T00:00:00.000Z",
+          "valid_end": "2025-09-30T23:59:59.000Z",
+          "marker": {
+            "lon": -76,
+            "lat": 29.2
+          },
+          "hover_geometry_id": "geom_evt_2025_al09_imelda_d5_hover",
+          "bbox": [
+            -81,
+            25.2,
+            -71,
+            33.2
+          ],
+          "valid_label": "09-30 - 70kt"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "track",
+            "label": "Track",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "nhc_wind_field",
+              "nhc_34kt_wind_probability"
+            ]
+          },
+          {
+            "tab_id": "satellite",
+            "label": "Satellite",
+            "layers": [
+              "satellite_ir"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "storm_name": "Imelda",
+        "classification": "Hurricane",
+        "basin": "AL",
+        "storm_number": 9,
+        "max_wind_kt": 70,
+        "min_pressure_mb": 979,
+        "archive_source": "nhc_atcf"
+      }
+    },
+    {
+      "event_id": "evt_20250925_pacific_northwest_2025_09_25_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Pacific Northwest Critical Fire Weather",
+      "short_name": "Pacific Northwest Fire Weather",
+      "primary_region_label": "Pacific Northwest",
+      "valid_start": "2025-09-25T15:00:00.000Z",
+      "valid_end": "2025-09-26T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-25T15:00:00.000Z",
+          "valid_end": "2025-09-26T03:00:00.000Z",
+          "marker": {
+            "lon": -119.720303030303,
+            "lat": 46.50000000000002
+          },
+          "hover_geometry_id": "geom_evt_20250925_pacific_northwest_2025_09_25_fire_d1_hover",
+          "bbox": [
+            -121.45,
+            44.89,
+            -117.89,
+            48.29
+          ],
+          "valid_label": "09-25 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20250921_southern_plains_2025_09_21_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southern Plains Severe Weather",
+      "short_name": "Southern Plains Severe",
+      "primary_region_label": "Southern Plains",
+      "valid_start": "2025-09-21T12:00:00.000Z",
+      "valid_end": "2025-09-24T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-21T12:00:00.000Z",
+          "valid_end": "2025-09-22T06:00:00.000Z",
+          "marker": {
+            "lon": -97.94000000000001,
+            "lat": 33.61
+          },
+          "hover_geometry_id": "geom_evt_20250921_southern_plains_2025_09_21_severe_d1_hover",
+          "bbox": [
+            -99.75,
+            32.39,
+            -95.98,
+            34.66
+          ],
+          "valid_label": "09-21 - SLGT Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-09-22T12:00:00.000Z",
+          "valid_end": "2025-09-23T06:00:00.000Z",
+          "marker": {
+            "lon": -91.97212765957445,
+            "lat": 39.68255319148936
+          },
+          "hover_geometry_id": "geom_evt_20250922_southern_plains_2025_09_22_severe_d1_hover",
+          "bbox": [
+            -101.83,
+            35.72,
+            -81.27,
+            43.5
+          ],
+          "valid_label": "09-22 - SLGT Risk"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2025-09-23T12:00:00.000Z",
+          "valid_end": "2025-09-24T06:00:00.000Z",
+          "marker": {
+            "lon": -94.275,
+            "lat": 35.814
+          },
+          "hover_geometry_id": "geom_evt_20250923_southern_plains_2025_09_23_severe_d1_hover",
+          "bbox": [
+            -95.37,
+            35.23,
+            -93.35,
+            36.28
+          ],
+          "valid_label": "09-23 - ENH Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook",
+        "merged_days": 3,
+        "peak_day": "2025-09-23"
+      }
+    },
+    {
+      "event_id": "evt_20250903_southern_plains_2025_09_03_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southern Plains Severe Weather",
+      "short_name": "Southern Plains Severe",
+      "primary_region_label": "Southern Plains",
+      "valid_start": "2025-09-03T12:00:00.000Z",
+      "valid_end": "2025-09-04T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-03T12:00:00.000Z",
+          "valid_end": "2025-09-04T06:00:00.000Z",
+          "marker": {
+            "lon": -96.08909090909091,
+            "lat": 38.33363636363636
+          },
+          "hover_geometry_id": "geom_evt_20250903_southern_plains_2025_09_03_severe_d1_hover",
+          "bbox": [
+            -99.16,
+            37.37,
+            -93.17,
+            39.49
+          ],
+          "valid_label": "09-03 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250918_southern_plains_2025_09_18_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southern Plains Severe Weather",
+      "short_name": "Southern Plains Severe",
+      "primary_region_label": "Southern Plains",
+      "valid_start": "2025-09-18T12:00:00.000Z",
+      "valid_end": "2025-09-19T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-18T12:00:00.000Z",
+          "valid_end": "2025-09-19T06:00:00.000Z",
+          "marker": {
+            "lon": -93.14083333333332,
+            "lat": 38.785833333333336
+          },
+          "hover_geometry_id": "geom_evt_20250918_southern_plains_2025_09_18_severe_d1_hover",
+          "bbox": [
+            -94.2,
+            36.98,
+            -92.15,
+            40.18
+          ],
+          "valid_label": "09-18 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250905_mid_atlantic_2025_09_05_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Mid-Atlantic Severe Weather",
+      "short_name": "Mid-Atlantic Severe",
+      "primary_region_label": "Mid-Atlantic",
+      "valid_start": "2025-09-05T12:00:00.000Z",
+      "valid_end": "2025-09-06T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-05T12:00:00.000Z",
+          "valid_end": "2025-09-06T06:00:00.000Z",
+          "marker": {
+            "lon": -85.58312500000001,
+            "lat": 36.739374999999995
+          },
+          "hover_geometry_id": "geom_evt_20250905_mid_atlantic_2025_09_05_severe_d1_hover",
+          "bbox": [
+            -89.16,
+            34.52,
+            -80.44,
+            39.8
+          ],
+          "valid_label": "09-05 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250906_great_lakes_2025_09_06_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Great Lakes Severe Weather",
+      "short_name": "Great Lakes Severe",
+      "primary_region_label": "Great Lakes",
+      "valid_start": "2025-09-06T12:00:00.000Z",
+      "valid_end": "2025-09-07T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-06T12:00:00.000Z",
+          "valid_end": "2025-09-07T06:00:00.000Z",
+          "marker": {
+            "lon": -73.17583333333333,
+            "lat": 41.800000000000004
+          },
+          "hover_geometry_id": "geom_evt_20250906_great_lakes_2025_09_06_severe_d1_hover",
+          "bbox": [
+            -76.46,
+            39.42,
+            -69.22,
+            45.04
+          ],
+          "valid_label": "09-06 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250908_central_plains_2025_09_08_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Central Plains Severe Weather",
+      "short_name": "Central Plains Severe",
+      "primary_region_label": "Central Plains",
+      "valid_start": "2025-09-08T12:00:00.000Z",
+      "valid_end": "2025-09-10T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-08T12:00:00.000Z",
+          "valid_end": "2025-09-09T06:00:00.000Z",
+          "marker": {
+            "lon": -100.42500000000001,
+            "lat": 36.75875
+          },
+          "hover_geometry_id": "geom_evt_20250908_central_plains_2025_09_08_severe_d1_hover",
+          "bbox": [
+            -101.73,
+            34.92,
+            -98.94,
+            37.94
+          ],
+          "valid_label": "09-08 - SLGT Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-09-09T12:00:00.000Z",
+          "valid_end": "2025-09-10T06:00:00.000Z",
+          "marker": {
+            "lon": -101.8825,
+            "lat": 38.9375
+          },
+          "hover_geometry_id": "geom_evt_20250909_central_plains_2025_09_09_severe_d1_hover",
+          "bbox": [
+            -103.13,
+            37.81,
+            -100.49,
+            40.19
+          ],
+          "valid_label": "09-09 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook",
+        "merged_days": 2,
+        "peak_day": "2025-09-08"
+      }
+    },
+    {
+      "event_id": "evt_20250917_central_plains_2025_09_17_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Central Plains Severe Weather",
+      "short_name": "Central Plains Severe",
+      "primary_region_label": "Central Plains",
+      "valid_start": "2025-09-17T12:00:00.000Z",
+      "valid_end": "2025-09-18T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-17T12:00:00.000Z",
+          "valid_end": "2025-09-18T06:00:00.000Z",
+          "marker": {
+            "lon": -103.24416666666667,
+            "lat": 37.347500000000004
+          },
+          "hover_geometry_id": "geom_evt_20250917_central_plains_2025_09_17_severe_d1_hover",
+          "bbox": [
+            -104.89,
+            35.47,
+            -101.01,
+            38.84
+          ],
+          "valid_label": "09-17 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250911_northern_plains_2025_09_11_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Northern Plains Severe Weather",
+      "short_name": "Northern Plains Severe",
+      "primary_region_label": "Northern Plains",
+      "valid_start": "2025-09-11T12:00:00.000Z",
+      "valid_end": "2025-09-12T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-11T12:00:00.000Z",
+          "valid_end": "2025-09-12T06:00:00.000Z",
+          "marker": {
+            "lon": -104.98444444444445,
+            "lat": 46.74666666666666
+          },
+          "hover_geometry_id": "geom_evt_20250911_northern_plains_2025_09_11_severe_d1_hover",
+          "bbox": [
+            -108.68,
+            45.12,
+            -101.24,
+            48.16
+          ],
+          "valid_label": "09-11 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250916_northern_plains_2025_09_16_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Northern Plains Severe Weather",
+      "short_name": "Northern Plains Severe",
+      "primary_region_label": "Northern Plains",
+      "valid_start": "2025-09-16T12:00:00.000Z",
+      "valid_end": "2025-09-17T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-16T12:00:00.000Z",
+          "valid_end": "2025-09-17T06:00:00.000Z",
+          "marker": {
+            "lon": -101.84933333333335,
+            "lat": 41.05
+          },
+          "hover_geometry_id": "geom_evt_20250916_northern_plains_2025_09_16_severe_d1_hover",
+          "bbox": [
+            -103.78,
+            39.54,
+            -99.53,
+            42.7
+          ],
+          "valid_label": "09-16 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250912_northern_rockies_2025_09_12_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Northern Rockies Severe Weather",
+      "short_name": "Northern Rockies Severe",
+      "primary_region_label": "Northern Rockies",
+      "valid_start": "2025-09-12T12:00:00.000Z",
+      "valid_end": "2025-09-13T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-12T12:00:00.000Z",
+          "valid_end": "2025-09-13T06:00:00.000Z",
+          "marker": {
+            "lon": -105.35473684210528,
+            "lat": 42.18473684210526
+          },
+          "hover_geometry_id": "geom_evt_20250912_northern_rockies_2025_09_12_severe_d1_hover",
+          "bbox": [
+            -109.07,
+            36.14,
+            -101.1,
+            48.22
+          ],
+          "valid_label": "09-12 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250913_southwest_2025_09_13_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southwest Severe Weather",
+      "short_name": "Southwest Severe",
+      "primary_region_label": "Southwest",
+      "valid_start": "2025-09-13T12:00:00.000Z",
+      "valid_end": "2025-09-14T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-13T12:00:00.000Z",
+          "valid_end": "2025-09-14T06:00:00.000Z",
+          "marker": {
+            "lon": -106.12692307692308,
+            "lat": 33.49307692307692
+          },
+          "hover_geometry_id": "geom_evt_20250913_southwest_2025_09_13_severe_d1_hover",
+          "bbox": [
+            -108.39,
+            31.81,
+            -103.14,
+            35.73
+          ],
+          "valid_label": "09-13 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250926_southwest_2025_09_26_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southwest Severe Weather",
+      "short_name": "Southwest Severe",
+      "primary_region_label": "Southwest",
+      "valid_start": "2025-09-26T12:00:00.000Z",
+      "valid_end": "2025-09-27T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-26T12:00:00.000Z",
+          "valid_end": "2025-09-27T06:00:00.000Z",
+          "marker": {
+            "lon": -110.78692307692307,
+            "lat": 32.901538461538465
+          },
+          "hover_geometry_id": "geom_evt_20250926_southwest_2025_09_26_severe_d1_hover",
+          "bbox": [
+            -112.42,
+            31.83,
+            -109.37,
+            33.97
+          ],
+          "valid_label": "09-26 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250914_upper_midwest_2025_09_14_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Upper Midwest Severe Weather",
+      "short_name": "Upper Midwest Severe",
+      "primary_region_label": "Upper Midwest",
+      "valid_start": "2025-09-14T12:00:00.000Z",
+      "valid_end": "2025-09-15T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-09-14T12:00:00.000Z",
+          "valid_end": "2025-09-15T06:00:00.000Z",
+          "marker": {
+            "lon": -99.61999999999998,
+            "lat": 41.92625
+          },
+          "hover_geometry_id": "geom_evt_20250914_upper_midwest_2025_09_14_severe_d1_hover",
+          "bbox": [
+            -100.89,
+            35.48,
+            -97.9,
+            48.82
+          ],
+          "valid_label": "09-14 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    }
+  ]
+}

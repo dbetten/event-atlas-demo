@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Maps - Beta Pivotalweather</title>
+  <script src="static-shim.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1a2e;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      background: #16213e;
+      padding: 12px 20px;
+      border-bottom: 1px solid #0f3460;
+      z-index: 1000;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .back-link {
+      color: #8892b0;
+      text-decoration: none;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .back-link:hover {
+      color: #ccd6f6;
+    }
+
+    .header h1 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #ccd6f6;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .event-icon {
+      font-size: 28px;
+    }
+
+    .header-subtitle {
+      font-size: 13px;
+      color: #8892b0;
+      margin-top: 4px;
+    }
+
+    .header-subtitle span {
+      margin-right: 12px;
+    }
+
+    .header-subtitle .valid-time {
+      color: #64ffda;
+    }
+
+    .tabs-container {
+      background: #0f3460;
+      padding: 0 20px;
+      display: flex;
+      gap: 2px;
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: #8892b0;
+      padding: 12px 16px;
+      font-size: 13px;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      transition: all 0.15s;
+    }
+
+    .tab-btn:hover {
+      color: #ccd6f6;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .tab-btn.active {
+      color: #e94560;
+      border-bottom-color: #e94560;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      position: relative;
+    }
+
+    #map {
+      flex: 1;
+      background: #1a1a2e;
+    }
+
+    .layers-panel {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(22, 33, 62, 0.95);
+      border: 1px solid #0f3460;
+      border-radius: 6px;
+      padding: 12px;
+      z-index: 1000;
+      min-width: 180px;
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+
+    .layers-panel h3 {
+      font-size: 11px;
+      color: #8892b0;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .layer-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 0;
+      font-size: 12px;
+    }
+
+    .layer-item input[type="checkbox"] {
+      accent-color: #e94560;
+    }
+
+    .map-info {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(22, 33, 62, 0.95);
+      border: 1px solid #0f3460;
+      border-radius: 6px;
+      padding: 10px 14px;
+      z-index: 1000;
+      font-size: 12px;
+    }
+
+    .map-info-row {
+      display: flex;
+      gap: 16px;
+      color: #8892b0;
+    }
+
+    .map-info-row strong {
+      color: #ccd6f6;
+    }
+
+    .loading-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(26, 26, 46, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1002;
+    }
+
+    .loading-overlay.hidden {
+      display: none;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid #0f3460;
+      border-top-color: #e94560;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .error-state {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1000;
+      display: none;
+    }
+
+    .error-state.visible {
+      display: block;
+    }
+
+    .error-state h2 {
+      font-size: 18px;
+      color: #e94560;
+      margin-bottom: 12px;
+    }
+
+    .error-state p {
+      color: #8892b0;
+      margin-bottom: 16px;
+    }
+
+    .error-state a {
+      color: #64ffda;
+    }
+
+    /* Dark map tiles */
+    .leaflet-tile-pane {
+      filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9);
+    }
+
+    .placeholder-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(22, 33, 62, 0.95);
+      border: 1px solid #0f3460;
+      border-radius: 8px;
+      padding: 24px 32px;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    .placeholder-overlay h3 {
+      color: #ccd6f6;
+      margin-bottom: 8px;
+    }
+
+    .placeholder-overlay p {
+      color: #8892b0;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <a href="index.html" class="back-link">← Back to Event Atlas</a>
+    </div>
+    <h1>
+      <span class="event-icon" id="eventIcon">⛈️</span>
+      <span id="eventTitle">Loading...</span>
+    </h1>
+    <div class="header-subtitle">
+      <span id="eventPeril">Loading...</span>
+      <span class="valid-time" id="eventValid"></span>
+      <span id="eventSources"></span>
+    </div>
+  </header>
+
+  <div class="tabs-container" id="tabsContainer">
+    <!-- Tabs will be populated dynamically -->
+  </div>
+
+  <main class="main-content">
+    <div id="map"></div>
+
+    <div class="layers-panel" id="layersPanel">
+      <h3>Layers</h3>
+      <div id="layersList">
+        <!-- Layers will be populated dynamically -->
+      </div>
+    </div>
+
+    <div class="map-info">
+      <div class="map-info-row">
+        <span>Model: <strong id="infoModel">HRRR</strong></span>
+        <span>Zoom: <strong id="infoZoom">5</strong></span>
+      </div>
+    </div>
+
+    <div class="placeholder-overlay" id="placeholderOverlay">
+      <h3>Map Layers Placeholder</h3>
+      <p>In production, this view would display<br>the selected map layers for this event.</p>
+    </div>
+
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="error-state" id="errorState">
+      <h2>Event Not Found</h2>
+      <p>The requested event could not be loaded.</p>
+      <a href="index.html">Return to Event Atlas</a>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    // Icon mapping
+    const ICON_MAP = {
+      severe_weather: '⛈️',
+      tornado_outbreak: '🌪️',
+      winter_storm: '❄️',
+      tropical_cyclone: '🌀',
+      wildfire: '🔥',
+      fire_weather: '🔥',
+      extreme_rain: '🌧️',
+    };
+
+    const PERIL_LABELS = {
+      severe_weather: 'Severe Weather',
+      winter_weather: 'Winter Weather',
+      fire_weather: 'Fire Weather',
+      wildfire: 'Wildfire',
+      tropical: 'Tropical',
+      excessive_rain: 'Extreme Rain',
+    };
+
+    // Parse URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const pathParts = window.location.pathname.split('/');
+    const eventId = pathParts[pathParts.length - 2] || urlParams.get('event');
+    const dayIndex = parseInt(urlParams.get('day')) || 1;
+
+    // State
+    let eventData = null;
+    let mapContext = null;
+    let currentTab = null;
+    let activeLayers = new Set();
+
+    // Initialize map
+    const map = L.map('map', {
+      center: [39, -98],
+      zoom: 5,
+      zoomControl: true,
+      attributionControl: false,
+    });
+
+    // Add tile layer
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      maxZoom: 19,
+    }).addTo(map);
+
+    // Track zoom level
+    map.on('zoomend', () => {
+      document.getElementById('infoZoom').textContent = map.getZoom();
+    });
+
+    // DOM elements
+    const loadingOverlay = document.getElementById('loadingOverlay');
+    const errorState = document.getElementById('errorState');
+    const tabsContainer = document.getElementById('tabsContainer');
+    const layersList = document.getElementById('layersList');
+
+    // Load event data
+    async function loadEvent() {
+      if (!eventId) {
+        showError('No event ID provided');
+        return;
+      }
+
+      try {
+        // Load event details
+        const detailResponse = await fetch(`/api/events/${eventId}`);
+        if (!detailResponse.ok) throw new Error('Event not found');
+        eventData = await detailResponse.json();
+
+        // Load map context
+        const mapsResponse = await fetch(`/api/events/${eventId}/maps?day=${dayIndex}`);
+        if (!mapsResponse.ok) throw new Error('Map config not found');
+        mapContext = await mapsResponse.json();
+
+        updateHeader();
+        updateTabs();
+        updateMap();
+
+        loadingOverlay.classList.add('hidden');
+      } catch (err) {
+        console.error('Error loading event:', err);
+        showError(err.message);
+      }
+    }
+
+    // Show error state
+    function showError(message) {
+      loadingOverlay.classList.add('hidden');
+      errorState.classList.add('visible');
+      errorState.querySelector('p').textContent = message;
+    }
+
+    // Update header with event info
+    function updateHeader() {
+      document.getElementById('eventIcon').textContent =
+        ICON_MAP[eventData.icon_key] || ICON_MAP[eventData.peril] || '📍';
+      document.getElementById('eventTitle').textContent = eventData.headline;
+      document.getElementById('eventPeril').textContent =
+        PERIL_LABELS[eventData.peril] || eventData.peril;
+
+      // Format valid time
+      const start = new Date(eventData.valid_start);
+      const end = new Date(eventData.valid_end);
+      document.getElementById('eventValid').textContent =
+        `${start.toLocaleDateString()} - ${end.toLocaleDateString()}`;
+
+      // Sources
+      if (eventData.source_badges && eventData.source_badges.length > 0) {
+        document.getElementById('eventSources').textContent =
+          `Sources: ${eventData.source_badges.join(', ')}`;
+      }
+
+      // Update page title
+      document.title = `${eventData.headline} - Event Maps`;
+    }
+
+    // Update tabs
+    function updateTabs() {
+      const ctx = mapContext.default_map_context;
+      tabsContainer.innerHTML = '';
+
+      ctx.tabs.forEach((tab, index) => {
+        const btn = document.createElement('button');
+        btn.className = 'tab-btn' + (index === 0 ? ' active' : '');
+        btn.textContent = tab.label;
+        btn.addEventListener('click', () => selectTab(tab, btn));
+        tabsContainer.appendChild(btn);
+      });
+
+      // Select first tab
+      if (ctx.tabs.length > 0) {
+        selectTab(ctx.tabs[0]);
+      }
+    }
+
+    // Select a tab
+    function selectTab(tab, btnElement) {
+      currentTab = tab;
+
+      // Update active state
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      if (btnElement) {
+        btnElement.classList.add('active');
+      } else {
+        const buttons = document.querySelectorAll('.tab-btn');
+        buttons.forEach(btn => {
+          if (btn.textContent === tab.label) btn.classList.add('active');
+        });
+      }
+
+      // Update layers panel
+      updateLayers(tab.layers);
+    }
+
+    // Update layers panel
+    function updateLayers(layers) {
+      layersList.innerHTML = '';
+      activeLayers.clear();
+
+      layers.forEach((layerId, index) => {
+        const label = formatLayerId(layerId);
+        const div = document.createElement('div');
+        div.className = 'layer-item';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = `layer-${layerId}`;
+        checkbox.checked = index < 3; // First 3 layers visible by default
+        checkbox.addEventListener('change', (e) => {
+          if (e.target.checked) {
+            activeLayers.add(layerId);
+          } else {
+            activeLayers.delete(layerId);
+          }
+          // In production, this would update map layers
+          console.log('Active layers:', Array.from(activeLayers));
+        });
+
+        if (checkbox.checked) activeLayers.add(layerId);
+
+        const labelEl = document.createElement('label');
+        labelEl.htmlFor = `layer-${layerId}`;
+        labelEl.textContent = label;
+
+        div.appendChild(checkbox);
+        div.appendChild(labelEl);
+        layersList.appendChild(div);
+      });
+    }
+
+    // Format layer ID for display
+    function formatLayerId(layerId) {
+      return layerId
+        .replace(/_/g, ' ')
+        .replace(/^(spc|wpc|nhc|nws|model|radar|satellite)\s/i, '')
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+    }
+
+    // Update map view
+    function updateMap() {
+      const ctx = mapContext.default_map_context;
+
+      // Set bounds
+      const [west, south, east, north] = ctx.bbox;
+      map.fitBounds([[south, west], [north, east]], { padding: [20, 20] });
+
+      // Update model info
+      document.getElementById('infoModel').textContent =
+        (ctx.default_model || 'HRRR').toUpperCase();
+    }
+
+    // Initialize
+    loadEvent();
+
+    // Handle back button preserving state
+    window.addEventListener('popstate', () => {
+      // Preserve day and peril in back link
+      const backLink = document.querySelector('.back-link');
+      const currentParams = new URLSearchParams(window.location.search);
+      const day = currentParams.get('day') || 1;
+      const peril = currentParams.get('peril') || 'all';
+      backLink.href = `/beta/events?day=${day}&peril=${peril}`;
+    });
+  </script>
+</body>
+</html>

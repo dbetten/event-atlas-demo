@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Atlas - Beta Pivotalweather</title>
+  <script src="static-shim.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1a2e;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      background: #16213e;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #0f3460;
+      z-index: 1000;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header .beta-tag {
+      background: #e94560;
+      color: white;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-weight: 500;
+    }
+
+    .controls {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .control-label {
+      font-size: 10px;
+      color: #8892b0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .day-slider {
+      display: flex;
+      gap: 4px;
+    }
+
+    .day-btn {
+      background: #0f3460;
+      border: 1px solid #1a4078;
+      color: #ccd6f6;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: all 0.15s;
+    }
+
+    .day-btn:hover {
+      background: #1a4078;
+    }
+
+    .day-btn.active {
+      background: #e94560;
+      border-color: #e94560;
+      color: white;
+    }
+
+    .day-btn.all-days-btn {
+      background: #1a4078;
+      border-color: #2a5088;
+      margin-left: 4px;
+    }
+
+    .day-btn.all-days-btn.active {
+      background: #4fc3f7;
+      border-color: #4fc3f7;
+      color: #0a192f;
+    }
+
+    .peril-select {
+      background: #0f3460;
+      border: 1px solid #1a4078;
+      color: #ccd6f6;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      min-width: 140px;
+    }
+
+    .date-picker {
+      background: #0f3460;
+      border: 1px solid #1a4078;
+      color: #ccd6f6;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .date-picker::-webkit-calendar-picker-indicator {
+      filter: invert(0.8);
+      cursor: pointer;
+    }
+
+    .date-display {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .archive-badge {
+      background: #f59e0b;
+      color: #1a1a2e;
+      font-size: 9px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .today-btn {
+      background: transparent;
+      border: 1px solid #1a4078;
+      color: #8892b0;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .today-btn:hover {
+      background: #1a4078;
+      color: #ccd6f6;
+    }
+
+    .today-btn.hidden {
+      display: none;
+    }
+
+    .toggle-btn {
+      background: #0f3460;
+      border: 1px solid #1a4078;
+      color: #8892b0;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .toggle-btn:hover {
+      background: #1a4078;
+      color: #ccd6f6;
+    }
+
+    .toggle-btn.active {
+      background: #e94560;
+      border-color: #e94560;
+      color: white;
+    }
+
+    .source-controls {
+      display: flex;
+      gap: 4px;
+    }
+
+    .source-btn {
+      background: #0f3460;
+      border: 1px solid #1a4078;
+      color: #8892b0;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .source-btn:hover {
+      background: #1a4078;
+      color: #ccd6f6;
+    }
+
+    .source-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .source-btn.loading {
+      background: #1a4078;
+      color: #64ffda;
+    }
+
+    .source-btn.live-active {
+      background: #10b981;
+      border-color: #10b981;
+      color: white;
+    }
+
+    .source-icon {
+      font-size: 14px;
+    }
+
+    .live-badge {
+      background: #10b981;
+      color: white;
+      font-size: 9px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-left: 8px;
+    }
+
+    .live-badge.hidden {
+      display: none;
+    }
+
+    .toggle-icon {
+      font-size: 14px;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      position: relative;
+    }
+
+    #map {
+      flex: 1;
+      background: #1a1a2e;
+    }
+
+    .legend {
+      position: absolute;
+      bottom: 30px;
+      left: 12px;
+      background: rgba(22, 33, 62, 0.95);
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #0f3460;
+      z-index: 1000;
+      min-width: 140px;
+    }
+
+    .legend h3 {
+      font-size: 11px;
+      color: #8892b0;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 0;
+      font-size: 12px;
+    }
+
+    .legend-icon {
+      font-size: 16px;
+      width: 24px;
+      text-align: center;
+    }
+
+    .event-count {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(22, 33, 62, 0.95);
+      padding: 8px 14px;
+      border-radius: 6px;
+      border: 1px solid #0f3460;
+      z-index: 1000;
+      font-size: 13px;
+    }
+
+    .event-count strong {
+      color: #e94560;
+    }
+
+    .hover-card {
+      position: absolute;
+      background: rgba(22, 33, 62, 0.98);
+      border: 1px solid #0f3460;
+      border-radius: 8px;
+      padding: 16px;
+      min-width: 280px;
+      max-width: 320px;
+      z-index: 1001;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      display: none;
+    }
+
+    .hover-card.visible {
+      display: block;
+    }
+
+    .hover-card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .hover-card-icon {
+      font-size: 28px;
+    }
+
+    .hover-card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #ccd6f6;
+      margin-bottom: 4px;
+    }
+
+    .hover-card-subtitle {
+      font-size: 12px;
+      color: #8892b0;
+    }
+
+    .hover-card-valid {
+      font-size: 12px;
+      color: #64ffda;
+      margin-bottom: 6px;
+    }
+
+    .hover-card-source {
+      font-size: 10px;
+      color: #8892b0;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+
+    .hover-card-badges {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .hover-card-badge {
+      background: #0f3460;
+      color: #8892b0;
+      font-size: 10px;
+      padding: 3px 8px;
+      border-radius: 3px;
+    }
+
+    .hover-card-tabs {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .hover-card-tab {
+      background: #1a4078;
+      color: #ccd6f6;
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    .hover-card-cta {
+      display: block;
+      background: #e94560;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: background 0.15s;
+    }
+
+    .hover-card-cta:hover {
+      background: #d63050;
+    }
+
+    .loading-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(26, 26, 46, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1002;
+    }
+
+    .loading-overlay.hidden {
+      display: none;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid #0f3460;
+      border-top-color: #e94560;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .empty-state {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #8892b0;
+      z-index: 1000;
+      display: none;
+    }
+
+    .empty-state.visible {
+      display: block;
+    }
+
+    .empty-state h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #ccd6f6;
+    }
+
+    .disclaimer {
+      position: absolute;
+      bottom: 8px;
+      right: 12px;
+      font-size: 10px;
+      color: #5a6785;
+      z-index: 1000;
+      max-width: 300px;
+      text-align: right;
+    }
+
+    /* Leaflet marker customization */
+    .event-marker {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+      transition: transform 0.15s;
+    }
+
+    .event-marker:hover {
+      transform: scale(1.15);
+    }
+
+    .event-marker.small { font-size: 40px; }
+    .event-marker.medium { font-size: 48px; }
+    .event-marker.large { font-size: 56px; }
+    .event-marker.major { font-size: 64px; }
+
+    /* Dark map tiles style override */
+    .leaflet-tile-pane {
+      filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9);
+    }
+
+    /* Trajectory styles */
+    .trajectory-path {
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .trajectory-dot {
+      fill: rgba(255, 255, 255, 0.6);
+      stroke: none;
+    }
+
+    .trajectory-dot.past {
+      fill: rgba(255, 255, 255, 0.4);
+    }
+
+    .trajectory-dot.future {
+      fill: rgba(255, 255, 255, 0.8);
+    }
+
+    .trajectory-dot.current {
+      display: none; /* Hidden - the marker shows this */
+    }
+
+    .trajectory-label {
+      font-size: 9px;
+      fill: rgba(255, 255, 255, 0.7);
+      text-anchor: middle;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div style="background:#1d4ed8;color:#fff;text-align:center;padding:4px 8px;font:12px sans-serif;">Static demo — archived weather events, June 2024 to May 2026. Feedback welcome!</div>
+  <header class="header">
+    <h1>
+      Event Atlas
+      <span class="beta-tag">BETA</span>
+      <span class="live-badge hidden" id="liveBadge">LIVE</span>
+    </h1>
+    <div class="controls">
+      <div class="control-group">
+        <span class="control-label">Base Date</span>
+        <div class="date-display">
+          <input type="date" class="date-picker" id="datePicker" />
+          <button class="today-btn hidden" id="todayBtn">Today</button>
+          <span class="archive-badge hidden" id="archiveBadge">Archive</span>
+        </div>
+      </div>
+      <div class="control-group">
+        <span class="control-label">Day</span>
+        <div class="day-slider" id="daySlider">
+          <button class="day-btn active" data-day="1" id="dayBtn1">Day 1</button>
+          <button class="day-btn" data-day="2" id="dayBtn2">Day 2</button>
+          <button class="day-btn" data-day="3" id="dayBtn3">Day 3</button>
+          <button class="day-btn" data-day="4" id="dayBtn4">Day 4</button>
+          <button class="day-btn" data-day="5" id="dayBtn5">Day 5</button>
+          <button class="day-btn" data-day="6" id="dayBtn6">Day 6</button>
+          <button class="day-btn all-days-btn" data-day="all" id="dayBtnAll">All</button>
+        </div>
+      </div>
+      <div class="control-group">
+        <span class="control-label">Peril</span>
+        <select class="peril-select" id="perilSelect">
+          <option value="all">All Events</option>
+          <option value="severe_weather">Severe Weather</option>
+          <option value="winter_weather">Winter</option>
+          <option value="tropical">Tropical</option>
+          <option value="fire_weather">Fire / Wildfire</option>
+          <option value="excessive_rain">Extreme Rain</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <span class="control-label">Display</span>
+        <button class="toggle-btn" id="trajectoryToggle">
+          <span class="toggle-icon">⟿</span> Trajectories
+        </button>
+      </div>
+      <div class="control-group">
+        <span class="control-label">Data Source</span>
+        <div class="source-controls">
+          <button class="source-btn" id="fetchLiveBtn" title="Fetch live data from NOAA">
+            <span class="source-icon">📡</span> Fetch Live
+          </button>
+          <button class="source-btn source-toggle" id="toggleSourceBtn" title="Toggle between fixture and live data">
+            <span id="sourceLabel">Fixtures</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div id="map"></div>
+
+    <div class="legend">
+      <h3>Event Types</h3>
+      <div class="legend-item"><span class="legend-icon">⛈️</span> Severe Weather</div>
+      <div class="legend-item"><span class="legend-icon">❄️</span> Winter Weather</div>
+      <div class="legend-item"><span class="legend-icon">🌀</span> Tropical</div>
+      <div class="legend-item"><span class="legend-icon">🔥</span> Fire / Wildfire</div>
+      <div class="legend-item"><span class="legend-icon">🌧️</span> Extreme Rain</div>
+    </div>
+
+    <div class="event-count" id="eventCount">
+      <strong id="countNumber">0</strong> events
+    </div>
+
+    <div class="hover-card" id="hoverCard" role="dialog" aria-labelledby="cardTitle" aria-live="polite">
+      <div class="hover-card-header">
+        <span class="hover-card-icon" id="cardIcon" aria-hidden="true">⛈️</span>
+        <div>
+          <div class="hover-card-title" id="cardTitle">Event Title</div>
+          <div class="hover-card-subtitle" id="cardSubtitle">Peril · Status</div>
+        </div>
+      </div>
+      <div class="hover-card-valid" id="cardValid">Valid: Today</div>
+      <div class="hover-card-source" id="cardSource"></div>
+      <div class="hover-card-badges" id="cardBadges" aria-label="Sources"></div>
+      <div class="hover-card-tabs" id="cardTabs" aria-label="Available map tabs"></div>
+      <a href="#" class="hover-card-cta" id="cardCta">Open event maps →</a>
+    </div>
+
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="empty-state" id="emptyState">
+      <h2>No events found</h2>
+      <p>No major events for the selected day and peril filter.</p>
+    </div>
+
+    <div class="disclaimer">
+      Prototype event navigation. Not an official warning source.
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    // Icon mapping
+    const ICON_MAP = {
+      severe_weather: '⛈️',
+      tornado_outbreak: '🌪️',
+      winter_storm: '❄️',
+      tropical_cyclone: '🌀',
+      wildfire: '🔥',
+      fire_weather: '🔥',
+      extreme_rain: '🌧️',
+    };
+
+    // State
+    let currentDay = 1;
+    let currentPeril = 'all';
+    let currentBaseDate = null; // null means today (live mode)
+    let useLiveData = false; // Use live-fetched NOAA data
+    let liveDataAvailable = false; // Whether live data has been fetched
+    let events = [];
+    let markers = [];
+    let hoverLayer = null;
+    let selectedEvent = null;
+    let geometryCache = {};
+    let showAllTrajectories = false;
+    let allTrajectoriesLayers = []; // Store all trajectory layers when toggle is on
+
+    // Date utilities
+    function formatDate(date) {
+      return date.toISOString().split('T')[0];
+    }
+
+    function parseDate(str) {
+      const [y, m, d] = str.split('-').map(Number);
+      return new Date(y, m - 1, d);
+    }
+
+    function addDays(date, days) {
+      const result = new Date(date);
+      result.setDate(result.getDate() + days);
+      return result;
+    }
+
+    function formatShortDate(date) {
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      return `${months[date.getMonth()]} ${date.getDate()}`;
+    }
+
+    // Format ISO date string to short label (e.g., "May 5")
+    function formatDateLabel(isoDateStr) {
+      const date = new Date(isoDateStr);
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      return `${months[date.getUTCMonth()]} ${date.getUTCDate()}`;
+    }
+
+    function isToday(date) {
+      const today = new Date();
+      return date.getFullYear() === today.getFullYear() &&
+             date.getMonth() === today.getMonth() &&
+             date.getDate() === today.getDate();
+    }
+
+    function getToday() {
+      const now = new Date();
+      return new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    }
+
+    // Initialize map
+    const map = L.map('map', {
+      center: [39, -98],
+      zoom: 4,
+      zoomControl: true,
+      attributionControl: false,
+    });
+
+    // Add tile layer (CartoDB dark matter)
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      maxZoom: 19,
+    }).addTo(map);
+
+    // Hover geometry layer
+    const hoverGeometryLayer = L.geoJSON(null, {
+      style: {
+        color: '#e94560',
+        weight: 2,
+        fillColor: '#e94560',
+        fillOpacity: 0.15,
+      },
+    }).addTo(map);
+
+    // Trajectory layer (SVG overlay for smooth curves)
+    let trajectoryLayer = null;
+    let eventDetailsCache = {};
+
+    // Peril color mapping for trajectories
+    const PERIL_COLORS = {
+      tropical: '#ff6b35',
+      severe_weather: '#e94560',
+      winter_weather: '#64b5f6',
+      fire_weather: '#ff9800',
+      wildfire: '#ff5722',
+      excessive_rain: '#4fc3f7',
+    };
+
+    // Perils that typically don't move (stationary events)
+    const STATIONARY_PERILS = ['wildfire', 'fire_weather', 'excessive_rain'];
+
+    // Minimum distance (miles) an event must move in 2 days to show trajectory
+    const MIN_TRAJECTORY_DISTANCE_MILES = 200;
+
+    // Calculate distance between two lat/lon points using Haversine formula
+    function haversineDistance(lat1, lon1, lat2, lon2) {
+      const R = 3959; // Earth's radius in miles
+      const dLat = (lat2 - lat1) * Math.PI / 180;
+      const dLon = (lon2 - lon1) * Math.PI / 180;
+      const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                Math.sin(dLon / 2) * Math.sin(dLon / 2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      return R * c;
+    }
+
+    // Get target date string for a given day offset from base date
+    function getTargetDateStr(dayOffset) {
+      const baseDate = currentBaseDate ? parseDate(currentBaseDate) : getToday();
+      const targetDate = addDays(baseDate, dayOffset - 1);
+      return formatDate(targetDate);
+    }
+
+    // Find day membership by calendar date (for archive mode)
+    function findDayMembershipByDate(dayMemberships, targetDateStr) {
+      return dayMemberships.find(dm => {
+        const dmDate = dm.valid_start.split('T')[0];
+        return dmDate === targetDateStr;
+      });
+    }
+
+    // Check if event qualifies for trajectory display
+    function shouldShowTrajectory(dayMemberships, peril, currentDayIndex) {
+      // Skip stationary event types
+      if (STATIONARY_PERILS.includes(peril)) {
+        return false;
+      }
+
+      if (!dayMemberships || dayMemberships.length < 2) {
+        return false;
+      }
+
+      // Sort by valid_start date for consistent ordering
+      const sorted = [...dayMemberships].sort((a, b) =>
+        new Date(a.valid_start) - new Date(b.valid_start)
+      );
+
+      // Check TOTAL trajectory distance (first to last position)
+      // This ensures trajectory shows consistently across all days of the event
+      const first = sorted[0];
+      const last = sorted[sorted.length - 1];
+      const totalDistance = haversineDistance(
+        first.marker.lat, first.marker.lon,
+        last.marker.lat, last.marker.lon
+      );
+
+      return totalDistance >= MIN_TRAJECTORY_DISTANCE_MILES;
+    }
+
+    // Create smooth Catmull-Rom spline through points
+    function catmullRomSpline(points, segments = 20) {
+      if (points.length < 2) return points;
+      if (points.length === 2) return points;
+
+      const result = [];
+
+      for (let i = 0; i < points.length - 1; i++) {
+        const p0 = points[Math.max(0, i - 1)];
+        const p1 = points[i];
+        const p2 = points[i + 1];
+        const p3 = points[Math.min(points.length - 1, i + 2)];
+
+        for (let t = 0; t < segments; t++) {
+          const s = t / segments;
+          const s2 = s * s;
+          const s3 = s2 * s;
+
+          const x = 0.5 * (
+            (2 * p1[0]) +
+            (-p0[0] + p2[0]) * s +
+            (2 * p0[0] - 5 * p1[0] + 4 * p2[0] - p3[0]) * s2 +
+            (-p0[0] + 3 * p1[0] - 3 * p2[0] + p3[0]) * s3
+          );
+          const y = 0.5 * (
+            (2 * p1[1]) +
+            (-p0[1] + p2[1]) * s +
+            (2 * p0[1] - 5 * p1[1] + 4 * p2[1] - p3[1]) * s2 +
+            (-p0[1] + 3 * p1[1] - 3 * p2[1] + p3[1]) * s3
+          );
+          result.push([x, y]);
+        }
+      }
+      result.push(points[points.length - 1]);
+      return result;
+    }
+
+    // Draw trajectory on map
+    function drawTrajectory(dayMemberships, peril, currentDayIndex) {
+      clearTrajectory();
+
+      // Check if this event qualifies for trajectory display
+      if (!shouldShowTrajectory(dayMemberships, peril, currentDayIndex)) {
+        return false; // Return false to indicate no trajectory was drawn
+      }
+
+      // Sort by valid_start date for consistent ordering
+      const sorted = [...dayMemberships].sort((a, b) =>
+        new Date(a.valid_start) - new Date(b.valid_start)
+      );
+
+      // Get current target date for comparison
+      const currentDateStr = getTargetDateStr(currentDayIndex);
+
+      // Extract points [lng, lat] for each day
+      const points = sorted.map(dm => [dm.marker.lon, dm.marker.lat]);
+
+      // Create smooth curve
+      const smoothPoints = catmullRomSpline(points, 16);
+
+      // Convert to Leaflet LatLngs
+      const latLngs = smoothPoints.map(p => L.latLng(p[1], p[0]));
+
+      // Get color based on peril
+      const color = PERIL_COLORS[peril] || '#e94560';
+
+      // Create gradient polyline with arrow
+      const polyline = L.polyline(latLngs, {
+        color: color,
+        weight: 3,
+        opacity: 0.8,
+        smoothFactor: 1,
+        lineCap: 'round',
+        lineJoin: 'round',
+        dashArray: null,
+      }).addTo(map);
+
+      // Add arrow decorator pattern
+      const arrowHead = createArrowHead(latLngs, color);
+
+      // Add day dots (small circles at each day position)
+      const dayDots = sorted.map((dm, idx) => {
+        const dmDateStr = dm.valid_start.split('T')[0];
+        const isPast = dmDateStr < currentDateStr;
+        const isCurrent = dmDateStr === currentDateStr;
+        const isFuture = dmDateStr > currentDateStr;
+
+        if (isCurrent) return null; // Skip current day - marker shows it
+
+        const radius = isFuture ? 5 : 4;
+        const fillOpacity = isPast ? 0.4 : 0.7;
+        const strokeOpacity = isPast ? 0.5 : 0.9;
+
+        const circle = L.circleMarker([dm.marker.lat, dm.marker.lon], {
+          radius: radius,
+          fillColor: '#fff',
+          fillOpacity: fillOpacity,
+          color: color,
+          weight: 2,
+          opacity: strokeOpacity,
+        }).addTo(map);
+
+        // Add day label with date
+        const dmDateLabel = formatDateLabel(dm.valid_start);
+        const dayLabel = L.marker([dm.marker.lat, dm.marker.lon], {
+          icon: L.divIcon({
+            className: 'trajectory-day-label',
+            html: `<div style="
+              font-size: 9px;
+              color: rgba(255,255,255,0.85);
+              text-shadow: 0 1px 2px rgba(0,0,0,0.8), 0 0 4px rgba(0,0,0,0.5);
+              font-weight: 600;
+              transform: translate(-50%, -20px);
+              white-space: nowrap;
+            ">${dmDateLabel}</div>`,
+            iconSize: [50, 20],
+            iconAnchor: [25, 0],
+          }),
+          interactive: false,
+        }).addTo(map);
+
+        return { circle, label: dayLabel };
+      }).filter(Boolean);
+
+      trajectoryLayer = {
+        polyline,
+        arrowHead,
+        dayDots,
+      };
+
+      return true; // Trajectory was drawn
+    }
+
+    // Create arrowhead at end of path
+    function createArrowHead(latLngs, color) {
+      if (latLngs.length < 2) return null;
+
+      const end = latLngs[latLngs.length - 1];
+      const prev = latLngs[latLngs.length - 2];
+
+      // Calculate angle
+      const dx = end.lng - prev.lng;
+      const dy = end.lat - prev.lat;
+      const angle = Math.atan2(dy, dx);
+
+      // Arrow size in degrees (approximate)
+      const size = 0.4;
+      const wingAngle = Math.PI / 6; // 30 degrees
+
+      // Calculate arrow points
+      const leftWing = L.latLng(
+        end.lat - size * Math.sin(angle - wingAngle),
+        end.lng - size * Math.cos(angle - wingAngle)
+      );
+      const rightWing = L.latLng(
+        end.lat - size * Math.sin(angle + wingAngle),
+        end.lng - size * Math.cos(angle + wingAngle)
+      );
+
+      const arrow = L.polygon([end, leftWing, rightWing], {
+        color: color,
+        fillColor: color,
+        fillOpacity: 0.9,
+        weight: 0,
+      }).addTo(map);
+
+      return arrow;
+    }
+
+    // Clear trajectory
+    function clearTrajectory() {
+      if (trajectoryLayer) {
+        if (trajectoryLayer.polyline) map.removeLayer(trajectoryLayer.polyline);
+        if (trajectoryLayer.arrowHead) map.removeLayer(trajectoryLayer.arrowHead);
+        if (trajectoryLayer.dayDots) {
+          trajectoryLayer.dayDots.forEach(d => {
+            if (d.circle) map.removeLayer(d.circle);
+            if (d.label) map.removeLayer(d.label);
+          });
+        }
+        trajectoryLayer = null;
+      }
+    }
+
+    // Clear all persistent trajectories
+    function clearAllTrajectories() {
+      allTrajectoriesLayers.forEach(layer => {
+        if (layer.polyline) map.removeLayer(layer.polyline);
+        if (layer.arrowHead) map.removeLayer(layer.arrowHead);
+        if (layer.dayDots) {
+          layer.dayDots.forEach(d => {
+            if (d.circle) map.removeLayer(d.circle);
+            if (d.label) map.removeLayer(d.label);
+          });
+        }
+      });
+      allTrajectoriesLayers = [];
+    }
+
+    // Draw all trajectories for current events
+    async function drawAllTrajectories() {
+      clearAllTrajectories();
+
+      // For "all" mode, use day 1 as reference for trajectory display
+      const effectiveDayIndex = currentDay === 'all' ? 1 : currentDay;
+
+      for (const event of events) {
+        const details = await fetchEventDetails(event.event_id);
+        if (details && details.day_membership && details.day_membership.length > 1) {
+          // Check if qualifies for trajectory
+          if (!shouldShowTrajectory(details.day_membership, event.peril, effectiveDayIndex)) {
+            continue;
+          }
+
+          // Draw trajectory and store the layer
+          const layer = drawTrajectoryPersistent(details.day_membership, event.peril, effectiveDayIndex);
+          if (layer) {
+            allTrajectoriesLayers.push(layer);
+          }
+        }
+      }
+    }
+
+    // Draw trajectory and return the layer (for persistent display)
+    function drawTrajectoryPersistent(dayMemberships, peril, currentDayIndex) {
+      if (!shouldShowTrajectory(dayMemberships, peril, currentDayIndex)) {
+        return null;
+      }
+
+      // Sort by valid_start date
+      const sorted = [...dayMemberships].sort((a, b) =>
+        new Date(a.valid_start) - new Date(b.valid_start)
+      );
+
+      // Get current target date for comparison
+      const currentDateStr = getTargetDateStr(currentDayIndex);
+
+      const points = sorted.map(dm => [dm.marker.lon, dm.marker.lat]);
+      const smoothPoints = catmullRomSpline(points, 16);
+      const latLngs = smoothPoints.map(p => L.latLng(p[1], p[0]));
+      const color = PERIL_COLORS[peril] || '#e94560';
+
+      const polyline = L.polyline(latLngs, {
+        color: color,
+        weight: 3,
+        opacity: 0.7,
+        smoothFactor: 1,
+        lineCap: 'round',
+        lineJoin: 'round',
+      }).addTo(map);
+
+      const arrowHead = createArrowHead(latLngs, color);
+
+      const dayDots = sorted.map((dm, idx) => {
+        const dmDateStr = dm.valid_start.split('T')[0];
+        const isCurrent = dmDateStr === currentDateStr;
+        if (isCurrent) return null;
+
+        const isPast = dmDateStr < currentDateStr;
+        const radius = isPast ? 4 : 5;
+        const fillOpacity = isPast ? 0.4 : 0.7;
+
+        const circle = L.circleMarker([dm.marker.lat, dm.marker.lon], {
+          radius: radius,
+          fillColor: '#fff',
+          fillOpacity: fillOpacity,
+          color: color,
+          weight: 2,
+          opacity: isPast ? 0.5 : 0.9,
+        }).addTo(map);
+
+        // Format date label from valid_start (e.g., "May 5")
+        const dmDateLabel = formatDateLabel(dm.valid_start);
+        const dayLabel = L.marker([dm.marker.lat, dm.marker.lon], {
+          icon: L.divIcon({
+            className: 'trajectory-day-label',
+            html: `<div style="
+              font-size: 9px;
+              color: rgba(255,255,255,0.85);
+              text-shadow: 0 1px 2px rgba(0,0,0,0.8), 0 0 4px rgba(0,0,0,0.5);
+              font-weight: 600;
+              transform: translate(-50%, -20px);
+              white-space: nowrap;
+            ">${dmDateLabel}</div>`,
+            iconSize: [50, 20],
+            iconAnchor: [25, 0],
+          }),
+          interactive: false,
+        }).addTo(map);
+
+        return { circle, label: dayLabel };
+      }).filter(Boolean);
+
+      return { polyline, arrowHead, dayDots };
+    }
+
+    // Fetch full event details (with all day memberships)
+    async function fetchEventDetails(eventId) {
+      if (eventDetailsCache[eventId]) {
+        return eventDetailsCache[eventId];
+      }
+
+      try {
+        const response = await fetch(`/api/events/${eventId}`);
+        if (!response.ok) return null;
+
+        const event = await response.json();
+
+        // Also fetch maps to get day memberships
+        const mapsResponse = await fetch(`/api/events/${eventId}/maps?day=1`);
+        if (mapsResponse.ok) {
+          const mapsData = await mapsResponse.json();
+          event._mapsContext = mapsData;
+        }
+
+        eventDetailsCache[eventId] = event;
+        return event;
+      } catch (err) {
+        console.error('Error fetching event details:', err);
+        return null;
+      }
+    }
+
+    // DOM elements
+    const daySlider = document.getElementById('daySlider');
+    const perilSelect = document.getElementById('perilSelect');
+    const datePicker = document.getElementById('datePicker');
+    const todayBtn = document.getElementById('todayBtn');
+    const archiveBadge = document.getElementById('archiveBadge');
+    const liveBadge = document.getElementById('liveBadge');
+    const loadingOverlay = document.getElementById('loadingOverlay');
+    const emptyState = document.getElementById('emptyState');
+    const eventCount = document.getElementById('countNumber');
+    const hoverCard = document.getElementById('hoverCard');
+    const trajectoryToggle = document.getElementById('trajectoryToggle');
+    const fetchLiveBtn = document.getElementById('fetchLiveBtn');
+    const toggleSourceBtn = document.getElementById('toggleSourceBtn');
+    const sourceLabel = document.getElementById('sourceLabel');
+
+    // Fetch live data from NOAA sources
+    async function fetchLiveData() {
+      fetchLiveBtn.disabled = true;
+      fetchLiveBtn.classList.add('loading');
+      fetchLiveBtn.innerHTML = '<span class="source-icon">⏳</span> Fetching...';
+
+      try {
+        const response = await fetch('/api/event-atlas/fetch-live', { method: 'POST' });
+        const result = await response.json();
+
+        if (result.success) {
+          liveDataAvailable = true;
+          useLiveData = true;
+          updateSourceUI();
+
+          // Show results summary
+          const successSources = result.sources.filter(s => s.status === 'success');
+          const errorSources = result.sources.filter(s => s.status === 'error');
+
+          let message = `Fetched ${result.eventCount} events from ${successSources.length} sources`;
+          if (errorSources.length > 0) {
+            message += ` (${errorSources.length} sources failed)`;
+          }
+
+          console.log('[Live Fetch]', message);
+          console.log('[Live Fetch] Sources:', result.sources);
+          if (result.errors.length > 0) {
+            console.warn('[Live Fetch] Errors:', result.errors);
+          }
+
+          // Show brief notification
+          showNotification(message, result.errors.length > 0 ? 'warning' : 'success');
+
+          // Reload events with live data
+          loadEvents();
+          logAnalytics('live_fetch_success', { event_count: result.eventCount });
+        } else {
+          throw new Error(result.error || 'Fetch failed');
+        }
+      } catch (err) {
+        console.error('[Live Fetch] Failed:', err);
+        showNotification(`Live fetch failed: ${err.message}`, 'error');
+        logAnalytics('live_fetch_error', { error: err.message });
+      } finally {
+        fetchLiveBtn.disabled = false;
+        fetchLiveBtn.classList.remove('loading');
+        fetchLiveBtn.innerHTML = '<span class="source-icon">📡</span> Fetch Live';
+      }
+    }
+
+    // Toggle between fixture and live data
+    function toggleDataSource() {
+      if (!liveDataAvailable) {
+        showNotification('No live data available. Click "Fetch Live" first.', 'warning');
+        return;
+      }
+
+      useLiveData = !useLiveData;
+      updateSourceUI();
+      loadEvents();
+      logAnalytics('source_toggled', { source: useLiveData ? 'live' : 'fixtures' });
+    }
+
+    // Update source UI elements
+    function updateSourceUI() {
+      liveBadge.classList.toggle('hidden', !useLiveData);
+      toggleSourceBtn.classList.toggle('live-active', useLiveData);
+      sourceLabel.textContent = useLiveData ? 'Live' : 'Fixtures';
+    }
+
+    // Show notification toast
+    function showNotification(message, type = 'info') {
+      // Create notification element
+      const notification = document.createElement('div');
+      notification.className = `notification notification-${type}`;
+      notification.innerHTML = `
+        <span>${message}</span>
+        <button onclick="this.parentElement.remove()">✕</button>
+      `;
+      notification.style.cssText = `
+        position: fixed;
+        top: 70px;
+        right: 20px;
+        background: ${type === 'error' ? '#ef4444' : type === 'warning' ? '#f59e0b' : '#10b981'};
+        color: white;
+        padding: 12px 16px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        z-index: 2000;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        font-size: 13px;
+        max-width: 400px;
+      `;
+      notification.querySelector('button').style.cssText = `
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 0;
+        margin-left: 8px;
+      `;
+
+      document.body.appendChild(notification);
+
+      // Auto-remove after 5 seconds
+      setTimeout(() => notification.remove(), 5000);
+    }
+
+    // Check for existing live data on load
+    async function checkLiveStatus() {
+      try {
+        const response = await fetch('/api/event-atlas/live-status');
+        const status = await response.json();
+        if (status.available) {
+          liveDataAvailable = true;
+          console.log('[Live Status] Live data available:', status);
+        }
+      } catch (err) {
+        console.warn('[Live Status] Could not check live status:', err);
+      }
+    }
+
+    // Event handlers for source buttons
+    fetchLiveBtn.addEventListener('click', fetchLiveData);
+    toggleSourceBtn.addEventListener('click', toggleDataSource);
+
+    // Trajectory toggle handler
+    trajectoryToggle.addEventListener('click', async () => {
+      showAllTrajectories = !showAllTrajectories;
+      trajectoryToggle.classList.toggle('active', showAllTrajectories);
+
+      if (showAllTrajectories) {
+        await drawAllTrajectories();
+        logAnalytics('trajectories_enabled');
+      } else {
+        clearAllTrajectories();
+        logAnalytics('trajectories_disabled');
+      }
+    });
+
+    // Initialize date picker
+    function initializeDatePicker() {
+      const today = getToday();
+      datePicker.value = formatDate(today);
+      datePicker.max = formatDate(today); // Can't go into the future
+      currentBaseDate = null; // null = live/today mode
+      updateDayLabels();
+      updateArchiveIndicator();
+
+      // Limit picker to available archive range (auto-discovered fixtures)
+      fetch('/api/event-atlas/archives')
+        .then(r => r.json())
+        .then(data => {
+          if (data.earliest) {
+            datePicker.min = data.earliest;
+            datePicker.title = `Archive available from ${data.earliest}`;
+          }
+        })
+        .catch(() => {}); // Non-fatal; picker just stays unbounded
+    }
+
+    // Update day button labels based on base date
+    function updateDayLabels() {
+      const baseDate = currentBaseDate ? parseDate(currentBaseDate) : getToday();
+      for (let i = 1; i <= 6; i++) {
+        const btn = document.getElementById(`dayBtn${i}`);
+        const dayDate = addDays(baseDate, i - 1);
+        btn.textContent = `${formatShortDate(dayDate)}`;
+        btn.title = `Day ${i}: ${formatDate(dayDate)}`;
+      }
+    }
+
+    // Update archive indicator
+    function updateArchiveIndicator() {
+      const isArchive = currentBaseDate !== null;
+      archiveBadge.classList.toggle('hidden', !isArchive);
+      todayBtn.classList.toggle('hidden', !isArchive);
+    }
+
+    // Date picker change handler
+    datePicker.addEventListener('change', (e) => {
+      const selectedDate = e.target.value;
+      const today = formatDate(getToday());
+
+      if (selectedDate === today) {
+        currentBaseDate = null;
+      } else {
+        currentBaseDate = selectedDate;
+      }
+
+      updateDayLabels();
+      updateArchiveIndicator();
+      logAnalytics('event_date_changed', { base_date: currentBaseDate || 'today', is_archive: currentBaseDate !== null });
+      loadEvents();
+    });
+
+    // Today button handler
+    todayBtn.addEventListener('click', () => {
+      const today = getToday();
+      datePicker.value = formatDate(today);
+      currentBaseDate = null;
+      updateDayLabels();
+      updateArchiveIndicator();
+      logAnalytics('event_date_reset_to_today');
+      loadEvents();
+    });
+
+    // Day slider click handler
+    daySlider.addEventListener('click', (e) => {
+      if (e.target.classList.contains('day-btn')) {
+        document.querySelectorAll('.day-btn').forEach(btn => btn.classList.remove('active'));
+        e.target.classList.add('active');
+        const dayValue = e.target.dataset.day;
+        if (dayValue === 'all') {
+          currentDay = 'all';
+        } else {
+          currentDay = parseInt(dayValue);
+        }
+        loadEvents();
+      }
+    });
+
+    // Peril select handler
+    perilSelect.addEventListener('change', (e) => {
+      currentPeril = e.target.value;
+      loadEvents();
+    });
+
+    // Load events from API
+    async function loadEvents() {
+      loadingOverlay.classList.remove('hidden');
+      emptyState.classList.remove('visible');
+      hideHoverCard();
+      clearMarkers();
+
+      try {
+        const params = new URLSearchParams({
+          day: currentDay,
+          peril: currentPeril,
+          include_monitoring: 'false',
+        });
+
+        // Add archive date if viewing historical data
+        if (currentBaseDate) {
+          params.set('archive', currentBaseDate);
+        }
+
+        // Add source parameter for live data
+        if (useLiveData && !currentBaseDate) {
+          params.set('source', 'live');
+        }
+
+        const response = await fetch(`/api/event-atlas?${params}`);
+        if (!response.ok) throw new Error('Failed to load events');
+
+        const data = await response.json();
+        events = data.events || [];
+        eventCount.textContent = events.length;
+
+        if (events.length === 0) {
+          emptyState.classList.add('visible');
+        } else {
+          renderMarkers();
+
+          // Redraw all trajectories if toggle is on
+          if (showAllTrajectories) {
+            await drawAllTrajectories();
+          }
+        }
+      } catch (err) {
+        console.error('Error loading events:', err);
+        emptyState.querySelector('h2').textContent = 'Error loading events';
+        emptyState.querySelector('p').textContent = 'Please try again.';
+        emptyState.classList.add('visible');
+      } finally {
+        loadingOverlay.classList.add('hidden');
+      }
+    }
+
+    // Clear all markers
+    function clearMarkers() {
+      markers.forEach(m => map.removeLayer(m));
+      markers = [];
+      hoverGeometryLayer.clearLayers();
+      clearTrajectory();
+      clearAllTrajectories();
+    }
+
+    // Render event markers
+    function renderMarkers() {
+      events.forEach((event, index) => {
+        const icon = ICON_MAP[event.icon_key] || '📍';
+        const sizeClass = event.size_class || 'medium';
+
+        // Build accessible label
+        const ariaLabel = `${event.title}, ${event.subtitle || event.peril}, valid ${event.valid_label}. Press Enter to open event maps.`;
+
+        const markerIcon = L.divIcon({
+          className: `event-marker ${sizeClass}`,
+          html: `<span role="button" tabindex="0" aria-label="${ariaLabel}">${icon}</span>`,
+          iconSize: [80, 80],
+          iconAnchor: [40, 40],
+        });
+
+        const marker = L.marker([event.marker.lat, event.marker.lon], {
+          icon: markerIcon,
+          zIndexOffset: Math.round(event.marker_priority),
+          alt: event.title,
+        });
+
+        marker.eventData = event;
+        marker.markerIndex = index;
+
+        marker.on('mouseover', () => {
+          showEventHover(event, marker);
+          logAnalytics('event_symbol_hovered', { event_id: event.event_id, peril: event.peril });
+        });
+        marker.on('mouseout', () => {
+          if (selectedEvent !== event.event_id) {
+            hideHoverCard();
+          }
+        });
+        marker.on('click', () => {
+          if (selectedEvent === event.event_id) {
+            logAnalytics('event_symbol_clicked', { event_id: event.event_id, peril: event.peril, source: 'mouse' });
+            window.location.href = event.click_url;
+          } else {
+            selectEvent(event, marker);
+          }
+        });
+
+        marker.addTo(map);
+        markers.push(marker);
+      });
+    }
+
+    // Show event on hover
+    async function showEventHover(event, marker) {
+      updateHoverCard(event);
+      hoverCard.classList.add('visible');
+
+      // Load and show geometry
+      await loadAndShowGeometry(event.hover_geometry_id);
+
+      // Load full event details and draw trajectory (if applicable)
+      const details = await fetchEventDetails(event.event_id);
+      let trajectoryDirection = null;
+
+      if (details && details.day_membership && details.day_membership.length > 1) {
+        // drawTrajectory returns true if trajectory was drawn, false otherwise
+        const trajectoryDrawn = drawTrajectory(details.day_membership, event.peril, currentDay);
+        if (trajectoryDrawn) {
+          trajectoryDirection = getTrajectoryDirection(details.day_membership, currentDay);
+        }
+      }
+
+      // Position card after we know trajectory direction (to avoid blocking it)
+      positionHoverCard(marker, trajectoryDirection);
+    }
+
+    // Select event (for mobile tap)
+    function selectEvent(event, marker) {
+      selectedEvent = event.event_id;
+      showEventHover(event, marker);
+    }
+
+    // Hide hover card
+    function hideHoverCard() {
+      hoverCard.classList.remove('visible');
+      hoverGeometryLayer.clearLayers();
+      clearTrajectory();
+      selectedEvent = null;
+    }
+
+    // Update hover card content
+    function updateHoverCard(event) {
+      document.getElementById('cardIcon').textContent = ICON_MAP[event.icon_key] || '📍';
+      document.getElementById('cardTitle').textContent = event.title;
+      document.getElementById('cardSubtitle').textContent = event.subtitle || '';
+      document.getElementById('cardValid').textContent = event.valid_label || '';
+
+      // Event source - derive from event_id and archive status
+      const sourceEl = document.getElementById('cardSource');
+      const eventSource = getEventSource(event.event_id);
+      sourceEl.textContent = eventSource ? `Source: ${eventSource}` : '';
+
+      // Badges
+      const badgesEl = document.getElementById('cardBadges');
+      badgesEl.innerHTML = '';
+      (event.source_badges || []).forEach(badge => {
+        const span = document.createElement('span');
+        span.className = 'hover-card-badge';
+        span.textContent = badge;
+        badgesEl.appendChild(span);
+      });
+
+      // Tabs
+      const tabsEl = document.getElementById('cardTabs');
+      tabsEl.innerHTML = '';
+      (event.quick_map_tabs || []).slice(0, 5).forEach(tab => {
+        const span = document.createElement('span');
+        span.className = 'hover-card-tab';
+        span.textContent = tab;
+        tabsEl.appendChild(span);
+      });
+
+      // CTA
+      document.getElementById('cardCta').href = event.click_url;
+    }
+
+    // Determine event source from event_id
+    function getEventSource(eventId) {
+      if (!eventId) return null;
+
+      // Parse event_id to extract date/source info
+      // Format: evt_YYYYMMDD_name or evt_YYYY_storm_name
+      const match = eventId.match(/^evt_(\d{4})(\d{2})?(\d{2})?_/);
+      if (!match) return null;
+
+      const year = match[1];
+      const month = match[2];
+
+      // Determine fixture source
+      if (currentBaseDate) {
+        // In archive mode - show the archive month
+        const archiveMatch = currentBaseDate.match(/^(\d{4})-(\d{2})/);
+        if (archiveMatch) {
+          const months = ['January', 'February', 'March', 'April', 'May', 'June',
+                          'July', 'August', 'September', 'October', 'November', 'December'];
+          const monthName = months[parseInt(archiveMatch[2]) - 1];
+          return `${monthName} ${archiveMatch[1]} Archive`;
+        }
+      }
+
+      // Live events
+      if (month) {
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                        'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        const monthName = months[parseInt(month) - 1];
+        return `${monthName} ${year} Event`;
+      }
+
+      return `${year} Event`;
+    }
+
+    // Position hover card near marker, avoiding trajectory
+    function positionHoverCard(marker, trajectoryDirection = null) {
+      const point = map.latLngToContainerPoint(marker.getLatLng());
+      const mapRect = document.getElementById('map').getBoundingClientRect();
+      const cardWidth = 320;
+      const cardHeight = 300;
+
+      // Default: position to the right
+      let left = point.x + 30;
+      let top = point.y - 100;
+
+      // If we have trajectory direction info, position card opposite to trajectory
+      if (trajectoryDirection) {
+        // Trajectory goes right/northeast - put card on left
+        if (trajectoryDirection.dx > 0) {
+          left = point.x - cardWidth - 30;
+        }
+        // Trajectory goes up - put card below
+        if (trajectoryDirection.dy < 0) {
+          top = point.y + 30;
+        }
+      }
+
+      // Keep within bounds
+      if (left + cardWidth > mapRect.width) {
+        left = point.x - cardWidth - 30;
+      }
+      if (left < 10) {
+        left = 10;
+      }
+      if (top < 10) {
+        top = 10;
+      }
+      if (top + cardHeight > mapRect.height) {
+        top = mapRect.height - cardHeight - 10;
+      }
+
+      hoverCard.style.left = `${left}px`;
+      hoverCard.style.top = `${top}px`;
+    }
+
+    // Calculate trajectory direction from day memberships
+    function getTrajectoryDirection(dayMemberships, currentDayIndex) {
+      if (!dayMemberships || dayMemberships.length < 2) return null;
+
+      // Sort by valid_start date
+      const sorted = [...dayMemberships].sort((a, b) =>
+        new Date(a.valid_start) - new Date(b.valid_start)
+      );
+
+      // Find current position by calendar date
+      const currentDateStr = getTargetDateStr(currentDayIndex);
+      const currentIdx = sorted.findIndex(dm => dm.valid_start.split('T')[0] === currentDateStr);
+
+      // If current date not in event, use first and last positions
+      let from, to;
+      if (currentIdx === -1) {
+        from = sorted[0];
+        to = sorted[sorted.length - 1];
+      } else if (currentIdx < sorted.length - 1) {
+        from = sorted[currentIdx];
+        to = sorted[currentIdx + 1];
+      } else {
+        from = sorted[Math.max(0, currentIdx - 1)];
+        to = sorted[currentIdx];
+      }
+
+      // Calculate direction in screen space
+      const fromPoint = map.latLngToContainerPoint([from.marker.lat, from.marker.lon]);
+      const toPoint = map.latLngToContainerPoint([to.marker.lat, to.marker.lon]);
+
+      return {
+        dx: toPoint.x - fromPoint.x,
+        dy: toPoint.y - fromPoint.y,
+      };
+    }
+
+    // Load and display hover geometry
+    async function loadAndShowGeometry(geometryId) {
+      if (!geometryId) return;
+
+      // Check cache
+      if (geometryCache[geometryId]) {
+        hoverGeometryLayer.clearLayers();
+        hoverGeometryLayer.addData(geometryCache[geometryId]);
+        return;
+      }
+
+      try {
+        // Include archive date and source if applicable
+        const params = new URLSearchParams();
+        if (currentBaseDate) {
+          params.set('archive', currentBaseDate);
+        }
+        if (useLiveData && !currentBaseDate) {
+          params.set('source', 'live');
+        }
+        const queryStr = params.toString() ? `?${params.toString()}` : '';
+        const response = await fetch(`/api/event-atlas/geometries/${geometryId}${queryStr}`);
+        if (!response.ok) return;
+
+        const geojson = await response.json();
+        geometryCache[geometryId] = geojson;
+
+        hoverGeometryLayer.clearLayers();
+        hoverGeometryLayer.addData(geojson);
+      } catch (err) {
+        console.error('Error loading geometry:', err);
+      }
+    }
+
+    // Click outside to dismiss
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.event-marker') && !e.target.closest('.hover-card')) {
+        hideHoverCard();
+      }
+    });
+
+    // Keyboard navigation state
+    let focusedMarkerIndex = -1;
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        hideHoverCard();
+        focusedMarkerIndex = -1;
+      }
+
+      // Tab through markers when map is focused
+      if (e.key === 'Tab' && document.activeElement === document.body) {
+        e.preventDefault();
+        if (markers.length === 0) return;
+
+        if (e.shiftKey) {
+          focusedMarkerIndex = (focusedMarkerIndex - 1 + markers.length) % markers.length;
+        } else {
+          focusedMarkerIndex = (focusedMarkerIndex + 1) % markers.length;
+        }
+
+        const marker = markers[focusedMarkerIndex];
+        const event = marker.eventData;
+        showEventHover(event, marker);
+        map.panTo(marker.getLatLng());
+        logAnalytics('event_symbol_focused', { event_id: event.event_id, peril: event.peril });
+      }
+
+      // Enter to open event
+      if (e.key === 'Enter' && focusedMarkerIndex >= 0) {
+        const marker = markers[focusedMarkerIndex];
+        const event = marker.eventData;
+        logAnalytics('event_symbol_clicked', { event_id: event.event_id, peril: event.peril, source: 'keyboard' });
+        window.location.href = event.click_url;
+      }
+    });
+
+    // Analytics logging (console for prototype)
+    function logAnalytics(eventName, data = {}) {
+      const payload = {
+        event: eventName,
+        timestamp: new Date().toISOString(),
+        day_index: currentDay,
+        peril_filter: currentPeril,
+        ...data
+      };
+      console.log('[Analytics]', payload);
+    }
+
+    // Track filter changes
+    daySlider.addEventListener('click', (e) => {
+      if (e.target.classList.contains('day-btn')) {
+        const prevDay = currentDay;
+        logAnalytics('event_day_changed', { previous_day: prevDay, new_day: parseInt(e.target.dataset.day) });
+      }
+    });
+
+    perilSelect.addEventListener('change', (e) => {
+      const prevPeril = currentPeril;
+      logAnalytics('event_filter_changed', { previous_peril: prevPeril, new_peril: e.target.value });
+    });
+
+    // Log initial load
+    function onAtlasLoaded() {
+      logAnalytics('event_atlas_loaded', { event_count: events.length });
+    }
+
+    // Wrap loadEvents to add analytics
+    const originalLoadEvents = loadEvents;
+    loadEvents = async function() {
+      await originalLoadEvents();
+      onAtlasLoaded();
+    };
+
+    // Initial load
+    initializeDatePicker();
+    checkLiveStatus(); // Check if live data is available
+    loadEvents();
+  </script>
+</body>
+</html>

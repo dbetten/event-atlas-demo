@@ -1,0 +1,2692 @@
+{
+  "archive_month": "2025-05",
+  "description": "May 2025 historical events - auto-generated from NOAA archives",
+  "generated_at": "2026-06-10T03:11:46.486Z",
+  "sources": [
+    "NHC ATCF Archive",
+    "SPC Fire Outlook Archive (IEM)",
+    "WPC Winter Archive",
+    "Winter Watch Backfill (IEM VTEC)",
+    "SPC Outlook Archive (IEM)",
+    "WPC ERO Archive (IEM)"
+  ],
+  "events": [
+    {
+      "event_id": "evt_20250517_southern_plains_2025_05_17_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southern Plains Severe Weather",
+      "short_name": "Southern Plains Severe",
+      "primary_region_label": "Southern Plains",
+      "valid_start": "2025-05-17T12:00:00.000Z",
+      "valid_end": "2025-05-20T06:00:00.000Z",
+      "severity_score": 3.4,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 85,
+      "icon_key": "tornado_outbreak",
+      "color_key": "severe_blue",
+      "size_class": "major",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-17T12:00:00.000Z",
+          "valid_end": "2025-05-18T06:00:00.000Z",
+          "marker": {
+            "lon": -95.81545454545454,
+            "lat": 33.373636363636365
+          },
+          "hover_geometry_id": "geom_evt_20250517_southern_plains_2025_05_17_severe_d1_hover",
+          "bbox": [
+            -98.96,
+            31.33,
+            -92.67,
+            34.69
+          ],
+          "valid_label": "05-17 - ENH Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-05-18T12:00:00.000Z",
+          "valid_end": "2025-05-19T06:00:00.000Z",
+          "marker": {
+            "lon": -98.58599999999998,
+            "lat": 37.83200000000001
+          },
+          "hover_geometry_id": "geom_evt_20250518_southern_plains_2025_05_18_severe_d1_hover",
+          "bbox": [
+            -100.07,
+            36.48,
+            -96.78,
+            39
+          ],
+          "valid_label": "05-18 - MDT Risk"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2025-05-19T12:00:00.000Z",
+          "valid_end": "2025-05-20T06:00:00.000Z",
+          "marker": {
+            "lon": -95.155,
+            "lat": 36.19785714285714
+          },
+          "hover_geometry_id": "geom_evt_20250519_southern_plains_2025_05_19_severe_d1_hover",
+          "bbox": [
+            -97.99,
+            33.5,
+            -92.29,
+            38.32
+          ],
+          "valid_label": "05-19 - MDT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "MDT",
+        "archive_source": "iem_spc_outlook",
+        "merged_days": 3,
+        "peak_day": "2025-05-18"
+      }
+    },
+    {
+      "event_id": "evt_20250515_mid_atlantic_2025_05_15_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Mid-Atlantic Severe Weather",
+      "short_name": "Mid-Atlantic Severe",
+      "primary_region_label": "Mid-Atlantic",
+      "valid_start": "2025-05-15T12:00:00.000Z",
+      "valid_end": "2025-05-17T06:00:00.000Z",
+      "severity_score": 3.4,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 85,
+      "icon_key": "tornado_outbreak",
+      "color_key": "severe_blue",
+      "size_class": "major",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-15T12:00:00.000Z",
+          "valid_end": "2025-05-16T06:00:00.000Z",
+          "marker": {
+            "lon": -88.43423076923075,
+            "lat": 42.953461538461546
+          },
+          "hover_geometry_id": "geom_evt_20250515_mid_atlantic_2025_05_15_severe_d1_hover",
+          "bbox": [
+            -93.57,
+            39.94,
+            -83.52,
+            46.46
+          ],
+          "valid_label": "05-15 - ENH Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-05-16T12:00:00.000Z",
+          "valid_end": "2025-05-17T06:00:00.000Z",
+          "marker": {
+            "lon": -87.84846153846155,
+            "lat": 37.48423076923078
+          },
+          "hover_geometry_id": "geom_evt_20250516_mid_atlantic_2025_05_16_severe_d1_hover",
+          "bbox": [
+            -92.06,
+            35.86,
+            -83.53,
+            39.31
+          ],
+          "valid_label": "05-16 - MDT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "MDT",
+        "archive_source": "iem_spc_outlook",
+        "merged_days": 2,
+        "peak_day": "2025-05-16"
+      }
+    },
+    {
+      "event_id": "evt_20250504_southwest_2025_05_04_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Southwest Critical Fire Weather",
+      "short_name": "Southwest Fire Weather",
+      "primary_region_label": "Southwest",
+      "valid_start": "2025-05-04T15:00:00.000Z",
+      "valid_end": "2025-05-05T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-04T15:00:00.000Z",
+          "valid_end": "2025-05-05T03:00:00.000Z",
+          "marker": {
+            "lon": -107.93881012441904,
+            "lat": 32.13925908673223
+          },
+          "hover_geometry_id": "geom_evt_20250504_southwest_2025_05_04_fire_d1_hover",
+          "bbox": [
+            -109.17,
+            31.305,
+            -106.78,
+            32.99
+          ],
+          "valid_label": "05-04 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20250513_southwest_2025_05_13_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Southwest Critical Fire Weather",
+      "short_name": "Southwest Fire Weather",
+      "primary_region_label": "Southwest",
+      "valid_start": "2025-05-13T15:00:00.000Z",
+      "valid_end": "2025-05-15T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-13T15:00:00.000Z",
+          "valid_end": "2025-05-14T03:00:00.000Z",
+          "marker": {
+            "lon": -105.85421102225982,
+            "lat": 36.641269164380994
+          },
+          "hover_geometry_id": "geom_evt_20250513_southwest_2025_05_13_fire_d1_hover",
+          "bbox": [
+            -112.01,
+            30.89746627929751,
+            -95.16459322033899,
+            48.998
+          ],
+          "valid_label": "05-13 - Critical"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-05-14T15:00:00.000Z",
+          "valid_end": "2025-05-15T03:00:00.000Z",
+          "marker": {
+            "lon": -106.92235659100133,
+            "lat": 32.40870877646894
+          },
+          "hover_geometry_id": "geom_evt_20250514_southwest_2025_05_14_fire_d1_hover",
+          "bbox": [
+            -110.54,
+            31.22,
+            -103.83,
+            34.92
+          ],
+          "valid_label": "05-14 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire",
+        "merged_days": 2,
+        "peak_day": "2025-05-13"
+      }
+    },
+    {
+      "event_id": "evt_20250518_southwest_2025_05_18_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Southwest Critical Fire Weather",
+      "short_name": "Southwest Fire Weather",
+      "primary_region_label": "Southwest",
+      "valid_start": "2025-05-18T15:00:00.000Z",
+      "valid_end": "2025-05-19T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-18T15:00:00.000Z",
+          "valid_end": "2025-05-19T03:00:00.000Z",
+          "marker": {
+            "lon": -106.1574347648901,
+            "lat": 32.198285257851346
+          },
+          "hover_geometry_id": "geom_evt_20250518_southwest_2025_05_18_fire_d1_hover",
+          "bbox": [
+            -109.44967996850083,
+            30.91,
+            -103.02,
+            34.59
+          ],
+          "valid_label": "05-18 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20250523_southwest_2025_05_23_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Southwest Critical Fire Weather",
+      "short_name": "Southwest Fire Weather",
+      "primary_region_label": "Southwest",
+      "valid_start": "2025-05-23T15:00:00.000Z",
+      "valid_end": "2025-05-24T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-23T15:00:00.000Z",
+          "valid_end": "2025-05-24T03:00:00.000Z",
+          "marker": {
+            "lon": -108.87615384615385,
+            "lat": 34.20307692307692
+          },
+          "hover_geometry_id": "geom_evt_20250523_southwest_2025_05_23_fire_d1_hover",
+          "bbox": [
+            -111.81,
+            32.27,
+            -106.2,
+            35.53
+          ],
+          "valid_label": "05-23 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20250511_upper_midwest_2025_05_11_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Upper Midwest Critical Fire Weather",
+      "short_name": "Upper Midwest Fire Weather",
+      "primary_region_label": "Upper Midwest",
+      "valid_start": "2025-05-11T15:00:00.000Z",
+      "valid_end": "2025-05-13T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-11T15:00:00.000Z",
+          "valid_end": "2025-05-12T03:00:00.000Z",
+          "marker": {
+            "lon": -97.9645631544865,
+            "lat": 45.87958425369499
+          },
+          "hover_geometry_id": "geom_evt_20250511_upper_midwest_2025_05_11_fire_d1_hover",
+          "bbox": [
+            -102.51,
+            40.83,
+            -93.72,
+            49.003100820205006
+          ],
+          "valid_label": "05-11 - Critical"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-05-12T15:00:00.000Z",
+          "valid_end": "2025-05-13T03:00:00.000Z",
+          "marker": {
+            "lon": -97.43174975062071,
+            "lat": 45.91010321123356
+          },
+          "hover_geometry_id": "geom_evt_20250512_upper_midwest_2025_05_12_fire_d1_hover",
+          "bbox": [
+            -101.72,
+            41.18,
+            -95.21,
+            48.998
+          ],
+          "valid_label": "05-12 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire",
+        "merged_days": 2,
+        "peak_day": "2025-05-11"
+      }
+    },
+    {
+      "event_id": "evt_20250517_desert_southwest_2025_05_17_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Desert Southwest Critical Fire Weather",
+      "short_name": "Desert Southwest Fire Weather",
+      "primary_region_label": "Desert Southwest",
+      "valid_start": "2025-05-17T15:00:00.000Z",
+      "valid_end": "2025-05-18T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-17T15:00:00.000Z",
+          "valid_end": "2025-05-18T03:00:00.000Z",
+          "marker": {
+            "lon": -107.06706853959243,
+            "lat": 31.979061335405035
+          },
+          "hover_geometry_id": "geom_evt_20250517_desert_southwest_2025_05_17_fire_d1_hover",
+          "bbox": [
+            -110.1367210076415,
+            31.04785710036543,
+            -104.39,
+            34.09
+          ],
+          "valid_label": "05-17 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20250519_desert_southwest_2025_05_19_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Desert Southwest Critical Fire Weather",
+      "short_name": "Desert Southwest Fire Weather",
+      "primary_region_label": "Desert Southwest",
+      "valid_start": "2025-05-19T15:00:00.000Z",
+      "valid_end": "2025-05-20T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-19T15:00:00.000Z",
+          "valid_end": "2025-05-20T03:00:00.000Z",
+          "marker": {
+            "lon": -106.106626918847,
+            "lat": 31.87303153096835
+          },
+          "hover_geometry_id": "geom_evt_20250519_desert_southwest_2025_05_19_fire_d1_hover",
+          "bbox": [
+            -109.05,
+            29.743144760271715,
+            -102.97,
+            34.74
+          ],
+          "valid_label": "05-19 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20250506_gulf_coast_2025_05_06_rain",
+      "peril": "excessive_rain",
+      "status": "post_event",
+      "headline": "Gulf Coast Moderate Risk Extreme Rain",
+      "short_name": "Gulf Coast Extreme Rain",
+      "primary_region_label": "Gulf Coast",
+      "valid_start": "2025-05-06T12:00:00.000Z",
+      "valid_end": "2025-05-08T12:00:00.000Z",
+      "severity_score": 3.2,
+      "confidence_score": 0.72,
+      "impact_score": 0.7,
+      "rank_score": 76,
+      "icon_key": "extreme_rain",
+      "color_key": "rain_green",
+      "size_class": "large",
+      "source_badges": [
+        "WPC"
+      ],
+      "subperils": [
+        "flash_flooding",
+        "urban_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-06T12:00:00.000Z",
+          "valid_end": "2025-05-07T12:00:00.000Z",
+          "marker": {
+            "lon": -92.27871004455048,
+            "lat": 31.387151360314796
+          },
+          "hover_geometry_id": "geom_evt_20250506_gulf_coast_2025_05_06_rain_d1_hover",
+          "bbox": [
+            -96.05354138002883,
+            29.74840370243756,
+            -88.58921626631977,
+            33.18093831386995
+          ],
+          "valid_label": "05-06 - Moderate Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-05-07T12:00:00.000Z",
+          "valid_end": "2025-05-08T12:00:00.000Z",
+          "marker": {
+            "lon": -90.3606644343164,
+            "lat": 29.424535779534164
+          },
+          "hover_geometry_id": "geom_evt_20250507_gulf_coast_2025_05_07_rain_d1_hover",
+          "bbox": [
+            -91.99540996120339,
+            28.587219692050876,
+            -88.86491377761357,
+            30.30611449954681
+          ],
+          "valid_label": "05-07 - Moderate Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "wpc_ero",
+              "radar_qpe"
+            ]
+          },
+          {
+            "tab_id": "ero",
+            "label": "ERO",
+            "layers": [
+              "wpc_ero"
+            ]
+          },
+          {
+            "tab_id": "qpf",
+            "label": "QPF",
+            "layers": [
+              "wpc_qpf",
+              "model_qpf_6hr"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "ero_risk_level": "MDT",
+        "archive_source": "iem_wpc_ero",
+        "merged_days": 2,
+        "peak_day": "2025-05-06"
+      }
+    },
+    {
+      "event_id": "evt_20250512_southeast_2025_05_12_rain",
+      "peril": "excessive_rain",
+      "status": "post_event",
+      "headline": "Southeast Moderate Risk Extreme Rain",
+      "short_name": "Southeast Extreme Rain",
+      "primary_region_label": "Southeast",
+      "valid_start": "2025-05-12T12:00:00.000Z",
+      "valid_end": "2025-05-13T12:00:00.000Z",
+      "severity_score": 3.2,
+      "confidence_score": 0.72,
+      "impact_score": 0.7,
+      "rank_score": 76,
+      "icon_key": "extreme_rain",
+      "color_key": "rain_green",
+      "size_class": "large",
+      "source_badges": [
+        "WPC"
+      ],
+      "subperils": [
+        "flash_flooding",
+        "urban_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-12T12:00:00.000Z",
+          "valid_end": "2025-05-13T12:00:00.000Z",
+          "marker": {
+            "lon": -80.13736732370303,
+            "lat": 26.113492363897684
+          },
+          "hover_geometry_id": "geom_evt_20250512_southeast_2025_05_12_rain_d1_hover",
+          "bbox": [
+            -80.66733451563172,
+            25.319200664806623,
+            -79.69867967764117,
+            26.9723153170388
+          ],
+          "valid_label": "05-12 - Moderate Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "wpc_ero",
+              "radar_qpe"
+            ]
+          },
+          {
+            "tab_id": "ero",
+            "label": "ERO",
+            "layers": [
+              "wpc_ero"
+            ]
+          },
+          {
+            "tab_id": "qpf",
+            "label": "QPF",
+            "layers": [
+              "wpc_qpf",
+              "model_qpf_6hr"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "ero_risk_level": "MDT",
+        "archive_source": "iem_wpc_ero"
+      }
+    },
+    {
+      "event_id": "evt_20250519_southern_plains_2025_05_19_rain",
+      "peril": "excessive_rain",
+      "status": "post_event",
+      "headline": "Southern Plains Moderate Risk Extreme Rain",
+      "short_name": "Southern Plains Extreme Rain",
+      "primary_region_label": "Southern Plains",
+      "valid_start": "2025-05-19T12:00:00.000Z",
+      "valid_end": "2025-05-20T12:00:00.000Z",
+      "severity_score": 3.2,
+      "confidence_score": 0.72,
+      "impact_score": 0.7,
+      "rank_score": 76,
+      "icon_key": "extreme_rain",
+      "color_key": "rain_green",
+      "size_class": "large",
+      "source_badges": [
+        "WPC"
+      ],
+      "subperils": [
+        "flash_flooding",
+        "urban_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-19T12:00:00.000Z",
+          "valid_end": "2025-05-20T12:00:00.000Z",
+          "marker": {
+            "lon": -92.90616278126873,
+            "lat": 35.93323303618977
+          },
+          "hover_geometry_id": "geom_evt_20250519_southern_plains_2025_05_19_rain_d1_hover",
+          "bbox": [
+            -95.32947812376715,
+            34.562202329372894,
+            -90.3624417883505,
+            37.36355702288353
+          ],
+          "valid_label": "05-19 - Moderate Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "wpc_ero",
+              "radar_qpe"
+            ]
+          },
+          {
+            "tab_id": "ero",
+            "label": "ERO",
+            "layers": [
+              "wpc_ero"
+            ]
+          },
+          {
+            "tab_id": "qpf",
+            "label": "QPF",
+            "layers": [
+              "wpc_qpf",
+              "model_qpf_6hr"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "ero_risk_level": "MDT",
+        "archive_source": "iem_wpc_ero"
+      }
+    },
+    {
+      "event_id": "evt_20250525_southern_plains_2025_05_25_rain",
+      "peril": "excessive_rain",
+      "status": "post_event",
+      "headline": "Southern Plains Moderate Risk Extreme Rain",
+      "short_name": "Southern Plains Extreme Rain",
+      "primary_region_label": "Southern Plains",
+      "valid_start": "2025-05-25T12:00:00.000Z",
+      "valid_end": "2025-05-26T12:00:00.000Z",
+      "severity_score": 3.2,
+      "confidence_score": 0.72,
+      "impact_score": 0.7,
+      "rank_score": 76,
+      "icon_key": "extreme_rain",
+      "color_key": "rain_green",
+      "size_class": "large",
+      "source_badges": [
+        "WPC"
+      ],
+      "subperils": [
+        "flash_flooding",
+        "urban_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-25T12:00:00.000Z",
+          "valid_end": "2025-05-26T12:00:00.000Z",
+          "marker": {
+            "lon": -95.96930305538399,
+            "lat": 35.20373827526355
+          },
+          "hover_geometry_id": "geom_evt_20250525_southern_plains_2025_05_25_rain_d1_hover",
+          "bbox": [
+            -97.88415280841744,
+            33.842515591902455,
+            -94.17755714629787,
+            36.6661886652749
+          ],
+          "valid_label": "05-25 - Moderate Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "wpc_ero",
+              "radar_qpe"
+            ]
+          },
+          {
+            "tab_id": "ero",
+            "label": "ERO",
+            "layers": [
+              "wpc_ero"
+            ]
+          },
+          {
+            "tab_id": "qpf",
+            "label": "QPF",
+            "layers": [
+              "wpc_qpf",
+              "model_qpf_6hr"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "ero_risk_level": "MDT",
+        "archive_source": "iem_wpc_ero"
+      }
+    },
+    {
+      "event_id": "evt_20250514_northern_rockies_2025_05_14_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Northern Rockies Winter Storm",
+      "short_name": "Northern Rockies Winter",
+      "primary_region_label": "Northern Rockies",
+      "valid_start": "2025-05-14T00:00:00.000Z",
+      "valid_end": "2025-05-16T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-14T00:00:00.000Z",
+          "valid_end": "2025-05-16T00:00:00.000Z",
+          "marker": {
+            "lon": -108.19593491735515,
+            "lat": 44.29882747933884
+          },
+          "hover_geometry_id": "geom_evt_20250514_northern_rockies_2025_05_14_winter_d1_hover",
+          "bbox": [
+            -110.17,
+            43.21,
+            -106.77,
+            45.38
+          ],
+          "valid_label": "05-14 - 5 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 5,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch"
+      }
+    },
+    {
+      "event_id": "evt_20250518_desert_southwest_2025_05_18_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Desert Southwest Winter Storm",
+      "short_name": "Desert Southwest Winter",
+      "primary_region_label": "Desert Southwest",
+      "valid_start": "2025-05-18T00:00:00.000Z",
+      "valid_end": "2025-05-20T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-18T00:00:00.000Z",
+          "valid_end": "2025-05-20T00:00:00.000Z",
+          "marker": {
+            "lon": -114.2379864724246,
+            "lat": 45.54294484911557
+          },
+          "hover_geometry_id": "geom_evt_20250518_desert_southwest_2025_05_18_winter_d1_hover",
+          "bbox": [
+            -116.34,
+            44.230000000000004,
+            -112.81,
+            47.6
+          ],
+          "valid_label": "05-18 - 5 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 5,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch"
+      }
+    },
+    {
+      "event_id": "evt_20250501_southern_plains_2025_05_01_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southern Plains Severe Weather",
+      "short_name": "Southern Plains Severe",
+      "primary_region_label": "Southern Plains",
+      "valid_start": "2025-05-01T12:00:00.000Z",
+      "valid_end": "2025-05-03T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-01T12:00:00.000Z",
+          "valid_end": "2025-05-02T06:00:00.000Z",
+          "marker": {
+            "lon": -90.78909014369404,
+            "lat": 35.48500321299044
+          },
+          "hover_geometry_id": "geom_evt_20250501_southern_plains_2025_05_01_severe_d1_hover",
+          "bbox": [
+            -102.04,
+            28.090799258605166,
+            -77.14,
+            42.84580436666808
+          ],
+          "valid_label": "05-01 - SLGT Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-05-02T12:00:00.000Z",
+          "valid_end": "2025-05-03T06:00:00.000Z",
+          "marker": {
+            "lon": -90.58764705882353,
+            "lat": 33.766470588235286
+          },
+          "hover_geometry_id": "geom_evt_20250502_southern_plains_2025_05_02_severe_d1_hover",
+          "bbox": [
+            -100.93,
+            28.65,
+            -83.28,
+            38.79
+          ],
+          "valid_label": "05-02 - ENH Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook",
+        "merged_days": 2,
+        "peak_day": "2025-05-02"
+      }
+    },
+    {
+      "event_id": "evt_20250522_southern_plains_2025_05_22_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southern Plains Severe Weather",
+      "short_name": "Southern Plains Severe",
+      "primary_region_label": "Southern Plains",
+      "valid_start": "2025-05-22T12:00:00.000Z",
+      "valid_end": "2025-05-23T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-22T12:00:00.000Z",
+          "valid_end": "2025-05-23T06:00:00.000Z",
+          "marker": {
+            "lon": -97.8488888888889,
+            "lat": 33.52111111111111
+          },
+          "hover_geometry_id": "geom_evt_20250522_southern_plains_2025_05_22_severe_d1_hover",
+          "bbox": [
+            -99.22,
+            32.5,
+            -96.49,
+            34.33
+          ],
+          "valid_label": "05-22 - ENH Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250524_southern_plains_2025_05_24_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southern Plains Severe Weather",
+      "short_name": "Southern Plains Severe",
+      "primary_region_label": "Southern Plains",
+      "valid_start": "2025-05-24T12:00:00.000Z",
+      "valid_end": "2025-05-26T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-24T12:00:00.000Z",
+          "valid_end": "2025-05-25T06:00:00.000Z",
+          "marker": {
+            "lon": -97.43416666666667,
+            "lat": 35.77583333333333
+          },
+          "hover_geometry_id": "geom_evt_20250524_southern_plains_2025_05_24_severe_d1_hover",
+          "bbox": [
+            -99.2,
+            34.98,
+            -95.55,
+            36.74
+          ],
+          "valid_label": "05-24 - ENH Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-05-25T12:00:00.000Z",
+          "valid_end": "2025-05-26T06:00:00.000Z",
+          "marker": {
+            "lon": -94.72238095238096,
+            "lat": 34.38380952380952
+          },
+          "hover_geometry_id": "geom_evt_20250525_southern_plains_2025_05_25_severe_d1_hover",
+          "bbox": [
+            -102.66,
+            31.99,
+            -86.82,
+            35.85
+          ],
+          "valid_label": "05-25 - ENH Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook",
+        "merged_days": 2,
+        "peak_day": "2025-05-24"
+      }
+    },
+    {
+      "event_id": "evt_20250504_central_plains_2025_05_04_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Central Plains Severe Weather",
+      "short_name": "Central Plains Severe",
+      "primary_region_label": "Central Plains",
+      "valid_start": "2025-05-04T12:00:00.000Z",
+      "valid_end": "2025-05-06T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-04T12:00:00.000Z",
+          "valid_end": "2025-05-05T06:00:00.000Z",
+          "marker": {
+            "lon": -103.94600000000001,
+            "lat": 32.996
+          },
+          "hover_geometry_id": "geom_evt_20250504_central_plains_2025_05_04_severe_d1_hover",
+          "bbox": [
+            -105.56,
+            31.35,
+            -102.51,
+            34.68
+          ],
+          "valid_label": "05-04 - SLGT Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-05-05T12:00:00.000Z",
+          "valid_end": "2025-05-06T06:00:00.000Z",
+          "marker": {
+            "lon": -101.71241800638046,
+            "lat": 31.027089955061083
+          },
+          "hover_geometry_id": "geom_evt_20250505_central_plains_2025_05_05_severe_d1_hover",
+          "bbox": [
+            -103.78,
+            29.14616623909697,
+            -99.57,
+            33.45
+          ],
+          "valid_label": "05-05 - ENH Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook",
+        "merged_days": 2,
+        "peak_day": "2025-05-05"
+      }
+    },
+    {
+      "event_id": "evt_20250529_central_plains_2025_05_29_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Central Plains Severe Weather",
+      "short_name": "Central Plains Severe",
+      "primary_region_label": "Central Plains",
+      "valid_start": "2025-05-29T12:00:00.000Z",
+      "valid_end": "2025-05-30T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-29T12:00:00.000Z",
+          "valid_end": "2025-05-30T06:00:00.000Z",
+          "marker": {
+            "lon": -101.20666666666666,
+            "lat": 32.462222222222216
+          },
+          "hover_geometry_id": "geom_evt_20250529_central_plains_2025_05_29_severe_d1_hover",
+          "bbox": [
+            -102.64,
+            31.3,
+            -99.28,
+            33.43
+          ],
+          "valid_label": "05-29 - ENH Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250506_gulf_coast_2025_05_06_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Gulf Coast Severe Weather",
+      "short_name": "Gulf Coast Severe",
+      "primary_region_label": "Gulf Coast",
+      "valid_start": "2025-05-06T12:00:00.000Z",
+      "valid_end": "2025-05-07T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-06T12:00:00.000Z",
+          "valid_end": "2025-05-07T06:00:00.000Z",
+          "marker": {
+            "lon": -95.193125,
+            "lat": 30.833750000000002
+          },
+          "hover_geometry_id": "geom_evt_20250506_gulf_coast_2025_05_06_severe_d1_hover",
+          "bbox": [
+            -97.7,
+            29.75,
+            -92.4,
+            32.06
+          ],
+          "valid_label": "05-06 - ENH Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250526_gulf_coast_2025_05_26_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Gulf Coast Severe Weather",
+      "short_name": "Gulf Coast Severe",
+      "primary_region_label": "Gulf Coast",
+      "valid_start": "2025-05-26T12:00:00.000Z",
+      "valid_end": "2025-05-28T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-26T12:00:00.000Z",
+          "valid_end": "2025-05-27T06:00:00.000Z",
+          "marker": {
+            "lon": -99.25833333333333,
+            "lat": 31.250833333333333
+          },
+          "hover_geometry_id": "geom_evt_20250526_gulf_coast_2025_05_26_severe_d1_hover",
+          "bbox": [
+            -101.26,
+            29.5,
+            -97.33,
+            32.36
+          ],
+          "valid_label": "05-26 - ENH Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-05-27T12:00:00.000Z",
+          "valid_end": "2025-05-28T06:00:00.000Z",
+          "marker": {
+            "lon": -97.22294202411548,
+            "lat": 30.09388206932935
+          },
+          "hover_geometry_id": "geom_evt_20250527_gulf_coast_2025_05_27_severe_d1_hover",
+          "bbox": [
+            -104.98547372923326,
+            26.97062750525966,
+            -81.36,
+            33.85
+          ],
+          "valid_label": "05-27 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook",
+        "merged_days": 2,
+        "peak_day": "2025-05-26"
+      }
+    },
+    {
+      "event_id": "evt_20250520_southeast_2025_05_20_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southeast Severe Weather",
+      "short_name": "Southeast Severe",
+      "primary_region_label": "Southeast",
+      "valid_start": "2025-05-20T12:00:00.000Z",
+      "valid_end": "2025-05-22T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-20T12:00:00.000Z",
+          "valid_end": "2025-05-21T06:00:00.000Z",
+          "marker": {
+            "lon": -86.6285,
+            "lat": 35.94449999999999
+          },
+          "hover_geometry_id": "geom_evt_20250520_southeast_2025_05_20_severe_d1_hover",
+          "bbox": [
+            -92.07,
+            32.84,
+            -82.35,
+            38.5
+          ],
+          "valid_label": "05-20 - ENH Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-05-21T12:00:00.000Z",
+          "valid_end": "2025-05-22T06:00:00.000Z",
+          "marker": {
+            "lon": -83.98821428571429,
+            "lat": 34.068571428571424
+          },
+          "hover_geometry_id": "geom_evt_20250521_southeast_2025_05_21_severe_d1_hover",
+          "bbox": [
+            -95.42,
+            29.82,
+            -75.33,
+            37.4
+          ],
+          "valid_label": "05-21 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook",
+        "merged_days": 2,
+        "peak_day": "2025-05-20"
+      }
+    },
+    {
+      "event_id": "evt_20250530_southeast_2025_05_30_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southeast Severe Weather",
+      "short_name": "Southeast Severe",
+      "primary_region_label": "Southeast",
+      "valid_start": "2025-05-30T12:00:00.000Z",
+      "valid_end": "2025-05-31T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-30T12:00:00.000Z",
+          "valid_end": "2025-05-31T06:00:00.000Z",
+          "marker": {
+            "lon": -80.01500000000001,
+            "lat": 34.295
+          },
+          "hover_geometry_id": "geom_evt_20250530_southeast_2025_05_30_severe_d1_hover",
+          "bbox": [
+            -83.21,
+            32.11,
+            -77.36,
+            36.35
+          ],
+          "valid_label": "05-30 - ENH Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250528_southern_plains_2025_05_28_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southern Plains Severe Weather",
+      "short_name": "Southern Plains Severe",
+      "primary_region_label": "Southern Plains",
+      "valid_start": "2025-05-28T12:00:00.000Z",
+      "valid_end": "2025-05-29T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-28T12:00:00.000Z",
+          "valid_end": "2025-05-29T06:00:00.000Z",
+          "marker": {
+            "lon": -99.10562499999999,
+            "lat": 32.83270833333333
+          },
+          "hover_geometry_id": "geom_evt_20250528_southern_plains_2025_05_28_severe_d1_hover",
+          "bbox": [
+            -104.76,
+            29.05,
+            -89.11,
+            40.16
+          ],
+          "valid_label": "05-28 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250503_mid_atlantic_2025_05_03_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Mid-Atlantic Severe Weather",
+      "short_name": "Mid-Atlantic Severe",
+      "primary_region_label": "Mid-Atlantic",
+      "valid_start": "2025-05-03T12:00:00.000Z",
+      "valid_end": "2025-05-04T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-03T12:00:00.000Z",
+          "valid_end": "2025-05-04T06:00:00.000Z",
+          "marker": {
+            "lon": -77.102,
+            "lat": 38.6745
+          },
+          "hover_geometry_id": "geom_evt_20250503_mid_atlantic_2025_05_03_severe_d1_hover",
+          "bbox": [
+            -82.1,
+            33.24,
+            -70.7,
+            43.76
+          ],
+          "valid_label": "05-03 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250531_mid_atlantic_2025_05_31_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Mid-Atlantic Severe Weather",
+      "short_name": "Mid-Atlantic Severe",
+      "primary_region_label": "Mid-Atlantic",
+      "valid_start": "2025-05-31T12:00:00.000Z",
+      "valid_end": "2025-06-01T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-31T12:00:00.000Z",
+          "valid_end": "2025-06-01T06:00:00.000Z",
+          "marker": {
+            "lon": -85.28841508201417,
+            "lat": 37.2858216882747
+          },
+          "hover_geometry_id": "geom_evt_20250531_mid_atlantic_2025_05_31_severe_d1_hover",
+          "bbox": [
+            -99.4,
+            33.72,
+            -74.02361189815919,
+            39.48
+          ],
+          "valid_label": "05-31 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250523_central_plains_2025_05_23_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Central Plains Severe Weather",
+      "short_name": "Central Plains Severe",
+      "primary_region_label": "Central Plains",
+      "valid_start": "2025-05-23T12:00:00.000Z",
+      "valid_end": "2025-05-24T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-23T12:00:00.000Z",
+          "valid_end": "2025-05-24T06:00:00.000Z",
+          "marker": {
+            "lon": -100.01172413793103,
+            "lat": 37.48793103448276
+          },
+          "hover_geometry_id": "geom_evt_20250523_central_plains_2025_05_23_severe_d1_hover",
+          "bbox": [
+            -103.8,
+            32.39,
+            -93.1,
+            42.03
+          ],
+          "valid_label": "05-23 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250508_gulf_coast_2025_05_08_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Gulf Coast Severe Weather",
+      "short_name": "Gulf Coast Severe",
+      "primary_region_label": "Gulf Coast",
+      "valid_start": "2025-05-08T12:00:00.000Z",
+      "valid_end": "2025-05-09T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-08T12:00:00.000Z",
+          "valid_end": "2025-05-09T06:00:00.000Z",
+          "marker": {
+            "lon": -92.10524054052925,
+            "lat": 30.300606871228453
+          },
+          "hover_geometry_id": "geom_evt_20250508_gulf_coast_2025_05_08_severe_d1_hover",
+          "bbox": [
+            -104.37827843498171,
+            25.819,
+            -78.6,
+            37.51
+          ],
+          "valid_label": "05-08 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250509_southeast_2025_05_09_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southeast Severe Weather",
+      "short_name": "Southeast Severe",
+      "primary_region_label": "Southeast",
+      "valid_start": "2025-05-09T12:00:00.000Z",
+      "valid_end": "2025-05-11T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-09T12:00:00.000Z",
+          "valid_end": "2025-05-10T06:00:00.000Z",
+          "marker": {
+            "lon": -79.28240173373274,
+            "lat": 32.26140125951173
+          },
+          "hover_geometry_id": "geom_evt_20250509_southeast_2025_05_09_severe_d1_hover",
+          "bbox": [
+            -82.19,
+            27.38,
+            -75.12,
+            37.12
+          ],
+          "valid_label": "05-09 - SLGT Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2025-05-10T12:00:00.000Z",
+          "valid_end": "2025-05-11T06:00:00.000Z",
+          "marker": {
+            "lon": -85.4471000779233,
+            "lat": 30.38723400983528
+          },
+          "hover_geometry_id": "geom_evt_20250510_southeast_2025_05_10_severe_d1_hover",
+          "bbox": [
+            -86.72,
+            29.246,
+            -83.99,
+            31.93
+          ],
+          "valid_label": "05-10 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook",
+        "merged_days": 2,
+        "peak_day": "2025-05-09"
+      }
+    },
+    {
+      "event_id": "evt_20250511_northern_rockies_2025_05_11_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Northern Rockies Severe Weather",
+      "short_name": "Northern Rockies Severe",
+      "primary_region_label": "Northern Rockies",
+      "valid_start": "2025-05-11T12:00:00.000Z",
+      "valid_end": "2025-05-12T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-11T12:00:00.000Z",
+          "valid_end": "2025-05-12T06:00:00.000Z",
+          "marker": {
+            "lon": -108.66445053273532,
+            "lat": 46.72826794004447
+          },
+          "hover_geometry_id": "geom_evt_20250511_northern_rockies_2025_05_11_severe_d1_hover",
+          "bbox": [
+            -113.32,
+            42.7,
+            -104.48,
+            49.009
+          ],
+          "valid_label": "05-11 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20250514_upper_midwest_2025_05_14_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Upper Midwest Severe Weather",
+      "short_name": "Upper Midwest Severe",
+      "primary_region_label": "Upper Midwest",
+      "valid_start": "2025-05-14T12:00:00.000Z",
+      "valid_end": "2025-05-15T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2025-05-14T12:00:00.000Z",
+          "valid_end": "2025-05-15T06:00:00.000Z",
+          "marker": {
+            "lon": -99.44000000000003,
+            "lat": 43.93923076923078
+          },
+          "hover_geometry_id": "geom_evt_20250514_upper_midwest_2025_05_14_severe_d1_hover",
+          "bbox": [
+            -102.29,
+            39.95,
+            -95.17,
+            47.74
+          ],
+          "valid_label": "05-14 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    }
+  ]
+}

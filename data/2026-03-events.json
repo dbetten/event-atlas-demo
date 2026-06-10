@@ -1,0 +1,3184 @@
+{
+  "archive_month": "2026-03",
+  "description": "March 2026 historical events - auto-generated from NOAA archives",
+  "generated_at": "2026-06-10T03:13:21.168Z",
+  "sources": [
+    "WPC ERO Archive (IEM)",
+    "SPC Fire Outlook Archive (IEM)",
+    "SPC Outlook Archive (IEM)",
+    "WPC Winter Archive",
+    "NHC ATCF Archive",
+    "Winter Watch Backfill (IEM VTEC)"
+  ],
+  "events": [
+    {
+      "event_id": "evt_20260310_mid_atlantic_2026_03_10_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Mid-Atlantic Severe Weather",
+      "short_name": "Mid-Atlantic Severe",
+      "primary_region_label": "Mid-Atlantic",
+      "valid_start": "2026-03-10T12:00:00.000Z",
+      "valid_end": "2026-03-11T06:00:00.000Z",
+      "severity_score": 3.4,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 85,
+      "icon_key": "tornado_outbreak",
+      "color_key": "severe_blue",
+      "size_class": "major",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-10T12:00:00.000Z",
+          "valid_end": "2026-03-11T06:00:00.000Z",
+          "marker": {
+            "lon": -88.65923076923076,
+            "lat": 40.95538461538461
+          },
+          "hover_geometry_id": "geom_evt_20260310_mid_atlantic_2026_03_10_severe_d1_hover",
+          "bbox": [
+            -90.56,
+            40.32,
+            -86.16,
+            41.56
+          ],
+          "valid_label": "03-10 - MDT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "MDT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20260316_mid_atlantic_2026_03_16_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Mid-Atlantic Severe Weather",
+      "short_name": "Mid-Atlantic Severe",
+      "primary_region_label": "Mid-Atlantic",
+      "valid_start": "2026-03-16T12:00:00.000Z",
+      "valid_end": "2026-03-17T06:00:00.000Z",
+      "severity_score": 3.4,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 85,
+      "icon_key": "tornado_outbreak",
+      "color_key": "severe_blue",
+      "size_class": "major",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-16T12:00:00.000Z",
+          "valid_end": "2026-03-17T06:00:00.000Z",
+          "marker": {
+            "lon": -78.00307692307693,
+            "lat": 36.88076923076923
+          },
+          "hover_geometry_id": "geom_evt_20260316_mid_atlantic_2026_03_16_severe_d1_hover",
+          "bbox": [
+            -79.67,
+            34.09,
+            -76.21,
+            39.42
+          ],
+          "valid_label": "03-16 - MDT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "MDT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20260305_central_plains_2026_03_05_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Central Plains Critical Fire Weather",
+      "short_name": "Central Plains Fire Weather",
+      "primary_region_label": "Central Plains",
+      "valid_start": "2026-03-05T15:00:00.000Z",
+      "valid_end": "2026-03-07T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-05T15:00:00.000Z",
+          "valid_end": "2026-03-06T03:00:00.000Z",
+          "marker": {
+            "lon": -104.0659375,
+            "lat": 35.14093749999999
+          },
+          "hover_geometry_id": "geom_evt_20260305_central_plains_2026_03_05_fire_d1_hover",
+          "bbox": [
+            -106.41,
+            32.07,
+            -101.76,
+            38.17
+          ],
+          "valid_label": "03-05 - Critical"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-03-06T15:00:00.000Z",
+          "valid_end": "2026-03-07T03:00:00.000Z",
+          "marker": {
+            "lon": -102.062,
+            "lat": 34.62025
+          },
+          "hover_geometry_id": "geom_evt_20260306_central_plains_2026_03_06_fire_d1_hover",
+          "bbox": [
+            -105.62,
+            31.44,
+            -99.81,
+            37.46
+          ],
+          "valid_label": "03-06 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire",
+        "merged_days": 2,
+        "peak_day": "2026-03-05"
+      }
+    },
+    {
+      "event_id": "evt_20260308_central_plains_2026_03_08_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Central Plains Critical Fire Weather",
+      "short_name": "Central Plains Fire Weather",
+      "primary_region_label": "Central Plains",
+      "valid_start": "2026-03-08T15:00:00.000Z",
+      "valid_end": "2026-03-10T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-08T15:00:00.000Z",
+          "valid_end": "2026-03-09T03:00:00.000Z",
+          "marker": {
+            "lon": -103.02473684210524,
+            "lat": 35.869473684210526
+          },
+          "hover_geometry_id": "geom_evt_20260308_central_plains_2026_03_08_fire_d1_hover",
+          "bbox": [
+            -105.18,
+            34.65,
+            -101.37,
+            36.9
+          ],
+          "valid_label": "03-08 - Critical"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-03-09T15:00:00.000Z",
+          "valid_end": "2026-03-10T03:00:00.000Z",
+          "marker": {
+            "lon": -103.03170731707316,
+            "lat": 38.835365853658544
+          },
+          "hover_geometry_id": "geom_evt_20260309_central_plains_2026_03_09_fire_d1_hover",
+          "bbox": [
+            -105.17,
+            34.51,
+            -100.58,
+            42.97
+          ],
+          "valid_label": "03-09 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire",
+        "merged_days": 2,
+        "peak_day": "2026-03-08"
+      }
+    },
+    {
+      "event_id": "evt_20260312_central_plains_2026_03_12_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Central Plains Critical Fire Weather",
+      "short_name": "Central Plains Fire Weather",
+      "primary_region_label": "Central Plains",
+      "valid_start": "2026-03-12T15:00:00.000Z",
+      "valid_end": "2026-03-13T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-12T15:00:00.000Z",
+          "valid_end": "2026-03-13T03:00:00.000Z",
+          "marker": {
+            "lon": -102.29775000000002,
+            "lat": 37.85675000000001
+          },
+          "hover_geometry_id": "geom_evt_20260312_central_plains_2026_03_12_fire_d1_hover",
+          "bbox": [
+            -105.56,
+            33.6,
+            -97.93,
+            42.43
+          ],
+          "valid_label": "03-12 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20260314_central_plains_2026_03_14_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Central Plains Critical Fire Weather",
+      "short_name": "Central Plains Fire Weather",
+      "primary_region_label": "Central Plains",
+      "valid_start": "2026-03-14T15:00:00.000Z",
+      "valid_end": "2026-03-16T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-14T15:00:00.000Z",
+          "valid_end": "2026-03-15T03:00:00.000Z",
+          "marker": {
+            "lon": -104.07107142857144,
+            "lat": 36.938035714285704
+          },
+          "hover_geometry_id": "geom_evt_20260314_central_plains_2026_03_14_fire_d1_hover",
+          "bbox": [
+            -108.09,
+            30.64,
+            -99.52,
+            42.65
+          ],
+          "valid_label": "03-14 - Critical"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-03-15T15:00:00.000Z",
+          "valid_end": "2026-03-16T03:00:00.000Z",
+          "marker": {
+            "lon": -102.60444824290029,
+            "lat": 31.536327995083727
+          },
+          "hover_geometry_id": "geom_evt_20260315_central_plains_2026_03_15_fire_d1_hover",
+          "bbox": [
+            -107.81,
+            28.841430068212823,
+            -97.95,
+            36.58
+          ],
+          "valid_label": "03-15 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire",
+        "merged_days": 2,
+        "peak_day": "2026-03-14"
+      }
+    },
+    {
+      "event_id": "evt_20260322_central_plains_2026_03_22_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Central Plains Critical Fire Weather",
+      "short_name": "Central Plains Fire Weather",
+      "primary_region_label": "Central Plains",
+      "valid_start": "2026-03-22T15:00:00.000Z",
+      "valid_end": "2026-03-23T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-22T15:00:00.000Z",
+          "valid_end": "2026-03-23T03:00:00.000Z",
+          "marker": {
+            "lon": -100.1984,
+            "lat": 33.94
+          },
+          "hover_geometry_id": "geom_evt_20260322_central_plains_2026_03_22_fire_d1_hover",
+          "bbox": [
+            -103,
+            30.91,
+            -96.78,
+            35.73
+          ],
+          "valid_label": "03-22 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20260326_central_plains_2026_03_26_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Central Plains Critical Fire Weather",
+      "short_name": "Central Plains Fire Weather",
+      "primary_region_label": "Central Plains",
+      "valid_start": "2026-03-26T15:00:00.000Z",
+      "valid_end": "2026-03-28T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-26T15:00:00.000Z",
+          "valid_end": "2026-03-27T03:00:00.000Z",
+          "marker": {
+            "lon": -103.29156862745096,
+            "lat": 35.265294117647066
+          },
+          "hover_geometry_id": "geom_evt_20260326_central_plains_2026_03_26_fire_d1_hover",
+          "bbox": [
+            -108.02,
+            31.23,
+            -97.65,
+            38.01
+          ],
+          "valid_label": "03-26 - Critical"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-03-27T15:00:00.000Z",
+          "valid_end": "2026-03-28T03:00:00.000Z",
+          "marker": {
+            "lon": -100.61733333333333,
+            "lat": 35.748
+          },
+          "hover_geometry_id": "geom_evt_20260327_central_plains_2026_03_27_fire_d1_hover",
+          "bbox": [
+            -102.68,
+            34.55,
+            -97.95,
+            37.41
+          ],
+          "valid_label": "03-27 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire",
+        "merged_days": 2,
+        "peak_day": "2026-03-26"
+      }
+    },
+    {
+      "event_id": "evt_20260316_gulf_coast_2026_03_16_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Gulf Coast Critical Fire Weather",
+      "short_name": "Gulf Coast Fire Weather",
+      "primary_region_label": "Gulf Coast",
+      "valid_start": "2026-03-16T15:00:00.000Z",
+      "valid_end": "2026-03-17T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-16T15:00:00.000Z",
+          "valid_end": "2026-03-17T03:00:00.000Z",
+          "marker": {
+            "lon": -97.18307053531686,
+            "lat": 27.96282226819922
+          },
+          "hover_geometry_id": "geom_evt_20260316_gulf_coast_2026_03_16_fire_d1_hover",
+          "bbox": [
+            -98.59,
+            25.953318730296772,
+            -95.34,
+            29.81
+          ],
+          "valid_label": "03-16 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20260317_southern_plains_2026_03_17_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Southern Plains Critical Fire Weather",
+      "short_name": "Southern Plains Fire Weather",
+      "primary_region_label": "Southern Plains",
+      "valid_start": "2026-03-17T15:00:00.000Z",
+      "valid_end": "2026-03-18T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-17T15:00:00.000Z",
+          "valid_end": "2026-03-18T03:00:00.000Z",
+          "marker": {
+            "lon": -99.56605263157896,
+            "lat": 34.26947368421052
+          },
+          "hover_geometry_id": "geom_evt_20260317_southern_plains_2026_03_17_fire_d1_hover",
+          "bbox": [
+            -101.45,
+            32.36,
+            -97.19,
+            35.83
+          ],
+          "valid_label": "03-17 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20260328_southern_plains_2026_03_28_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Southern Plains Critical Fire Weather",
+      "short_name": "Southern Plains Fire Weather",
+      "primary_region_label": "Southern Plains",
+      "valid_start": "2026-03-28T15:00:00.000Z",
+      "valid_end": "2026-03-29T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-28T15:00:00.000Z",
+          "valid_end": "2026-03-29T03:00:00.000Z",
+          "marker": {
+            "lon": -93.99152542372882,
+            "lat": 37.972711864406776
+          },
+          "hover_geometry_id": "geom_evt_20260328_southern_plains_2026_03_28_fire_d1_hover",
+          "bbox": [
+            -107.34,
+            30.25,
+            -80.04,
+            44.82
+          ],
+          "valid_label": "03-28 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20260318_northern_plains_2026_03_18_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Northern Plains Critical Fire Weather",
+      "short_name": "Northern Plains Fire Weather",
+      "primary_region_label": "Northern Plains",
+      "valid_start": "2026-03-18T15:00:00.000Z",
+      "valid_end": "2026-03-19T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-18T15:00:00.000Z",
+          "valid_end": "2026-03-19T03:00:00.000Z",
+          "marker": {
+            "lon": -104.82684210526315,
+            "lat": 42.113157894736844
+          },
+          "hover_geometry_id": "geom_evt_20260318_northern_plains_2026_03_18_fire_d1_hover",
+          "bbox": [
+            -106.54,
+            40.5,
+            -103.11,
+            43.53
+          ],
+          "valid_label": "03-18 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20260319_northern_rockies_2026_03_19_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Northern Rockies Critical Fire Weather",
+      "short_name": "Northern Rockies Fire Weather",
+      "primary_region_label": "Northern Rockies",
+      "valid_start": "2026-03-19T15:00:00.000Z",
+      "valid_end": "2026-03-22T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-19T15:00:00.000Z",
+          "valid_end": "2026-03-20T03:00:00.000Z",
+          "marker": {
+            "lon": -105.64071428571428,
+            "lat": 42.64142857142856
+          },
+          "hover_geometry_id": "geom_evt_20260319_northern_rockies_2026_03_19_fire_d1_hover",
+          "bbox": [
+            -107.95,
+            41,
+            -104.24,
+            43.99
+          ],
+          "valid_label": "03-19 - Critical"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-03-20T15:00:00.000Z",
+          "valid_end": "2026-03-21T03:00:00.000Z",
+          "marker": {
+            "lon": -106.10833333333335,
+            "lat": 42.62375
+          },
+          "hover_geometry_id": "geom_evt_20260320_northern_rockies_2026_03_20_fire_d1_hover",
+          "bbox": [
+            -108.03,
+            41.09,
+            -104.11,
+            43.91
+          ],
+          "valid_label": "03-20 - Critical"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2026-03-21T15:00:00.000Z",
+          "valid_end": "2026-03-22T03:00:00.000Z",
+          "marker": {
+            "lon": -106.59666666666664,
+            "lat": 41.543636363636374
+          },
+          "hover_geometry_id": "geom_evt_20260321_northern_rockies_2026_03_21_fire_d1_hover",
+          "bbox": [
+            -109.94,
+            39.6,
+            -102.82,
+            44.36
+          ],
+          "valid_label": "03-21 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire",
+        "merged_days": 3,
+        "peak_day": "2026-03-19"
+      }
+    },
+    {
+      "event_id": "evt_20260325_northern_rockies_2026_03_25_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Northern Rockies Critical Fire Weather",
+      "short_name": "Northern Rockies Fire Weather",
+      "primary_region_label": "Northern Rockies",
+      "valid_start": "2026-03-25T15:00:00.000Z",
+      "valid_end": "2026-03-26T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-25T15:00:00.000Z",
+          "valid_end": "2026-03-26T03:00:00.000Z",
+          "marker": {
+            "lon": -105.89882352941176,
+            "lat": 42.771764705882354
+          },
+          "hover_geometry_id": "geom_evt_20260325_northern_rockies_2026_03_25_fire_d1_hover",
+          "bbox": [
+            -108.57,
+            41.22,
+            -103.64,
+            44.49
+          ],
+          "valid_label": "03-25 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20260329_northern_rockies_2026_03_29_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Northern Rockies Critical Fire Weather",
+      "short_name": "Northern Rockies Fire Weather",
+      "primary_region_label": "Northern Rockies",
+      "valid_start": "2026-03-29T15:00:00.000Z",
+      "valid_end": "2026-03-31T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-29T15:00:00.000Z",
+          "valid_end": "2026-03-30T03:00:00.000Z",
+          "marker": {
+            "lon": -106.00214285714286,
+            "lat": 42.16428571428571
+          },
+          "hover_geometry_id": "geom_evt_20260329_northern_rockies_2026_03_29_fire_d1_hover",
+          "bbox": [
+            -107.51,
+            41,
+            -104.09,
+            43.51
+          ],
+          "valid_label": "03-29 - Critical"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-03-30T15:00:00.000Z",
+          "valid_end": "2026-03-31T03:00:00.000Z",
+          "marker": {
+            "lon": -105.88466666666666,
+            "lat": 42.71799999999999
+          },
+          "hover_geometry_id": "geom_evt_20260330_northern_rockies_2026_03_30_fire_d1_hover",
+          "bbox": [
+            -108.02,
+            41.49,
+            -103.76,
+            43.92
+          ],
+          "valid_label": "03-30 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire",
+        "merged_days": 2,
+        "peak_day": "2026-03-29"
+      }
+    },
+    {
+      "event_id": "evt_20260303_pacific_northwest_2026_03_03_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Pacific Northwest Winter Storm",
+      "short_name": "Pacific Northwest Winter",
+      "primary_region_label": "Pacific Northwest",
+      "valid_start": "2026-03-03T00:00:00.000Z",
+      "valid_end": "2026-03-05T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-03T00:00:00.000Z",
+          "valid_end": "2026-03-05T00:00:00.000Z",
+          "marker": {
+            "lon": -135.0809509684158,
+            "lat": 57.61523762093133
+          },
+          "hover_geometry_id": "geom_evt_20260303_pacific_northwest_2026_03_03_winter_d1_hover",
+          "bbox": [
+            -137.94,
+            55.83,
+            -132.65,
+            59.26
+          ],
+          "valid_label": "03-03 - 7 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 7,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch"
+      }
+    },
+    {
+      "event_id": "evt_20260306_pacific_northwest_2026_03_06_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Pacific Northwest Winter Storm",
+      "short_name": "Pacific Northwest Winter",
+      "primary_region_label": "Pacific Northwest",
+      "valid_start": "2026-03-06T00:00:00.000Z",
+      "valid_end": "2026-03-08T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "large",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-06T00:00:00.000Z",
+          "valid_end": "2026-03-08T00:00:00.000Z",
+          "marker": {
+            "lon": -159.2818685874802,
+            "lat": 57.32094871665446
+          },
+          "hover_geometry_id": "geom_evt_20260306_pacific_northwest_2026_03_06_winter_d1_hover",
+          "bbox": [
+            -168.95000000000002,
+            54.36,
+            -143.1,
+            66.58
+          ],
+          "valid_label": "03-06 - 15 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 15,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch"
+      }
+    },
+    {
+      "event_id": "evt_20260309_pacific_northwest_2026_03_09_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Pacific Northwest Winter Storm",
+      "short_name": "Pacific Northwest Winter",
+      "primary_region_label": "Pacific Northwest",
+      "valid_start": "2026-03-09T00:00:00.000Z",
+      "valid_end": "2026-03-11T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-09T00:00:00.000Z",
+          "valid_end": "2026-03-11T00:00:00.000Z",
+          "marker": {
+            "lon": -132.47968697833667,
+            "lat": 57.569758632902236
+          },
+          "hover_geometry_id": "geom_evt_20260309_pacific_northwest_2026_03_09_winter_d1_hover",
+          "bbox": [
+            -153.37,
+            47.4117,
+            -120.4346,
+            70.89
+          ],
+          "valid_label": "03-09 - 6 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 6,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch"
+      }
+    },
+    {
+      "event_id": "evt_20260312_pacific_northwest_2026_03_12_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Pacific Northwest Winter Storm",
+      "short_name": "Pacific Northwest Winter",
+      "primary_region_label": "Pacific Northwest",
+      "valid_start": "2026-03-12T00:00:00.000Z",
+      "valid_end": "2026-03-14T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-12T00:00:00.000Z",
+          "valid_end": "2026-03-14T00:00:00.000Z",
+          "marker": {
+            "lon": -121.83858220382794,
+            "lat": 47.7896369201584
+          },
+          "hover_geometry_id": "geom_evt_20260312_pacific_northwest_2026_03_12_winter_d1_hover",
+          "bbox": [
+            -124.35000000000001,
+            46.39,
+            -120.4346,
+            49
+          ],
+          "valid_label": "03-12 - 6 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 6,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch"
+      }
+    },
+    {
+      "event_id": "evt_20260321_pacific_northwest_2026_03_21_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Pacific Northwest Winter Storm",
+      "short_name": "Pacific Northwest Winter",
+      "primary_region_label": "Pacific Northwest",
+      "valid_start": "2026-03-21T00:00:00.000Z",
+      "valid_end": "2026-03-23T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "large",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-21T00:00:00.000Z",
+          "valid_end": "2026-03-23T00:00:00.000Z",
+          "marker": {
+            "lon": -135.19894501016037,
+            "lat": 57.77251888125004
+          },
+          "hover_geometry_id": "geom_evt_20260321_pacific_northwest_2026_03_21_winter_d1_hover",
+          "bbox": [
+            -143.89000000000001,
+            55.83,
+            -132.05,
+            60.52
+          ],
+          "valid_label": "03-21 - 11 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 11,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch"
+      }
+    },
+    {
+      "event_id": "evt_20260312_northern_rockies_2026_03_12_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Northern Rockies Winter Storm",
+      "short_name": "Northern Rockies Winter",
+      "primary_region_label": "Northern Rockies",
+      "valid_start": "2026-03-12T00:00:00.000Z",
+      "valid_end": "2026-03-16T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-12T00:00:00.000Z",
+          "valid_end": "2026-03-14T00:00:00.000Z",
+          "marker": {
+            "lon": -109.85133416071974,
+            "lat": 44.033270245113314
+          },
+          "hover_geometry_id": "geom_evt_20260312_northern_rockies_2026_03_12_winter_d1_hover",
+          "bbox": [
+            -111.15,
+            42.37,
+            -108.52,
+            46.32
+          ],
+          "valid_label": "03-12 - 7 zones under watch"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-03-13T00:00:00.000Z",
+          "valid_end": "2026-03-15T00:00:00.000Z",
+          "marker": {
+            "lon": -109.1812846322538,
+            "lat": 46.58352702429122
+          },
+          "hover_geometry_id": "geom_evt_20260313_northern_rockies_2026_03_13_winter_d1_hover",
+          "bbox": [
+            -112.18,
+            44.56,
+            -104.98,
+            49
+          ],
+          "valid_label": "03-13 - 36 zones under watch"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2026-03-14T00:00:00.000Z",
+          "valid_end": "2026-03-16T00:00:00.000Z",
+          "marker": {
+            "lon": -108.41395811518284,
+            "lat": 44.64706457242565
+          },
+          "hover_geometry_id": "geom_evt_20260314_northern_rockies_2026_03_14_winter_d1_hover",
+          "bbox": [
+            -111.15,
+            43.14,
+            -104.60000000000001,
+            48.1
+          ],
+          "valid_label": "03-14 - 8 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 7,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch",
+        "merged_days": 3,
+        "peak_day": "2026-03-12"
+      }
+    },
+    {
+      "event_id": "evt_20260314_northern_plains_2026_03_14_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Northern Plains Winter Storm",
+      "short_name": "Northern Plains Winter",
+      "primary_region_label": "Northern Plains",
+      "valid_start": "2026-03-14T00:00:00.000Z",
+      "valid_end": "2026-03-17T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "major",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-14T00:00:00.000Z",
+          "valid_end": "2026-03-16T00:00:00.000Z",
+          "marker": {
+            "lon": -101.75663077359009,
+            "lat": 45.79615755171485
+          },
+          "hover_geometry_id": "geom_evt_20260314_northern_plains_2026_03_14_winter_d1_hover",
+          "bbox": [
+            -105.41,
+            43.71,
+            -99.57000000000001,
+            47.79
+          ],
+          "valid_label": "03-14 - 27 zones under watch"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-03-15T00:00:00.000Z",
+          "valid_end": "2026-03-17T00:00:00.000Z",
+          "marker": {
+            "lon": -102.42487569060769,
+            "lat": 44.59263812154702
+          },
+          "hover_geometry_id": "geom_evt_20260315_northern_plains_2026_03_15_winter_d1_hover",
+          "bbox": [
+            -104.78,
+            43.910000000000004,
+            -101.05,
+            45.47
+          ],
+          "valid_label": "03-15 - 10 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 27,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch",
+        "merged_days": 2,
+        "peak_day": "2026-03-14"
+      }
+    },
+    {
+      "event_id": "evt_20260311_northeast_2026_03_11_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Northeast Winter Storm",
+      "short_name": "Northeast Winter",
+      "primary_region_label": "Northeast",
+      "valid_start": "2026-03-11T00:00:00.000Z",
+      "valid_end": "2026-03-13T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-11T00:00:00.000Z",
+          "valid_end": "2026-03-13T00:00:00.000Z",
+          "marker": {
+            "lon": -68.61301923076918,
+            "lat": 46.63038461538466
+          },
+          "hover_geometry_id": "geom_evt_20260311_northeast_2026_03_11_winter_d1_hover",
+          "bbox": [
+            -70.02,
+            45.51,
+            -67.75,
+            47.46
+          ],
+          "valid_label": "03-11 - 5 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 5,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch"
+      }
+    },
+    {
+      "event_id": "evt_20260312_upper_midwest_2026_03_12_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Upper Midwest Winter Storm",
+      "short_name": "Upper Midwest Winter",
+      "primary_region_label": "Upper Midwest",
+      "valid_start": "2026-03-12T00:00:00.000Z",
+      "valid_end": "2026-03-18T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "major",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-12T00:00:00.000Z",
+          "valid_end": "2026-03-14T00:00:00.000Z",
+          "marker": {
+            "lon": -95.05260109664174,
+            "lat": 47.29053803975316
+          },
+          "hover_geometry_id": "geom_evt_20260312_upper_midwest_2026_03_12_winter_d1_hover",
+          "bbox": [
+            -97.95,
+            45.38,
+            -90.04,
+            49
+          ],
+          "valid_label": "03-12 - 30 zones under watch"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-03-13T00:00:00.000Z",
+          "valid_end": "2026-03-15T00:00:00.000Z",
+          "marker": {
+            "lon": -92.66146179402008,
+            "lat": 45.60290697674401
+          },
+          "hover_geometry_id": "geom_evt_20260313_upper_midwest_2026_03_13_winter_d1_hover",
+          "bbox": [
+            -93.81,
+            45.21,
+            -90.68,
+            46.25
+          ],
+          "valid_label": "03-13 - 7 zones under watch"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2026-03-14T00:00:00.000Z",
+          "valid_end": "2026-03-16T00:00:00.000Z",
+          "marker": {
+            "lon": -98.06320666097368,
+            "lat": 45.359692570452474
+          },
+          "hover_geometry_id": "geom_evt_20260314_upper_midwest_2026_03_14_winter_d1_hover",
+          "bbox": [
+            -100.37,
+            43.5,
+            -96.10000000000001,
+            46.63
+          ],
+          "valid_label": "03-14 - 27 zones under watch"
+        },
+        {
+          "day_index": 4,
+          "valid_start": "2026-03-15T00:00:00.000Z",
+          "valid_end": "2026-03-17T00:00:00.000Z",
+          "marker": {
+            "lon": -94.45302391090966,
+            "lat": 43.78456796593411
+          },
+          "hover_geometry_id": "geom_evt_20260315_upper_midwest_2026_03_15_winter_d1_hover",
+          "bbox": [
+            -99.53,
+            40.99,
+            -89.72,
+            47.7
+          ],
+          "valid_label": "03-15 - 196 zones under watch"
+        },
+        {
+          "day_index": 5,
+          "valid_start": "2026-03-16T00:00:00.000Z",
+          "valid_end": "2026-03-18T00:00:00.000Z",
+          "marker": {
+            "lon": -90.89848971399901,
+            "lat": 41.716181635724986
+          },
+          "hover_geometry_id": "geom_evt_20260316_upper_midwest_2026_03_16_winter_d1_hover",
+          "bbox": [
+            -92.41,
+            40.7,
+            -89.63,
+            42.68
+          ],
+          "valid_label": "03-16 - 25 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 30,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch",
+        "merged_days": 5,
+        "peak_day": "2026-03-12"
+      }
+    },
+    {
+      "event_id": "evt_20260313_mid_atlantic_2026_03_13_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Mid-Atlantic Winter Storm",
+      "short_name": "Mid-Atlantic Winter",
+      "primary_region_label": "Mid-Atlantic",
+      "valid_start": "2026-03-13T00:00:00.000Z",
+      "valid_end": "2026-03-15T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "major",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-13T00:00:00.000Z",
+          "valid_end": "2026-03-15T00:00:00.000Z",
+          "marker": {
+            "lon": -87.01425546106304,
+            "lat": 46.24597465399327
+          },
+          "hover_geometry_id": "geom_evt_20260313_mid_atlantic_2026_03_13_winter_d1_hover",
+          "bbox": [
+            -90.42,
+            44.97,
+            -83.47,
+            48.19
+          ],
+          "valid_label": "03-13 - 33 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 33,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch"
+      }
+    },
+    {
+      "event_id": "evt_20260315_mid_atlantic_2026_03_15_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Mid-Atlantic Winter Storm",
+      "short_name": "Mid-Atlantic Winter",
+      "primary_region_label": "Mid-Atlantic",
+      "valid_start": "2026-03-15T00:00:00.000Z",
+      "valid_end": "2026-03-18T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "major",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-15T00:00:00.000Z",
+          "valid_end": "2026-03-17T00:00:00.000Z",
+          "marker": {
+            "lon": -86.93956925086938,
+            "lat": 45.300467334494556
+          },
+          "hover_geometry_id": "geom_evt_20260315_mid_atlantic_2026_03_15_winter_d1_hover",
+          "bbox": [
+            -90.42,
+            42.49,
+            -83.19,
+            48.19
+          ],
+          "valid_label": "03-15 - 94 zones under watch"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-03-16T00:00:00.000Z",
+          "valid_end": "2026-03-18T00:00:00.000Z",
+          "marker": {
+            "lon": -89.32291304347815,
+            "lat": 41.88821739130436
+          },
+          "hover_geometry_id": "geom_evt_20260316_mid_atlantic_2026_03_16_winter_d1_hover",
+          "bbox": [
+            -89.93,
+            41.1,
+            -88.71000000000001,
+            42.51
+          ],
+          "valid_label": "03-16 - 7 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 94,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch",
+        "merged_days": 2,
+        "peak_day": "2026-03-15"
+      }
+    },
+    {
+      "event_id": "evt_20260312_desert_southwest_2026_03_12_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Desert Southwest Winter Storm",
+      "short_name": "Desert Southwest Winter",
+      "primary_region_label": "Desert Southwest",
+      "valid_start": "2026-03-12T00:00:00.000Z",
+      "valid_end": "2026-03-14T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-12T00:00:00.000Z",
+          "valid_end": "2026-03-14T00:00:00.000Z",
+          "marker": {
+            "lon": -113.90874754420423,
+            "lat": 47.15325638506873
+          },
+          "hover_geometry_id": "geom_evt_20260312_desert_southwest_2026_03_12_winter_d1_hover",
+          "bbox": [
+            -116.34,
+            45.11,
+            -112.17,
+            49
+          ],
+          "valid_label": "03-12 - 5 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 5,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch"
+      }
+    },
+    {
+      "event_id": "evt_20260313_great_lakes_2026_03_13_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Great Lakes Winter Storm",
+      "short_name": "Great Lakes Winter",
+      "primary_region_label": "Great Lakes",
+      "valid_start": "2026-03-13T00:00:00.000Z",
+      "valid_end": "2026-03-15T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-13T00:00:00.000Z",
+          "valid_end": "2026-03-15T00:00:00.000Z",
+          "marker": {
+            "lon": -75.83714430894297,
+            "lat": 43.84658536585376
+          },
+          "hover_geometry_id": "geom_evt_20260313_great_lakes_2026_03_13_winter_d1_hover",
+          "bbox": [
+            -76.62,
+            43.160000000000004,
+            -74.05,
+            44.39
+          ],
+          "valid_label": "03-13 - 5 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 5,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch"
+      }
+    },
+    {
+      "event_id": "evt_20260317_great_lakes_2026_03_17_winter",
+      "peril": "winter_weather",
+      "status": "post_event",
+      "headline": "Great Lakes Winter Storm",
+      "short_name": "Great Lakes Winter",
+      "primary_region_label": "Great Lakes",
+      "valid_start": "2026-03-17T00:00:00.000Z",
+      "valid_end": "2026-03-19T00:00:00.000Z",
+      "severity_score": 2.88,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 72,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "NWS"
+      ],
+      "subperils": [
+        "heavy_snow"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-17T00:00:00.000Z",
+          "valid_end": "2026-03-19T00:00:00.000Z",
+          "marker": {
+            "lon": -78.99283292978201,
+            "lat": 42.198619854721535
+          },
+          "hover_geometry_id": "geom_evt_20260317_great_lakes_2026_03_17_winter_d1_hover",
+          "bbox": [
+            -81.97,
+            41.28,
+            -75.07000000000001,
+            43.61
+          ],
+          "valid_label": "03-17 - 5 zones under watch"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nws_winter_alerts",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "snow",
+            "label": "Snow",
+            "layers": [
+              "wpc_snow_probability",
+              "model_snowfall"
+            ]
+          },
+          {
+            "tab_id": "alerts",
+            "label": "Alerts",
+            "layers": [
+              "nws_winter_alerts"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "watch_zone_count": 5,
+        "had_blizzard_watch": false,
+        "archive_source": "iem_vtec_watch"
+      }
+    },
+    {
+      "event_id": "evt_20260304_southern_plains_2026_03_04_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southern Plains Severe Weather",
+      "short_name": "Southern Plains Severe",
+      "primary_region_label": "Southern Plains",
+      "valid_start": "2026-03-04T12:00:00.000Z",
+      "valid_end": "2026-03-08T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-04T12:00:00.000Z",
+          "valid_end": "2026-03-05T06:00:00.000Z",
+          "marker": {
+            "lon": -93.66176470588235,
+            "lat": 35.10176470588235
+          },
+          "hover_geometry_id": "geom_evt_20260304_southern_plains_2026_03_04_severe_d1_hover",
+          "bbox": [
+            -98.44,
+            31.61,
+            -87.18,
+            38.72
+          ],
+          "valid_label": "03-04 - SLGT Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-03-05T12:00:00.000Z",
+          "valid_end": "2026-03-06T06:00:00.000Z",
+          "marker": {
+            "lon": -99.63846153846156,
+            "lat": 35.35076923076923
+          },
+          "hover_geometry_id": "geom_evt_20260305_southern_plains_2026_03_05_severe_d1_hover",
+          "bbox": [
+            -101.56,
+            34.19,
+            -98.35,
+            36.61
+          ],
+          "valid_label": "03-05 - ENH Risk"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2026-03-06T12:00:00.000Z",
+          "valid_end": "2026-03-07T06:00:00.000Z",
+          "marker": {
+            "lon": -95.10958333333336,
+            "lat": 37.82833333333334
+          },
+          "hover_geometry_id": "geom_evt_20260306_southern_plains_2026_03_06_severe_d1_hover",
+          "bbox": [
+            -97.65,
+            33.29,
+            -92.64,
+            41.66
+          ],
+          "valid_label": "03-06 - ENH Risk"
+        },
+        {
+          "day_index": 4,
+          "valid_start": "2026-03-07T12:00:00.000Z",
+          "valid_end": "2026-03-08T06:00:00.000Z",
+          "marker": {
+            "lon": -90.28619349429144,
+            "lat": 34.565825561061644
+          },
+          "hover_geometry_id": "geom_evt_20260307_southern_plains_2026_03_07_severe_d1_hover",
+          "bbox": [
+            -100.85647847278635,
+            27.013957994472957,
+            -77.73,
+            43.655
+          ],
+          "valid_label": "03-07 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook",
+        "merged_days": 4,
+        "peak_day": "2026-03-05"
+      }
+    },
+    {
+      "event_id": "evt_20260315_southeast_2026_03_15_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southeast Severe Weather",
+      "short_name": "Southeast Severe",
+      "primary_region_label": "Southeast",
+      "valid_start": "2026-03-15T12:00:00.000Z",
+      "valid_end": "2026-03-16T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-15T12:00:00.000Z",
+          "valid_end": "2026-03-16T06:00:00.000Z",
+          "marker": {
+            "lon": -88.29263157894736,
+            "lat": 34.275263157894734
+          },
+          "hover_geometry_id": "geom_evt_20260315_southeast_2026_03_15_severe_d1_hover",
+          "bbox": [
+            -93.86,
+            30.37,
+            -84.63,
+            40.72
+          ],
+          "valid_label": "03-15 - ENH Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20260326_mid_atlantic_2026_03_26_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Mid-Atlantic Severe Weather",
+      "short_name": "Mid-Atlantic Severe",
+      "primary_region_label": "Mid-Atlantic",
+      "valid_start": "2026-03-26T12:00:00.000Z",
+      "valid_end": "2026-03-27T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-26T12:00:00.000Z",
+          "valid_end": "2026-03-27T06:00:00.000Z",
+          "marker": {
+            "lon": -84.28,
+            "lat": 40.89866666666668
+          },
+          "hover_geometry_id": "geom_evt_20260326_mid_atlantic_2026_03_26_severe_d1_hover",
+          "bbox": [
+            -90.07,
+            39.42,
+            -80.38,
+            41.96
+          ],
+          "valid_label": "03-26 - ENH Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20260322_great_lakes_2026_03_22_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Great Lakes Severe Weather",
+      "short_name": "Great Lakes Severe",
+      "primary_region_label": "Great Lakes",
+      "valid_start": "2026-03-22T12:00:00.000Z",
+      "valid_end": "2026-03-23T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-22T12:00:00.000Z",
+          "valid_end": "2026-03-23T06:00:00.000Z",
+          "marker": {
+            "lon": -78.985,
+            "lat": 40.410000000000004
+          },
+          "hover_geometry_id": "geom_evt_20260322_great_lakes_2026_03_22_severe_d1_hover",
+          "bbox": [
+            -81.67,
+            39.52,
+            -76.38,
+            41.29
+          ],
+          "valid_label": "03-22 - ENH Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20260309_southeast_2026_03_09_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southeast Severe Weather",
+      "short_name": "Southeast Severe",
+      "primary_region_label": "Southeast",
+      "valid_start": "2026-03-09T12:00:00.000Z",
+      "valid_end": "2026-03-10T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-09T12:00:00.000Z",
+          "valid_end": "2026-03-10T06:00:00.000Z",
+          "marker": {
+            "lon": -88.722,
+            "lat": 33.818666666666665
+          },
+          "hover_geometry_id": "geom_evt_20260309_southeast_2026_03_09_severe_d1_hover",
+          "bbox": [
+            -93.85,
+            31.96,
+            -84.3,
+            35.38
+          ],
+          "valid_label": "03-09 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20260311_southeast_2026_03_11_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southeast Severe Weather",
+      "short_name": "Southeast Severe",
+      "primary_region_label": "Southeast",
+      "valid_start": "2026-03-11T12:00:00.000Z",
+      "valid_end": "2026-03-13T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-11T12:00:00.000Z",
+          "valid_end": "2026-03-12T06:00:00.000Z",
+          "marker": {
+            "lon": -87.63263170209063,
+            "lat": 32.202614226857165
+          },
+          "hover_geometry_id": "geom_evt_20260311_southeast_2026_03_11_severe_d1_hover",
+          "bbox": [
+            -96.16,
+            28.577,
+            -74.93,
+            41.9
+          ],
+          "valid_label": "03-11 - SLGT Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-03-12T12:00:00.000Z",
+          "valid_end": "2026-03-13T06:00:00.000Z",
+          "marker": {
+            "lon": -77.51921998265934,
+            "lat": 34.423465861732204
+          },
+          "hover_geometry_id": "geom_evt_20260312_southeast_2026_03_12_severe_d1_hover",
+          "bbox": [
+            -80.17,
+            33.08639712168709,
+            -75.12,
+            35.86
+          ],
+          "valid_label": "03-12 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook",
+        "merged_days": 2,
+        "peak_day": "2026-03-11"
+      }
+    },
+    {
+      "event_id": "evt_20260331_mid_atlantic_2026_03_31_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Mid-Atlantic Severe Weather",
+      "short_name": "Mid-Atlantic Severe",
+      "primary_region_label": "Mid-Atlantic",
+      "valid_start": "2026-03-31T12:00:00.000Z",
+      "valid_end": "2026-04-01T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-31T12:00:00.000Z",
+          "valid_end": "2026-04-01T06:00:00.000Z",
+          "marker": {
+            "lon": -85.48163600812697,
+            "lat": 40.6922248119068
+          },
+          "hover_geometry_id": "geom_evt_20260331_mid_atlantic_2026_03_31_severe_d1_hover",
+          "bbox": [
+            -100.94,
+            33.48,
+            -75.18,
+            43.73547770199726
+          ],
+          "valid_label": "03-31 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20260330_upper_midwest_2026_03_30_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Upper Midwest Severe Weather",
+      "short_name": "Upper Midwest Severe",
+      "primary_region_label": "Upper Midwest",
+      "valid_start": "2026-03-30T12:00:00.000Z",
+      "valid_end": "2026-03-31T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-03-30T12:00:00.000Z",
+          "valid_end": "2026-03-31T06:00:00.000Z",
+          "marker": {
+            "lon": -91.0457142857143,
+            "lat": 42.09285714285715
+          },
+          "hover_geometry_id": "geom_evt_20260330_upper_midwest_2026_03_30_severe_d1_hover",
+          "bbox": [
+            -94.41,
+            40.81,
+            -87.02,
+            43.45
+          ],
+          "valid_label": "03-30 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    }
+  ]
+}

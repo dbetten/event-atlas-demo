@@ -1,0 +1,2760 @@
+{
+  "archive_month": "2024-09",
+  "description": "September 2024 historical events - auto-generated from NOAA archives",
+  "generated_at": "2026-06-10T03:43:53.736Z",
+  "sources": [
+    "NHC ATCF Archive",
+    "SPC Outlook Archive (IEM)",
+    "WPC Winter Archive",
+    "Winter Watch Backfill (IEM VTEC)",
+    "SPC Fire Outlook Archive (IEM)",
+    "WPC ERO Archive (IEM)"
+  ],
+  "events": [
+    {
+      "event_id": "evt_2024_al09_helene",
+      "peril": "tropical",
+      "status": "post_event",
+      "headline": "Major Hurricane Helene",
+      "short_name": "Helene",
+      "primary_region_label": "Atlantic",
+      "valid_start": "2024-09-23T12:00:00.000Z",
+      "valid_end": "2024-09-28T18:00:00.000Z",
+      "severity_score": 3.92,
+      "confidence_score": 0.95,
+      "impact_score": 0.85,
+      "rank_score": 98,
+      "icon_key": "tropical_cyclone",
+      "color_key": "tropical_red",
+      "size_class": "major",
+      "source_badges": [
+        "NHC"
+      ],
+      "subperils": [
+        "tropical_wind",
+        "hurricane_wind",
+        "storm_surge",
+        "freshwater_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-23T00:00:00.000Z",
+          "valid_end": "2024-09-23T23:59:59.000Z",
+          "marker": {
+            "lon": -81.9,
+            "lat": 17.8
+          },
+          "hover_geometry_id": "geom_evt_2024_al09_helene_d1_hover",
+          "bbox": [
+            -86.10000000000001,
+            14.600000000000001,
+            -77.7,
+            21
+          ],
+          "valid_label": "09-23 - 35kt"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2024-09-24T00:00:00.000Z",
+          "valid_end": "2024-09-24T23:59:59.000Z",
+          "marker": {
+            "lon": -84.6,
+            "lat": 19.4
+          },
+          "hover_geometry_id": "geom_evt_2024_al09_helene_d2_hover",
+          "bbox": [
+            -88.8,
+            16.2,
+            -80.39999999999999,
+            22.599999999999998
+          ],
+          "valid_label": "09-24 - 45kt"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2024-09-25T00:00:00.000Z",
+          "valid_end": "2024-09-25T23:59:59.000Z",
+          "marker": {
+            "lon": -86.5,
+            "lat": 22
+          },
+          "hover_geometry_id": "geom_evt_2024_al09_helene_d3_hover",
+          "bbox": [
+            -91.5,
+            18,
+            -81.5,
+            26
+          ],
+          "valid_label": "09-25 - 70kt"
+        },
+        {
+          "day_index": 4,
+          "valid_start": "2024-09-26T00:00:00.000Z",
+          "valid_end": "2024-09-26T23:59:59.000Z",
+          "marker": {
+            "lon": -85,
+            "lat": 26.6
+          },
+          "hover_geometry_id": "geom_evt_2024_al09_helene_d4_hover",
+          "bbox": [
+            -90,
+            22.6,
+            -80,
+            30.6
+          ],
+          "valid_label": "09-26 - 105kt"
+        },
+        {
+          "day_index": 5,
+          "valid_start": "2024-09-27T00:00:00.000Z",
+          "valid_end": "2024-09-27T23:59:59.000Z",
+          "marker": {
+            "lon": -84.9,
+            "lat": 36.8
+          },
+          "hover_geometry_id": "geom_evt_2024_al09_helene_d5_hover",
+          "bbox": [
+            -89.10000000000001,
+            33.599999999999994,
+            -80.7,
+            40
+          ],
+          "valid_label": "09-27 - 40kt"
+        },
+        {
+          "day_index": 6,
+          "valid_start": "2024-09-28T00:00:00.000Z",
+          "valid_end": "2024-09-28T23:59:59.000Z",
+          "marker": {
+            "lon": -87,
+            "lat": 37.1
+          },
+          "hover_geometry_id": "geom_evt_2024_al09_helene_d6_hover",
+          "bbox": [
+            -90.5,
+            34.6,
+            -83.5,
+            39.6
+          ],
+          "valid_label": "09-28 - 20kt"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "track",
+            "label": "Track",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "nhc_wind_field",
+              "nhc_34kt_wind_probability"
+            ]
+          },
+          {
+            "tab_id": "satellite",
+            "label": "Satellite",
+            "layers": [
+              "satellite_ir"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "storm_name": "Helene",
+        "classification": "Major Hurricane",
+        "basin": "AL",
+        "storm_number": 9,
+        "max_wind_kt": 120,
+        "min_pressure_mb": 939,
+        "archive_source": "nhc_atcf"
+      }
+    },
+    {
+      "event_id": "evt_20240925_southeast_2024_09_25_rain",
+      "peril": "excessive_rain",
+      "status": "post_event",
+      "headline": "Southeast High Risk Extreme Rain",
+      "short_name": "Southeast Extreme Rain",
+      "primary_region_label": "Southeast",
+      "valid_start": "2024-09-25T12:00:00.000Z",
+      "valid_end": "2024-09-27T12:00:00.000Z",
+      "severity_score": 4.5,
+      "confidence_score": 0.85,
+      "impact_score": 0.9,
+      "rank_score": 94,
+      "icon_key": "extreme_rain",
+      "color_key": "rain_green",
+      "size_class": "major",
+      "source_badges": [
+        "WPC"
+      ],
+      "subperils": [
+        "flash_flooding",
+        "urban_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-25T12:00:00.000Z",
+          "valid_end": "2024-09-26T12:00:00.000Z",
+          "marker": {
+            "lon": -83.51166931719534,
+            "lat": 34.59042434423801
+          },
+          "hover_geometry_id": "geom_evt_20240925_southeast_2024_09_25_rain_d1_hover",
+          "bbox": [
+            -85.49697897228401,
+            32.46155854231738,
+            -81.53041405832187,
+            36.499425552199575
+          ],
+          "valid_label": "09-25 - High Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2024-09-26T12:00:00.000Z",
+          "valid_end": "2024-09-27T12:00:00.000Z",
+          "marker": {
+            "lon": -83.40626013927783,
+            "lat": 33.47058269129353
+          },
+          "hover_geometry_id": "geom_evt_20240926_southeast_2024_09_26_rain_d1_hover",
+          "bbox": [
+            -86.86529332989926,
+            29.07232111215672,
+            -80.0993443672022,
+            37.329378286535636
+          ],
+          "valid_label": "09-26 - High Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "wpc_ero",
+              "radar_qpe"
+            ]
+          },
+          {
+            "tab_id": "ero",
+            "label": "ERO",
+            "layers": [
+              "wpc_ero"
+            ]
+          },
+          {
+            "tab_id": "qpf",
+            "label": "QPF",
+            "layers": [
+              "wpc_qpf",
+              "model_qpf_6hr"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "ero_risk_level": "HIGH",
+        "archive_source": "iem_wpc_ero",
+        "merged_days": 2,
+        "peak_day": "2024-09-25"
+      }
+    },
+    {
+      "event_id": "evt_20240927_mid_atlantic_2024_09_27_rain",
+      "peril": "excessive_rain",
+      "status": "post_event",
+      "headline": "Mid-Atlantic High Risk Extreme Rain",
+      "short_name": "Mid-Atlantic Extreme Rain",
+      "primary_region_label": "Mid-Atlantic",
+      "valid_start": "2024-09-27T12:00:00.000Z",
+      "valid_end": "2024-09-28T12:00:00.000Z",
+      "severity_score": 4.5,
+      "confidence_score": 0.85,
+      "impact_score": 0.9,
+      "rank_score": 94,
+      "icon_key": "extreme_rain",
+      "color_key": "rain_green",
+      "size_class": "major",
+      "source_badges": [
+        "WPC"
+      ],
+      "subperils": [
+        "flash_flooding",
+        "urban_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-27T12:00:00.000Z",
+          "valid_end": "2024-09-28T12:00:00.000Z",
+          "marker": {
+            "lon": -83.33379484865402,
+            "lat": 36.399399752773625
+          },
+          "hover_geometry_id": "geom_evt_20240927_mid_atlantic_2024_09_27_rain_d1_hover",
+          "bbox": [
+            -89.14691593750479,
+            35.3655641329043,
+            -79.31989611203808,
+            37.938414509200754
+          ],
+          "valid_label": "09-27 - High Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "wpc_ero",
+              "radar_qpe"
+            ]
+          },
+          {
+            "tab_id": "ero",
+            "label": "ERO",
+            "layers": [
+              "wpc_ero"
+            ]
+          },
+          {
+            "tab_id": "qpf",
+            "label": "QPF",
+            "layers": [
+              "wpc_qpf",
+              "model_qpf_6hr"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "ero_risk_level": "HIGH",
+        "archive_source": "iem_wpc_ero"
+      }
+    },
+    {
+      "event_id": "evt_2024_al06_francine",
+      "peril": "tropical",
+      "status": "post_event",
+      "headline": "Hurricane Francine",
+      "short_name": "Francine",
+      "primary_region_label": "Atlantic",
+      "valid_start": "2024-09-08T18:00:00.000Z",
+      "valid_end": "2024-09-14T00:00:00.000Z",
+      "severity_score": 3.52,
+      "confidence_score": 0.95,
+      "impact_score": 0.85,
+      "rank_score": 88,
+      "icon_key": "tropical_cyclone",
+      "color_key": "tropical_red",
+      "size_class": "major",
+      "source_badges": [
+        "NHC"
+      ],
+      "subperils": [
+        "tropical_wind",
+        "hurricane_wind",
+        "storm_surge",
+        "freshwater_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-08T00:00:00.000Z",
+          "valid_end": "2024-09-08T23:59:59.000Z",
+          "marker": {
+            "lon": -94.5,
+            "lat": 21.4
+          },
+          "hover_geometry_id": "geom_evt_2024_al06_francine_d1_hover",
+          "bbox": [
+            -98.7,
+            18.2,
+            -90.3,
+            24.599999999999998
+          ],
+          "valid_label": "09-08 - 45kt"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2024-09-09T00:00:00.000Z",
+          "valid_end": "2024-09-09T23:59:59.000Z",
+          "marker": {
+            "lon": -95.9,
+            "lat": 23.7
+          },
+          "hover_geometry_id": "geom_evt_2024_al06_francine_d2_hover",
+          "bbox": [
+            -100.10000000000001,
+            20.5,
+            -91.7,
+            26.9
+          ],
+          "valid_label": "09-09 - 50kt"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2024-09-10T00:00:00.000Z",
+          "valid_end": "2024-09-10T23:59:59.000Z",
+          "marker": {
+            "lon": -95.3,
+            "lat": 25.3
+          },
+          "hover_geometry_id": "geom_evt_2024_al06_francine_d3_hover",
+          "bbox": [
+            -99.5,
+            22.1,
+            -91.1,
+            28.5
+          ],
+          "valid_label": "09-10 - 55kt"
+        },
+        {
+          "day_index": 4,
+          "valid_start": "2024-09-11T00:00:00.000Z",
+          "valid_end": "2024-09-11T23:59:59.000Z",
+          "marker": {
+            "lon": -91.3,
+            "lat": 29.3
+          },
+          "hover_geometry_id": "geom_evt_2024_al06_francine_d4_hover",
+          "bbox": [
+            -96.3,
+            25.3,
+            -86.3,
+            33.3
+          ],
+          "valid_label": "09-11 - 90kt"
+        },
+        {
+          "day_index": 5,
+          "valid_start": "2024-09-12T00:00:00.000Z",
+          "valid_end": "2024-09-12T23:59:59.000Z",
+          "marker": {
+            "lon": -89.7,
+            "lat": 33.4
+          },
+          "hover_geometry_id": "geom_evt_2024_al06_francine_d5_hover",
+          "bbox": [
+            -93.2,
+            30.9,
+            -86.2,
+            35.9
+          ],
+          "valid_label": "09-12 - 25kt"
+        },
+        {
+          "day_index": 6,
+          "valid_start": "2024-09-13T00:00:00.000Z",
+          "valid_end": "2024-09-13T23:59:59.000Z",
+          "marker": {
+            "lon": -92,
+            "lat": 35.7
+          },
+          "hover_geometry_id": "geom_evt_2024_al06_francine_d6_hover",
+          "bbox": [
+            -95.5,
+            33.2,
+            -88.5,
+            38.2
+          ],
+          "valid_label": "09-13 - 15kt"
+        },
+        {
+          "day_index": 7,
+          "valid_start": "2024-09-14T00:00:00.000Z",
+          "valid_end": "2024-09-14T23:59:59.000Z",
+          "marker": {
+            "lon": -91.7,
+            "lat": 34.9
+          },
+          "hover_geometry_id": "geom_evt_2024_al06_francine_d7_hover",
+          "bbox": [
+            -95.2,
+            32.4,
+            -88.2,
+            37.4
+          ],
+          "valid_label": "09-14 - 15kt"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "track",
+            "label": "Track",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "nhc_wind_field",
+              "nhc_34kt_wind_probability"
+            ]
+          },
+          {
+            "tab_id": "satellite",
+            "label": "Satellite",
+            "layers": [
+              "satellite_ir"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "storm_name": "Francine",
+        "classification": "Hurricane",
+        "basin": "AL",
+        "storm_number": 6,
+        "max_wind_kt": 90,
+        "min_pressure_mb": 972,
+        "archive_source": "nhc_atcf"
+      }
+    },
+    {
+      "event_id": "evt_2024_al10_isaac",
+      "peril": "tropical",
+      "status": "post_event",
+      "headline": "Hurricane Isaac",
+      "short_name": "Isaac",
+      "primary_region_label": "Atlantic",
+      "valid_start": "2024-09-24T12:00:00.000Z",
+      "valid_end": "2024-09-30T18:00:00.000Z",
+      "severity_score": 3.52,
+      "confidence_score": 0.95,
+      "impact_score": 0.85,
+      "rank_score": 88,
+      "icon_key": "tropical_cyclone",
+      "color_key": "tropical_red",
+      "size_class": "major",
+      "source_badges": [
+        "NHC"
+      ],
+      "subperils": [
+        "tropical_wind",
+        "hurricane_wind",
+        "storm_surge",
+        "freshwater_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-24T00:00:00.000Z",
+          "valid_end": "2024-09-24T23:59:59.000Z",
+          "marker": {
+            "lon": -58.6,
+            "lat": 38.6
+          },
+          "hover_geometry_id": "geom_evt_2024_al10_isaac_d1_hover",
+          "bbox": [
+            -62.800000000000004,
+            35.4,
+            -54.4,
+            41.800000000000004
+          ],
+          "valid_label": "09-24 - 40kt"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2024-09-25T00:00:00.000Z",
+          "valid_end": "2024-09-25T23:59:59.000Z",
+          "marker": {
+            "lon": -55.7,
+            "lat": 36.9
+          },
+          "hover_geometry_id": "geom_evt_2024_al10_isaac_d2_hover",
+          "bbox": [
+            -59.900000000000006,
+            33.699999999999996,
+            -51.5,
+            40.1
+          ],
+          "valid_label": "09-25 - 45kt"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2024-09-26T00:00:00.000Z",
+          "valid_end": "2024-09-26T23:59:59.000Z",
+          "marker": {
+            "lon": -51.2,
+            "lat": 37.3
+          },
+          "hover_geometry_id": "geom_evt_2024_al10_isaac_d3_hover",
+          "bbox": [
+            -55.400000000000006,
+            34.099999999999994,
+            -47,
+            40.5
+          ],
+          "valid_label": "09-26 - 50kt"
+        },
+        {
+          "day_index": 4,
+          "valid_start": "2024-09-27T00:00:00.000Z",
+          "valid_end": "2024-09-27T23:59:59.000Z",
+          "marker": {
+            "lon": -46.2,
+            "lat": 37.5
+          },
+          "hover_geometry_id": "geom_evt_2024_al10_isaac_d4_hover",
+          "bbox": [
+            -51.2,
+            33.5,
+            -41.2,
+            41.5
+          ],
+          "valid_label": "09-27 - 75kt"
+        },
+        {
+          "day_index": 5,
+          "valid_start": "2024-09-28T00:00:00.000Z",
+          "valid_end": "2024-09-28T23:59:59.000Z",
+          "marker": {
+            "lon": -39.1,
+            "lat": 40.6
+          },
+          "hover_geometry_id": "geom_evt_2024_al10_isaac_d5_hover",
+          "bbox": [
+            -44.1,
+            36.6,
+            -34.1,
+            44.6
+          ],
+          "valid_label": "09-28 - 85kt"
+        },
+        {
+          "day_index": 6,
+          "valid_start": "2024-09-29T00:00:00.000Z",
+          "valid_end": "2024-09-29T23:59:59.000Z",
+          "marker": {
+            "lon": -35.1,
+            "lat": 43.7
+          },
+          "hover_geometry_id": "geom_evt_2024_al10_isaac_d6_hover",
+          "bbox": [
+            -39.300000000000004,
+            40.5,
+            -30.9,
+            46.900000000000006
+          ],
+          "valid_label": "09-29 - 60kt"
+        },
+        {
+          "day_index": 7,
+          "valid_start": "2024-09-30T00:00:00.000Z",
+          "valid_end": "2024-09-30T23:59:59.000Z",
+          "marker": {
+            "lon": -28,
+            "lat": 45.2
+          },
+          "hover_geometry_id": "geom_evt_2024_al10_isaac_d7_hover",
+          "bbox": [
+            -32.2,
+            42,
+            -23.8,
+            48.400000000000006
+          ],
+          "valid_label": "09-30 - 45kt"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "track",
+            "label": "Track",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "nhc_wind_field",
+              "nhc_34kt_wind_probability"
+            ]
+          },
+          {
+            "tab_id": "satellite",
+            "label": "Satellite",
+            "layers": [
+              "satellite_ir"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "storm_name": "Isaac",
+        "classification": "Hurricane",
+        "basin": "AL",
+        "storm_number": 10,
+        "max_wind_kt": 90,
+        "min_pressure_mb": 963,
+        "archive_source": "nhc_atcf"
+      }
+    },
+    {
+      "event_id": "evt_20240902_northern_rockies_2024_09_02_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Northern Rockies Critical Fire Weather",
+      "short_name": "Northern Rockies Fire Weather",
+      "primary_region_label": "Northern Rockies",
+      "valid_start": "2024-09-02T15:00:00.000Z",
+      "valid_end": "2024-09-03T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-02T15:00:00.000Z",
+          "valid_end": "2024-09-03T03:00:00.000Z",
+          "marker": {
+            "lon": -110.92170731707317,
+            "lat": 42.50365853658536
+          },
+          "hover_geometry_id": "geom_evt_20240902_northern_rockies_2024_09_02_fire_d1_hover",
+          "bbox": [
+            -120.78,
+            40.06,
+            -101.51,
+            45.16
+          ],
+          "valid_label": "09-02 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20240911_northern_california_2024_09_11_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Northern California Critical Fire Weather",
+      "short_name": "Northern California Fire Weather",
+      "primary_region_label": "Northern California",
+      "valid_start": "2024-09-11T15:00:00.000Z",
+      "valid_end": "2024-09-12T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-11T15:00:00.000Z",
+          "valid_end": "2024-09-12T03:00:00.000Z",
+          "marker": {
+            "lon": -115.91250000000001,
+            "lat": 38.844166666666666
+          },
+          "hover_geometry_id": "geom_evt_20240911_northern_california_2024_09_11_fire_d1_hover",
+          "bbox": [
+            -120.25,
+            35.64,
+            -111.12,
+            42.28
+          ],
+          "valid_label": "09-11 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20240912_northern_plains_2024_09_12_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Northern Plains Critical Fire Weather",
+      "short_name": "Northern Plains Fire Weather",
+      "primary_region_label": "Northern Plains",
+      "valid_start": "2024-09-12T15:00:00.000Z",
+      "valid_end": "2024-09-13T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-12T15:00:00.000Z",
+          "valid_end": "2024-09-13T03:00:00.000Z",
+          "marker": {
+            "lon": -103.627,
+            "lat": 40.6845
+          },
+          "hover_geometry_id": "geom_evt_20240912_northern_plains_2024_09_12_fire_d1_hover",
+          "bbox": [
+            -106.32,
+            36.72,
+            -100.33,
+            45.95
+          ],
+          "valid_label": "09-12 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20240929_northern_plains_2024_09_29_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Northern Plains Critical Fire Weather",
+      "short_name": "Northern Plains Fire Weather",
+      "primary_region_label": "Northern Plains",
+      "valid_start": "2024-09-29T15:00:00.000Z",
+      "valid_end": "2024-09-30T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-29T15:00:00.000Z",
+          "valid_end": "2024-09-30T03:00:00.000Z",
+          "marker": {
+            "lon": -103.21818181818183,
+            "lat": 44.07522727272727
+          },
+          "hover_geometry_id": "geom_evt_20240929_northern_plains_2024_09_29_fire_d1_hover",
+          "bbox": [
+            -107.98,
+            42,
+            -99.87,
+            47.08
+          ],
+          "valid_label": "09-29 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20240930_upper_midwest_2024_09_30_fire",
+      "peril": "fire_weather",
+      "status": "post_event",
+      "headline": "Upper Midwest Critical Fire Weather",
+      "short_name": "Upper Midwest Fire Weather",
+      "primary_region_label": "Upper Midwest",
+      "valid_start": "2024-09-30T15:00:00.000Z",
+      "valid_end": "2024-10-01T03:00:00.000Z",
+      "severity_score": 3.12,
+      "confidence_score": 0.88,
+      "impact_score": 0.8,
+      "rank_score": 78,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "wind_rh_fire_weather"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-30T15:00:00.000Z",
+          "valid_end": "2024-10-01T03:00:00.000Z",
+          "marker": {
+            "lon": -99.87875,
+            "lat": 42.731249999999996
+          },
+          "hover_geometry_id": "geom_evt_20240930_upper_midwest_2024_09_30_fire_d1_hover",
+          "bbox": [
+            -103.08,
+            40.58,
+            -97.51,
+            45.15
+          ],
+          "valid_label": "09-30 - Critical"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_fire_outlook",
+              "model_wind_gust"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "model_wind_gust",
+              "model_10m_wind"
+            ]
+          },
+          {
+            "tab_id": "humidity",
+            "label": "RH",
+            "layers": [
+              "model_min_relative_humidity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "fire_risk_level": "CRITICAL",
+        "threshold": "CRIT",
+        "archive_source": "iem_spc_fire"
+      }
+    },
+    {
+      "event_id": "evt_20240905_gulf_coast_2024_09_05_rain",
+      "peril": "excessive_rain",
+      "status": "post_event",
+      "headline": "Gulf Coast Moderate Risk Extreme Rain",
+      "short_name": "Gulf Coast Extreme Rain",
+      "primary_region_label": "Gulf Coast",
+      "valid_start": "2024-09-05T12:00:00.000Z",
+      "valid_end": "2024-09-07T12:00:00.000Z",
+      "severity_score": 3.2,
+      "confidence_score": 0.72,
+      "impact_score": 0.7,
+      "rank_score": 76,
+      "icon_key": "extreme_rain",
+      "color_key": "rain_green",
+      "size_class": "large",
+      "source_badges": [
+        "WPC"
+      ],
+      "subperils": [
+        "flash_flooding",
+        "urban_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-05T12:00:00.000Z",
+          "valid_end": "2024-09-06T12:00:00.000Z",
+          "marker": {
+            "lon": -90.08143026988608,
+            "lat": 29.77294662782097
+          },
+          "hover_geometry_id": "geom_evt_20240905_gulf_coast_2024_09_05_rain_d1_hover",
+          "bbox": [
+            -91.73711032116972,
+            29.097578981887537,
+            -89.07001603235514,
+            30.633164090422866
+          ],
+          "valid_label": "09-05 - Moderate Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2024-09-06T12:00:00.000Z",
+          "valid_end": "2024-09-07T12:00:00.000Z",
+          "marker": {
+            "lon": -90.08752573199916,
+            "lat": 29.83283749089283
+          },
+          "hover_geometry_id": "geom_evt_20240906_gulf_coast_2024_09_06_rain_d1_hover",
+          "bbox": [
+            -91.63921255645938,
+            29.106527920800165,
+            -89.14444381548022,
+            30.803009842084016
+          ],
+          "valid_label": "09-06 - Moderate Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "wpc_ero",
+              "radar_qpe"
+            ]
+          },
+          {
+            "tab_id": "ero",
+            "label": "ERO",
+            "layers": [
+              "wpc_ero"
+            ]
+          },
+          {
+            "tab_id": "qpf",
+            "label": "QPF",
+            "layers": [
+              "wpc_qpf",
+              "model_qpf_6hr"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "ero_risk_level": "MDT",
+        "archive_source": "iem_wpc_ero",
+        "merged_days": 2,
+        "peak_day": "2024-09-05"
+      }
+    },
+    {
+      "event_id": "evt_20240911_gulf_coast_2024_09_11_rain",
+      "peril": "excessive_rain",
+      "status": "post_event",
+      "headline": "Gulf Coast Moderate Risk Extreme Rain",
+      "short_name": "Gulf Coast Extreme Rain",
+      "primary_region_label": "Gulf Coast",
+      "valid_start": "2024-09-11T12:00:00.000Z",
+      "valid_end": "2024-09-12T12:00:00.000Z",
+      "severity_score": 3.2,
+      "confidence_score": 0.72,
+      "impact_score": 0.7,
+      "rank_score": 76,
+      "icon_key": "extreme_rain",
+      "color_key": "rain_green",
+      "size_class": "large",
+      "source_badges": [
+        "WPC"
+      ],
+      "subperils": [
+        "flash_flooding",
+        "urban_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-11T12:00:00.000Z",
+          "valid_end": "2024-09-12T12:00:00.000Z",
+          "marker": {
+            "lon": -90.26146439247762,
+            "lat": 30.247438757333878
+          },
+          "hover_geometry_id": "geom_evt_20240911_gulf_coast_2024_09_11_rain_d1_hover",
+          "bbox": [
+            -92.64845625049256,
+            29.097578981887498,
+            -88.39230901493573,
+            32.4879710239346
+          ],
+          "valid_label": "09-11 - Moderate Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "wpc_ero",
+              "radar_qpe"
+            ]
+          },
+          {
+            "tab_id": "ero",
+            "label": "ERO",
+            "layers": [
+              "wpc_ero"
+            ]
+          },
+          {
+            "tab_id": "qpf",
+            "label": "QPF",
+            "layers": [
+              "wpc_qpf",
+              "model_qpf_6hr"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "ero_risk_level": "MDT",
+        "archive_source": "iem_wpc_ero"
+      }
+    },
+    {
+      "event_id": "evt_20240912_southeast_2024_09_12_rain",
+      "peril": "excessive_rain",
+      "status": "post_event",
+      "headline": "Southeast Moderate Risk Extreme Rain",
+      "short_name": "Southeast Extreme Rain",
+      "primary_region_label": "Southeast",
+      "valid_start": "2024-09-12T12:00:00.000Z",
+      "valid_end": "2024-09-14T12:00:00.000Z",
+      "severity_score": 3.2,
+      "confidence_score": 0.72,
+      "impact_score": 0.7,
+      "rank_score": 76,
+      "icon_key": "extreme_rain",
+      "color_key": "rain_green",
+      "size_class": "large",
+      "source_badges": [
+        "WPC"
+      ],
+      "subperils": [
+        "flash_flooding",
+        "urban_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-12T12:00:00.000Z",
+          "valid_end": "2024-09-13T12:00:00.000Z",
+          "marker": {
+            "lon": -86.93461014734396,
+            "lat": 33.708239568437016
+          },
+          "hover_geometry_id": "geom_evt_20240912_southeast_2024_09_12_rain_d1_hover",
+          "bbox": [
+            -87.85316404707842,
+            32.57052944290474,
+            -85.94134766816819,
+            34.811957281403515
+          ],
+          "valid_label": "09-12 - Moderate Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2024-09-13T12:00:00.000Z",
+          "valid_end": "2024-09-14T12:00:00.000Z",
+          "marker": {
+            "lon": -86.78010751001668,
+            "lat": 34.05091236864128
+          },
+          "hover_geometry_id": "geom_evt_20240913_southeast_2024_09_13_rain_d1_hover",
+          "bbox": [
+            -87.9014008363973,
+            33.179046547975496,
+            -85.77967360611292,
+            34.98619653464422
+          ],
+          "valid_label": "09-13 - Moderate Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "wpc_ero",
+              "radar_qpe"
+            ]
+          },
+          {
+            "tab_id": "ero",
+            "label": "ERO",
+            "layers": [
+              "wpc_ero"
+            ]
+          },
+          {
+            "tab_id": "qpf",
+            "label": "QPF",
+            "layers": [
+              "wpc_qpf",
+              "model_qpf_6hr"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "ero_risk_level": "MDT",
+        "archive_source": "iem_wpc_ero",
+        "merged_days": 2,
+        "peak_day": "2024-09-12"
+      }
+    },
+    {
+      "event_id": "evt_20240916_southeast_2024_09_16_rain",
+      "peril": "excessive_rain",
+      "status": "post_event",
+      "headline": "Southeast Moderate Risk Extreme Rain",
+      "short_name": "Southeast Extreme Rain",
+      "primary_region_label": "Southeast",
+      "valid_start": "2024-09-16T12:00:00.000Z",
+      "valid_end": "2024-09-17T12:00:00.000Z",
+      "severity_score": 3.2,
+      "confidence_score": 0.72,
+      "impact_score": 0.7,
+      "rank_score": 76,
+      "icon_key": "extreme_rain",
+      "color_key": "rain_green",
+      "size_class": "large",
+      "source_badges": [
+        "WPC"
+      ],
+      "subperils": [
+        "flash_flooding",
+        "urban_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-16T12:00:00.000Z",
+          "valid_end": "2024-09-17T12:00:00.000Z",
+          "marker": {
+            "lon": -78.30920163869894,
+            "lat": 34.39639105768298
+          },
+          "hover_geometry_id": "geom_evt_20240916_southeast_2024_09_16_rain_d1_hover",
+          "bbox": [
+            -79.1623291072558,
+            33.84276088399932,
+            -77.45570891355617,
+            34.89282078672946
+          ],
+          "valid_label": "09-16 - Moderate Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "wpc_ero",
+              "radar_qpe"
+            ]
+          },
+          {
+            "tab_id": "ero",
+            "label": "ERO",
+            "layers": [
+              "wpc_ero"
+            ]
+          },
+          {
+            "tab_id": "qpf",
+            "label": "QPF",
+            "layers": [
+              "wpc_qpf",
+              "model_qpf_6hr"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "ero_risk_level": "MDT",
+        "archive_source": "iem_wpc_ero"
+      }
+    },
+    {
+      "event_id": "evt_20240929_mid_atlantic_2024_09_29_rain",
+      "peril": "excessive_rain",
+      "status": "post_event",
+      "headline": "Mid-Atlantic Moderate Risk Extreme Rain",
+      "short_name": "Mid-Atlantic Extreme Rain",
+      "primary_region_label": "Mid-Atlantic",
+      "valid_start": "2024-09-29T12:00:00.000Z",
+      "valid_end": "2024-09-30T12:00:00.000Z",
+      "severity_score": 3.2,
+      "confidence_score": 0.72,
+      "impact_score": 0.7,
+      "rank_score": 76,
+      "icon_key": "extreme_rain",
+      "color_key": "rain_green",
+      "size_class": "large",
+      "source_badges": [
+        "WPC"
+      ],
+      "subperils": [
+        "flash_flooding",
+        "urban_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-29T12:00:00.000Z",
+          "valid_end": "2024-09-30T12:00:00.000Z",
+          "marker": {
+            "lon": -79.09797608408707,
+            "lat": 38.11765203178531
+          },
+          "hover_geometry_id": "geom_evt_20240929_mid_atlantic_2024_09_29_rain_d1_hover",
+          "bbox": [
+            -79.9305985078504,
+            37.38337964477945,
+            -78.33004215030826,
+            38.7862115532847
+          ],
+          "valid_label": "09-29 - Moderate Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "wpc_ero",
+              "radar_qpe"
+            ]
+          },
+          {
+            "tab_id": "ero",
+            "label": "ERO",
+            "layers": [
+              "wpc_ero"
+            ]
+          },
+          {
+            "tab_id": "qpf",
+            "label": "QPF",
+            "layers": [
+              "wpc_qpf",
+              "model_qpf_6hr"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "ero_risk_level": "MDT",
+        "archive_source": "iem_wpc_ero"
+      }
+    },
+    {
+      "event_id": "evt_2024_al07_gordon",
+      "peril": "tropical",
+      "status": "post_event",
+      "headline": "Tropical Storm Gordon",
+      "short_name": "Gordon",
+      "primary_region_label": "Atlantic",
+      "valid_start": "2024-09-11T12:00:00.000Z",
+      "valid_end": "2024-09-17T06:00:00.000Z",
+      "severity_score": 3,
+      "confidence_score": 0.95,
+      "impact_score": 0.6,
+      "rank_score": 75,
+      "icon_key": "tropical_cyclone",
+      "color_key": "tropical_orange",
+      "size_class": "large",
+      "source_badges": [
+        "NHC"
+      ],
+      "subperils": [
+        "tropical_wind",
+        "freshwater_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-11T00:00:00.000Z",
+          "valid_end": "2024-09-11T23:59:59.000Z",
+          "marker": {
+            "lon": -29.6,
+            "lat": 16
+          },
+          "hover_geometry_id": "geom_evt_2024_al07_gordon_d1_hover",
+          "bbox": [
+            -33.1,
+            13.5,
+            -26.1,
+            18.5
+          ],
+          "valid_label": "09-11 - 30kt"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2024-09-12T00:00:00.000Z",
+          "valid_end": "2024-09-12T23:59:59.000Z",
+          "marker": {
+            "lon": -35.4,
+            "lat": 18.1
+          },
+          "hover_geometry_id": "geom_evt_2024_al07_gordon_d2_hover",
+          "bbox": [
+            -38.9,
+            15.600000000000001,
+            -31.9,
+            20.6
+          ],
+          "valid_label": "09-12 - 30kt"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2024-09-13T00:00:00.000Z",
+          "valid_end": "2024-09-13T23:59:59.000Z",
+          "marker": {
+            "lon": -39.1,
+            "lat": 19.7
+          },
+          "hover_geometry_id": "geom_evt_2024_al07_gordon_d3_hover",
+          "bbox": [
+            -43.300000000000004,
+            16.5,
+            -34.9,
+            22.9
+          ],
+          "valid_label": "09-13 - 35kt"
+        },
+        {
+          "day_index": 4,
+          "valid_start": "2024-09-14T00:00:00.000Z",
+          "valid_end": "2024-09-14T23:59:59.000Z",
+          "marker": {
+            "lon": -42.4,
+            "lat": 20.3
+          },
+          "hover_geometry_id": "geom_evt_2024_al07_gordon_d4_hover",
+          "bbox": [
+            -46.6,
+            17.1,
+            -38.199999999999996,
+            23.5
+          ],
+          "valid_label": "09-14 - 40kt"
+        },
+        {
+          "day_index": 5,
+          "valid_start": "2024-09-15T00:00:00.000Z",
+          "valid_end": "2024-09-15T23:59:59.000Z",
+          "marker": {
+            "lon": -45.8,
+            "lat": 19.2
+          },
+          "hover_geometry_id": "geom_evt_2024_al07_gordon_d5_hover",
+          "bbox": [
+            -49.3,
+            16.7,
+            -42.3,
+            21.7
+          ],
+          "valid_label": "09-15 - 30kt"
+        },
+        {
+          "day_index": 6,
+          "valid_start": "2024-09-16T00:00:00.000Z",
+          "valid_end": "2024-09-16T23:59:59.000Z",
+          "marker": {
+            "lon": -48.3,
+            "lat": 19
+          },
+          "hover_geometry_id": "geom_evt_2024_al07_gordon_d6_hover",
+          "bbox": [
+            -51.8,
+            16.5,
+            -44.8,
+            21.5
+          ],
+          "valid_label": "09-16 - 30kt"
+        },
+        {
+          "day_index": 7,
+          "valid_start": "2024-09-17T00:00:00.000Z",
+          "valid_end": "2024-09-17T23:59:59.000Z",
+          "marker": {
+            "lon": -49,
+            "lat": 18.9
+          },
+          "hover_geometry_id": "geom_evt_2024_al07_gordon_d7_hover",
+          "bbox": [
+            -52.5,
+            16.4,
+            -45.5,
+            21.4
+          ],
+          "valid_label": "09-17 - 30kt"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "track",
+            "label": "Track",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "nhc_wind_field",
+              "nhc_34kt_wind_probability"
+            ]
+          },
+          {
+            "tab_id": "satellite",
+            "label": "Satellite",
+            "layers": [
+              "satellite_ir"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "storm_name": "Gordon",
+        "classification": "Tropical Storm",
+        "basin": "AL",
+        "storm_number": 7,
+        "max_wind_kt": 40,
+        "min_pressure_mb": 1004,
+        "archive_source": "nhc_atcf"
+      }
+    },
+    {
+      "event_id": "evt_2024_al08_eight",
+      "peril": "tropical",
+      "status": "post_event",
+      "headline": "Tropical Storm Eight",
+      "short_name": "Eight",
+      "primary_region_label": "Atlantic",
+      "valid_start": "2024-09-15T00:00:00.000Z",
+      "valid_end": "2024-09-17T00:00:00.000Z",
+      "severity_score": 3,
+      "confidence_score": 0.95,
+      "impact_score": 0.6,
+      "rank_score": 75,
+      "icon_key": "tropical_cyclone",
+      "color_key": "tropical_orange",
+      "size_class": "large",
+      "source_badges": [
+        "NHC"
+      ],
+      "subperils": [
+        "tropical_wind",
+        "freshwater_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-15T00:00:00.000Z",
+          "valid_end": "2024-09-15T23:59:59.000Z",
+          "marker": {
+            "lon": -77.8,
+            "lat": 31.8
+          },
+          "hover_geometry_id": "geom_evt_2024_al08_eight_d1_hover",
+          "bbox": [
+            -82,
+            28.6,
+            -73.6,
+            35
+          ],
+          "valid_label": "09-15 - 45kt"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2024-09-16T00:00:00.000Z",
+          "valid_end": "2024-09-16T23:59:59.000Z",
+          "marker": {
+            "lon": -78.5,
+            "lat": 33.5
+          },
+          "hover_geometry_id": "geom_evt_2024_al08_eight_d2_hover",
+          "bbox": [
+            -82.7,
+            30.3,
+            -74.3,
+            36.7
+          ],
+          "valid_label": "09-16 - 40kt"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2024-09-17T00:00:00.000Z",
+          "valid_end": "2024-09-17T23:59:59.000Z",
+          "marker": {
+            "lon": -79.2,
+            "lat": 34.2
+          },
+          "hover_geometry_id": "geom_evt_2024_al08_eight_d3_hover",
+          "bbox": [
+            -82.7,
+            31.700000000000003,
+            -75.7,
+            36.7
+          ],
+          "valid_label": "09-17 - 25kt"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "track",
+            "label": "Track",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "nhc_wind_field",
+              "nhc_34kt_wind_probability"
+            ]
+          },
+          {
+            "tab_id": "satellite",
+            "label": "Satellite",
+            "layers": [
+              "satellite_ir"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "storm_name": "Eight",
+        "classification": "Tropical Storm",
+        "basin": "AL",
+        "storm_number": 8,
+        "max_wind_kt": 50,
+        "min_pressure_mb": 1004,
+        "archive_source": "nhc_atcf"
+      }
+    },
+    {
+      "event_id": "evt_2024_al11_joyce",
+      "peril": "tropical",
+      "status": "post_event",
+      "headline": "Tropical Storm Joyce",
+      "short_name": "Joyce",
+      "primary_region_label": "Atlantic",
+      "valid_start": "2024-09-27T06:00:00.000Z",
+      "valid_end": "2024-09-30T18:00:00.000Z",
+      "severity_score": 3,
+      "confidence_score": 0.95,
+      "impact_score": 0.6,
+      "rank_score": 75,
+      "icon_key": "tropical_cyclone",
+      "color_key": "tropical_orange",
+      "size_class": "large",
+      "source_badges": [
+        "NHC"
+      ],
+      "subperils": [
+        "tropical_wind",
+        "freshwater_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-27T00:00:00.000Z",
+          "valid_end": "2024-09-27T23:59:59.000Z",
+          "marker": {
+            "lon": -43.4,
+            "lat": 18.2
+          },
+          "hover_geometry_id": "geom_evt_2024_al11_joyce_d1_hover",
+          "bbox": [
+            -47.6,
+            15,
+            -39.199999999999996,
+            21.4
+          ],
+          "valid_label": "09-27 - 45kt"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2024-09-28T00:00:00.000Z",
+          "valid_end": "2024-09-28T23:59:59.000Z",
+          "marker": {
+            "lon": -46.4,
+            "lat": 20.2
+          },
+          "hover_geometry_id": "geom_evt_2024_al11_joyce_d2_hover",
+          "bbox": [
+            -50.6,
+            17,
+            -42.199999999999996,
+            23.4
+          ],
+          "valid_label": "09-28 - 40kt"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2024-09-29T00:00:00.000Z",
+          "valid_end": "2024-09-29T23:59:59.000Z",
+          "marker": {
+            "lon": -48.9,
+            "lat": 22
+          },
+          "hover_geometry_id": "geom_evt_2024_al11_joyce_d3_hover",
+          "bbox": [
+            -53.1,
+            18.8,
+            -44.699999999999996,
+            25.2
+          ],
+          "valid_label": "09-29 - 35kt"
+        },
+        {
+          "day_index": 4,
+          "valid_start": "2024-09-30T00:00:00.000Z",
+          "valid_end": "2024-09-30T23:59:59.000Z",
+          "marker": {
+            "lon": -48.8,
+            "lat": 22.5
+          },
+          "hover_geometry_id": "geom_evt_2024_al11_joyce_d4_hover",
+          "bbox": [
+            -52.3,
+            20,
+            -45.3,
+            25
+          ],
+          "valid_label": "09-30 - 30kt"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "track",
+            "label": "Track",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "nhc_wind_field",
+              "nhc_34kt_wind_probability"
+            ]
+          },
+          {
+            "tab_id": "satellite",
+            "label": "Satellite",
+            "layers": [
+              "satellite_ir"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "storm_name": "Joyce",
+        "classification": "Tropical Storm",
+        "basin": "AL",
+        "storm_number": 11,
+        "max_wind_kt": 45,
+        "min_pressure_mb": 1001,
+        "archive_source": "nhc_atcf"
+      }
+    },
+    {
+      "event_id": "evt_2024_al12_kirk",
+      "peril": "tropical",
+      "status": "post_event",
+      "headline": "Tropical Storm Kirk",
+      "short_name": "Kirk",
+      "primary_region_label": "Atlantic",
+      "valid_start": "2024-09-29T18:00:00.000Z",
+      "valid_end": "2024-09-30T18:00:00.000Z",
+      "severity_score": 3,
+      "confidence_score": 0.95,
+      "impact_score": 0.6,
+      "rank_score": 75,
+      "icon_key": "tropical_cyclone",
+      "color_key": "tropical_orange",
+      "size_class": "large",
+      "source_badges": [
+        "NHC"
+      ],
+      "subperils": [
+        "tropical_wind",
+        "freshwater_flooding"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-29T00:00:00.000Z",
+          "valid_end": "2024-09-29T23:59:59.000Z",
+          "marker": {
+            "lon": -32.1,
+            "lat": 13.8
+          },
+          "hover_geometry_id": "geom_evt_2024_al12_kirk_d1_hover",
+          "bbox": [
+            -35.6,
+            11.3,
+            -28.6,
+            16.3
+          ],
+          "valid_label": "09-29 - 30kt"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2024-09-30T00:00:00.000Z",
+          "valid_end": "2024-09-30T23:59:59.000Z",
+          "marker": {
+            "lon": -35.3,
+            "lat": 13.7
+          },
+          "hover_geometry_id": "geom_evt_2024_al12_kirk_d2_hover",
+          "bbox": [
+            -39.5,
+            10.5,
+            -31.099999999999994,
+            16.9
+          ],
+          "valid_label": "09-30 - 50kt"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "track",
+            "label": "Track",
+            "layers": [
+              "nhc_forecast_track",
+              "nhc_cone"
+            ]
+          },
+          {
+            "tab_id": "wind",
+            "label": "Wind",
+            "layers": [
+              "nhc_wind_field",
+              "nhc_34kt_wind_probability"
+            ]
+          },
+          {
+            "tab_id": "satellite",
+            "label": "Satellite",
+            "layers": [
+              "satellite_ir"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "storm_name": "Kirk",
+        "classification": "Tropical Storm",
+        "basin": "AL",
+        "storm_number": 12,
+        "max_wind_kt": 50,
+        "min_pressure_mb": 999,
+        "archive_source": "nhc_atcf"
+      }
+    },
+    {
+      "event_id": "evt_20240926_southeast_2024_09_26_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southeast Severe Weather",
+      "short_name": "Southeast Severe",
+      "primary_region_label": "Southeast",
+      "valid_start": "2024-09-26T12:00:00.000Z",
+      "valid_end": "2024-09-28T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-26T12:00:00.000Z",
+          "valid_end": "2024-09-27T06:00:00.000Z",
+          "marker": {
+            "lon": -79.61550938236682,
+            "lat": 32.76126008605703
+          },
+          "hover_geometry_id": "geom_evt_20240926_southeast_2024_09_26_severe_d1_hover",
+          "bbox": [
+            -82.54,
+            30.054194424198254,
+            -77.3055046887784,
+            34.4
+          ],
+          "valid_label": "09-26 - ENH Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2024-09-27T12:00:00.000Z",
+          "valid_end": "2024-09-28T06:00:00.000Z",
+          "marker": {
+            "lon": -77.33039551370487,
+            "lat": 34.452988316599914
+          },
+          "hover_geometry_id": "geom_evt_20240927_southeast_2024_09_27_severe_d1_hover",
+          "bbox": [
+            -78.44260295492799,
+            33.51226434048465,
+            -75.75332975064488,
+            35.83
+          ],
+          "valid_label": "09-27 - ENH Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook",
+        "merged_days": 2,
+        "peak_day": "2024-09-26"
+      }
+    },
+    {
+      "event_id": "evt_20240912_northern_plains_2024_09_12_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Northern Plains Severe Weather",
+      "short_name": "Northern Plains Severe",
+      "primary_region_label": "Northern Plains",
+      "valid_start": "2024-09-12T12:00:00.000Z",
+      "valid_end": "2024-09-13T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-12T12:00:00.000Z",
+          "valid_end": "2024-09-13T06:00:00.000Z",
+          "marker": {
+            "lon": -104.38090909090907,
+            "lat": 47.56818181818182
+          },
+          "hover_geometry_id": "geom_evt_20240912_northern_plains_2024_09_12_severe_d1_hover",
+          "bbox": [
+            -105.33,
+            46.14,
+            -103.12,
+            48.86
+          ],
+          "valid_label": "09-12 - ENH Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20240917_northern_plains_2024_09_17_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Northern Plains Severe Weather",
+      "short_name": "Northern Plains Severe",
+      "primary_region_label": "Northern Plains",
+      "valid_start": "2024-09-17T12:00:00.000Z",
+      "valid_end": "2024-09-18T06:00:00.000Z",
+      "severity_score": 2.8,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 70,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-17T12:00:00.000Z",
+          "valid_end": "2024-09-18T06:00:00.000Z",
+          "marker": {
+            "lon": -102.73187500000002,
+            "lat": 41.14124999999999
+          },
+          "hover_geometry_id": "geom_evt_20240917_northern_plains_2024_09_17_severe_d1_hover",
+          "bbox": [
+            -104.08,
+            38.62,
+            -101.37,
+            42.99
+          ],
+          "valid_label": "09-17 - ENH Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "ENH",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20240911_southeast_2024_09_11_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Southeast Severe Weather",
+      "short_name": "Southeast Severe",
+      "primary_region_label": "Southeast",
+      "valid_start": "2024-09-11T12:00:00.000Z",
+      "valid_end": "2024-09-12T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-11T12:00:00.000Z",
+          "valid_end": "2024-09-12T06:00:00.000Z",
+          "marker": {
+            "lon": -88.25934740652099,
+            "lat": 29.569602075725978
+          },
+          "hover_geometry_id": "geom_evt_20240911_southeast_2024_09_11_severe_d1_hover",
+          "bbox": [
+            -91.58321140939597,
+            28.577,
+            -84.54694781883856,
+            31.58
+          ],
+          "valid_label": "09-11 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20240916_mid_atlantic_2024_09_16_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Mid-Atlantic Severe Weather",
+      "short_name": "Mid-Atlantic Severe",
+      "primary_region_label": "Mid-Atlantic",
+      "valid_start": "2024-09-16T12:00:00.000Z",
+      "valid_end": "2024-09-17T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-16T12:00:00.000Z",
+          "valid_end": "2024-09-17T06:00:00.000Z",
+          "marker": {
+            "lon": -87.03263052427211,
+            "lat": 41.39722653509463
+          },
+          "hover_geometry_id": "geom_evt_20240916_mid_atlantic_2024_09_16_severe_d1_hover",
+          "bbox": [
+            -100.79,
+            33.516,
+            -75.1211379362169,
+            49.359
+          ],
+          "valid_label": "09-16 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20240924_mid_atlantic_2024_09_24_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Mid-Atlantic Severe Weather",
+      "short_name": "Mid-Atlantic Severe",
+      "primary_region_label": "Mid-Atlantic",
+      "valid_start": "2024-09-24T12:00:00.000Z",
+      "valid_end": "2024-09-25T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-24T12:00:00.000Z",
+          "valid_end": "2024-09-25T06:00:00.000Z",
+          "marker": {
+            "lon": -88.88090909090909,
+            "lat": 36.96227272727273
+          },
+          "hover_geometry_id": "geom_evt_20240924_mid_atlantic_2024_09_24_severe_d1_hover",
+          "bbox": [
+            -98.74,
+            34.77,
+            -80.72,
+            39.58
+          ],
+          "valid_label": "09-24 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20240918_upper_midwest_2024_09_18_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Upper Midwest Severe Weather",
+      "short_name": "Upper Midwest Severe",
+      "primary_region_label": "Upper Midwest",
+      "valid_start": "2024-09-18T12:00:00.000Z",
+      "valid_end": "2024-09-20T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-18T12:00:00.000Z",
+          "valid_end": "2024-09-19T06:00:00.000Z",
+          "marker": {
+            "lon": -96.55857142857141,
+            "lat": 43.66071428571429
+          },
+          "hover_geometry_id": "geom_evt_20240918_upper_midwest_2024_09_18_severe_d1_hover",
+          "bbox": [
+            -97.76,
+            41.62,
+            -95.23,
+            46.34
+          ],
+          "valid_label": "09-18 - SLGT Risk"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2024-09-19T12:00:00.000Z",
+          "valid_end": "2024-09-20T06:00:00.000Z",
+          "marker": {
+            "lon": -93.21867347331015,
+            "lat": 44.104616248133986
+          },
+          "hover_geometry_id": "geom_evt_20240919_upper_midwest_2024_09_19_severe_d1_hover",
+          "bbox": [
+            -96.93,
+            36.73,
+            -90.33,
+            48.639
+          ],
+          "valid_label": "09-19 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook",
+        "merged_days": 2,
+        "peak_day": "2024-09-18"
+      }
+    },
+    {
+      "event_id": "evt_20240921_central_plains_2024_09_21_severe",
+      "peril": "severe_weather",
+      "status": "post_event",
+      "headline": "Central Plains Severe Weather",
+      "short_name": "Central Plains Severe",
+      "primary_region_label": "Central Plains",
+      "valid_start": "2024-09-21T12:00:00.000Z",
+      "valid_end": "2024-09-22T06:00:00.000Z",
+      "severity_score": 2.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.75,
+      "rank_score": 55,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": [
+        "SPC"
+      ],
+      "subperils": [
+        "tornado",
+        "damaging_wind",
+        "large_hail"
+      ],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2024-09-21T12:00:00.000Z",
+          "valid_end": "2024-09-22T06:00:00.000Z",
+          "marker": {
+            "lon": -103.32888888888888,
+            "lat": 34.19666666666667
+          },
+          "hover_geometry_id": "geom_evt_20240921_central_plains_2024_09_21_severe_d1_hover",
+          "bbox": [
+            -105.22,
+            31.68,
+            -101.06,
+            35.99
+          ],
+          "valid_label": "09-21 - SLGT Risk"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          {
+            "tab_id": "overview",
+            "label": "Overview",
+            "layers": [
+              "spc_categorical_outlook",
+              "model_reflectivity"
+            ]
+          },
+          {
+            "tab_id": "spc",
+            "label": "SPC",
+            "layers": [
+              "spc_categorical_outlook",
+              "spc_tornado_probability"
+            ]
+          },
+          {
+            "tab_id": "radar",
+            "label": "Radar",
+            "layers": [
+              "model_reflectivity"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "spc_risk_level": "SLGT",
+        "archive_source": "iem_spc_outlook"
+      }
+    }
+  ]
+}

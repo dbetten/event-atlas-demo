@@ -1,0 +1,567 @@
+{
+  "events": [
+    {
+      "event_id": "evt_20260604_southern_plains_severe",
+      "headline": "Southern Plains Severe Weather",
+      "short_name": "Southern Plains Severe",
+      "peril": "severe_weather",
+      "status": "forecast",
+      "valid_start": "2026-06-04T18:00:00Z",
+      "valid_end": "2026-06-05T06:00:00Z",
+      "primary_region_label": "Southern Plains",
+      "severity_score": 3.4,
+      "confidence_score": 0.76,
+      "impact_score": 0.65,
+      "rank_score": 88,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "large",
+      "source_badges": ["SPC", "NWS", "Model"],
+      "subperils": ["tornado", "large_hail", "damaging_wind"],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-06-04T18:00:00Z",
+          "valid_end": "2026-06-05T06:00:00Z",
+          "marker": { "lon": -98.2, "lat": 34.8 },
+          "hover_geometry_id": "geom_evt_20260604_southern_plains_severe_d1_hover",
+          "bbox": [-104.5, 29.5, -91.0, 39.5],
+          "valid_label": "Today–Tonight"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          { "tab_id": "overview", "label": "Overview", "layers": ["spc_categorical_outlook", "nws_watches_warnings", "model_reflectivity"] },
+          { "tab_id": "spc", "label": "SPC Outlook", "layers": ["spc_categorical_outlook", "spc_tornado_probability", "spc_hail_probability", "spc_wind_probability"] },
+          { "tab_id": "tornado", "label": "Tornado", "layers": ["spc_tornado_probability", "model_stp", "model_srh_0_1km"] },
+          { "tab_id": "hail", "label": "Hail", "layers": ["spc_hail_probability", "model_updraft_helicity"] },
+          { "tab_id": "wind", "label": "Wind", "layers": ["spc_wind_probability", "model_wind_gust"] },
+          { "tab_id": "radar", "label": "Radar", "layers": ["model_reflectivity"] }
+        ]
+      }
+    },
+    {
+      "event_id": "evt_20260605_midwest_severe",
+      "headline": "Midwest Severe Weather",
+      "short_name": "Midwest Severe",
+      "peril": "severe_weather",
+      "status": "forecast",
+      "valid_start": "2026-06-05T18:00:00Z",
+      "valid_end": "2026-06-06T06:00:00Z",
+      "primary_region_label": "Midwest",
+      "severity_score": 2.8,
+      "confidence_score": 0.68,
+      "impact_score": 0.55,
+      "rank_score": 72,
+      "icon_key": "severe_weather",
+      "color_key": "severe_blue",
+      "size_class": "medium",
+      "source_badges": ["SPC", "NWS"],
+      "subperils": ["damaging_wind", "large_hail"],
+      "day_membership": [
+        {
+          "day_index": 2,
+          "valid_start": "2026-06-05T18:00:00Z",
+          "valid_end": "2026-06-06T06:00:00Z",
+          "marker": { "lon": -89.5, "lat": 41.2 },
+          "hover_geometry_id": "geom_evt_20260605_midwest_severe_d2_hover",
+          "bbox": [-95.0, 37.0, -84.0, 46.0],
+          "valid_label": "Tomorrow"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          { "tab_id": "overview", "label": "Overview", "layers": ["spc_categorical_outlook", "nws_watches_warnings", "model_reflectivity"] },
+          { "tab_id": "spc", "label": "SPC Outlook", "layers": ["spc_categorical_outlook", "spc_wind_probability", "spc_hail_probability"] },
+          { "tab_id": "wind", "label": "Wind", "layers": ["spc_wind_probability", "model_wind_gust"] },
+          { "tab_id": "radar", "label": "Radar", "layers": ["model_reflectivity"] }
+        ]
+      }
+    },
+    {
+      "event_id": "evt_20260604_central_winter_storm",
+      "headline": "Central & Eastern Winter Storm",
+      "short_name": "Central Winter Storm",
+      "peril": "winter_weather",
+      "status": "forecast",
+      "valid_start": "2026-06-04T12:00:00Z",
+      "valid_end": "2026-06-07T12:00:00Z",
+      "primary_region_label": "Central & Eastern US",
+      "severity_score": 3.8,
+      "confidence_score": 0.82,
+      "impact_score": 0.78,
+      "rank_score": 91,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "major",
+      "source_badges": ["WPC", "NWS", "Model"],
+      "subperils": ["heavy_snow", "ice_storm", "high_wind_winter"],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-06-04T12:00:00Z",
+          "valid_end": "2026-06-05T12:00:00Z",
+          "marker": { "lon": -98.0, "lat": 39.5 },
+          "hover_geometry_id": "geom_evt_20260604_central_winter_storm_d1_hover",
+          "bbox": [-105.0, 34.0, -90.0, 45.0],
+          "valid_label": "Day 1 - Central Plains"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-06-05T12:00:00Z",
+          "valid_end": "2026-06-06T12:00:00Z",
+          "marker": { "lon": -88.5, "lat": 41.0 },
+          "hover_geometry_id": "geom_evt_20260604_central_winter_storm_d2_hover",
+          "bbox": [-95.0, 36.0, -82.0, 47.0],
+          "valid_label": "Day 2 - Midwest"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2026-06-06T12:00:00Z",
+          "valid_end": "2026-06-07T12:00:00Z",
+          "marker": { "lon": -76.0, "lat": 42.5 },
+          "hover_geometry_id": "geom_evt_20260604_central_winter_storm_d3_hover",
+          "bbox": [-85.0, 38.0, -70.0, 47.0],
+          "valid_label": "Day 3 - Northeast"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          { "tab_id": "overview", "label": "Overview", "layers": ["wpc_snow_probability", "nws_winter_alerts", "model_snowfall"] },
+          { "tab_id": "snow", "label": "Snow", "layers": ["wpc_snow_probability", "model_snowfall", "model_kuchera_snowfall"] },
+          { "tab_id": "ice", "label": "Ice", "layers": ["wpc_freezing_rain_probability", "model_ice_accumulation"] },
+          { "tab_id": "wind", "label": "Wind", "layers": ["model_wind_gust"] },
+          { "tab_id": "alerts", "label": "Alerts", "layers": ["nws_winter_alerts"] }
+        ]
+      }
+    },
+    {
+      "event_id": "evt_20260605_pnw_winter",
+      "headline": "Pacific Northwest Winter Storm",
+      "short_name": "PNW Winter Storm",
+      "peril": "winter_weather",
+      "status": "forecast",
+      "valid_start": "2026-06-05T12:00:00Z",
+      "valid_end": "2026-06-06T12:00:00Z",
+      "primary_region_label": "Pacific Northwest",
+      "severity_score": 2.5,
+      "confidence_score": 0.71,
+      "impact_score": 0.58,
+      "rank_score": 65,
+      "icon_key": "winter_storm",
+      "color_key": "winter_blue",
+      "size_class": "medium",
+      "source_badges": ["WPC", "NWS"],
+      "subperils": ["heavy_snow", "mixed_precip"],
+      "day_membership": [
+        {
+          "day_index": 2,
+          "valid_start": "2026-06-05T12:00:00Z",
+          "valid_end": "2026-06-06T12:00:00Z",
+          "marker": { "lon": -122.5, "lat": 47.5 },
+          "hover_geometry_id": "geom_evt_20260605_pnw_winter_d2_hover",
+          "bbox": [-125.0, 44.0, -117.0, 50.0],
+          "valid_label": "Tomorrow"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          { "tab_id": "overview", "label": "Overview", "layers": ["wpc_snow_probability", "nws_winter_alerts", "model_snowfall"] },
+          { "tab_id": "snow", "label": "Snow", "layers": ["wpc_snow_probability", "model_snowfall"] },
+          { "tab_id": "alerts", "label": "Alerts", "layers": ["nws_winter_alerts"] }
+        ]
+      }
+    },
+    {
+      "event_id": "evt_20260604_southwest_fire",
+      "headline": "Southwest Fire Weather",
+      "short_name": "Southwest Fire Weather",
+      "peril": "fire_weather",
+      "status": "active",
+      "valid_start": "2026-06-04T15:00:00Z",
+      "valid_end": "2026-06-07T03:00:00Z",
+      "primary_region_label": "Southwest",
+      "severity_score": 3.2,
+      "confidence_score": 0.85,
+      "impact_score": 0.72,
+      "rank_score": 82,
+      "icon_key": "fire_weather",
+      "color_key": "fire_orange",
+      "size_class": "large",
+      "source_badges": ["SPC", "NWS"],
+      "subperils": ["wind_rh_fire_weather", "extremely_critical_fire_weather"],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-06-04T15:00:00Z",
+          "valid_end": "2026-06-05T03:00:00Z",
+          "marker": { "lon": -111.5, "lat": 34.5 },
+          "hover_geometry_id": "geom_evt_20260604_southwest_fire_d1_hover",
+          "bbox": [-118.0, 31.0, -103.0, 38.0],
+          "valid_label": "Today"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-06-05T15:00:00Z",
+          "valid_end": "2026-06-06T03:00:00Z",
+          "marker": { "lon": -110.5, "lat": 35.0 },
+          "hover_geometry_id": "geom_evt_20260604_southwest_fire_d2_hover",
+          "bbox": [-117.0, 31.5, -104.0, 38.5],
+          "valid_label": "Tomorrow"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2026-06-06T15:00:00Z",
+          "valid_end": "2026-06-07T03:00:00Z",
+          "marker": { "lon": -109.5, "lat": 35.5 },
+          "hover_geometry_id": "geom_evt_20260604_southwest_fire_d3_hover",
+          "bbox": [-116.0, 32.0, -105.0, 39.0],
+          "valid_label": "Day 3"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          { "tab_id": "overview", "label": "Overview", "layers": ["spc_fire_outlook", "nws_red_flag_warnings", "model_wind_gust"] },
+          { "tab_id": "fire", "label": "Fire Outlook", "layers": ["spc_fire_outlook"] },
+          { "tab_id": "wind", "label": "Wind", "layers": ["model_10m_wind", "model_wind_gust"] },
+          { "tab_id": "humidity", "label": "RH", "layers": ["model_min_relative_humidity"] },
+          { "tab_id": "alerts", "label": "Red Flag", "layers": ["nws_red_flag_warnings", "nws_fire_weather_watches"] }
+        ]
+      }
+    },
+    {
+      "event_id": "evt_20260604_nm_wildfires",
+      "headline": "New Mexico Wildfires",
+      "short_name": "NM Wildfires",
+      "peril": "wildfire",
+      "status": "active",
+      "valid_start": "2026-06-04T00:00:00Z",
+      "valid_end": "2026-06-10T00:00:00Z",
+      "primary_region_label": "Northern New Mexico",
+      "severity_score": 3.6,
+      "confidence_score": 0.92,
+      "impact_score": 0.81,
+      "rank_score": 86,
+      "icon_key": "wildfire",
+      "color_key": "fire_red",
+      "size_class": "large",
+      "source_badges": ["NIFC", "NWS"],
+      "subperils": ["active_large_fire", "wildfire_smoke"],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-06-04T00:00:00Z",
+          "valid_end": "2026-06-05T00:00:00Z",
+          "marker": { "lon": -105.8, "lat": 36.2 },
+          "hover_geometry_id": "geom_evt_20260604_nm_wildfires_d1_hover",
+          "bbox": [-107.5, 35.0, -104.0, 37.5],
+          "valid_label": "Today"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-06-05T00:00:00Z",
+          "valid_end": "2026-06-06T00:00:00Z",
+          "marker": { "lon": -105.8, "lat": 36.2 },
+          "hover_geometry_id": "geom_evt_20260604_nm_wildfires_d2_hover",
+          "bbox": [-107.5, 35.0, -104.0, 37.5],
+          "valid_label": "Tomorrow"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2026-06-06T00:00:00Z",
+          "valid_end": "2026-06-07T00:00:00Z",
+          "marker": { "lon": -105.8, "lat": 36.2 },
+          "hover_geometry_id": "geom_evt_20260604_nm_wildfires_d3_hover",
+          "bbox": [-107.5, 35.0, -104.0, 37.5],
+          "valid_label": "Day 3"
+        },
+        {
+          "day_index": 4,
+          "valid_start": "2026-06-07T00:00:00Z",
+          "valid_end": "2026-06-08T00:00:00Z",
+          "marker": { "lon": -105.8, "lat": 36.2 },
+          "hover_geometry_id": "geom_evt_20260604_nm_wildfires_d4_hover",
+          "bbox": [-107.5, 35.0, -104.0, 37.5],
+          "valid_label": "Day 4"
+        },
+        {
+          "day_index": 5,
+          "valid_start": "2026-06-08T00:00:00Z",
+          "valid_end": "2026-06-09T00:00:00Z",
+          "marker": { "lon": -105.8, "lat": 36.2 },
+          "hover_geometry_id": "geom_evt_20260604_nm_wildfires_d5_hover",
+          "bbox": [-107.5, 35.0, -104.0, 37.5],
+          "valid_label": "Day 5"
+        },
+        {
+          "day_index": 6,
+          "valid_start": "2026-06-09T00:00:00Z",
+          "valid_end": "2026-06-10T00:00:00Z",
+          "marker": { "lon": -105.8, "lat": 36.2 },
+          "hover_geometry_id": "geom_evt_20260604_nm_wildfires_d6_hover",
+          "bbox": [-107.5, 35.0, -104.0, 37.5],
+          "valid_label": "Day 6"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          { "tab_id": "overview", "label": "Overview", "layers": ["nifc_active_fires", "fire_perimeters", "smoke_near_surface"] },
+          { "tab_id": "fires", "label": "Active Fires", "layers": ["nifc_active_fires", "fire_perimeters"] },
+          { "tab_id": "smoke", "label": "Smoke", "layers": ["smoke_near_surface", "smoke_column"] },
+          { "tab_id": "weather", "label": "Weather", "layers": ["model_10m_wind", "model_min_relative_humidity"] }
+        ]
+      }
+    },
+    {
+      "event_id": "evt_2026_al05_erin",
+      "headline": "Hurricane Erin",
+      "short_name": "Hurricane Erin",
+      "peril": "tropical",
+      "status": "active",
+      "valid_start": "2026-06-04T00:00:00Z",
+      "valid_end": "2026-06-09T00:00:00Z",
+      "primary_region_label": "Gulf of Mexico",
+      "severity_score": 4.2,
+      "confidence_score": 0.88,
+      "impact_score": 0.91,
+      "rank_score": 96,
+      "icon_key": "tropical_cyclone",
+      "color_key": "tropical_red",
+      "size_class": "major",
+      "source_badges": ["NHC", "NWS", "Model"],
+      "subperils": ["hurricane_wind", "storm_surge", "freshwater_flooding", "tropical_tornadoes"],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-06-04T00:00:00Z",
+          "valid_end": "2026-06-05T00:00:00Z",
+          "marker": { "lon": -88.5, "lat": 25.5 },
+          "hover_geometry_id": "geom_evt_2026_al05_erin_d1_hover",
+          "bbox": [-95.0, 22.0, -82.0, 30.0],
+          "valid_label": "Day 1 - Gulf Approach"
+        },
+        {
+          "day_index": 2,
+          "valid_start": "2026-06-05T00:00:00Z",
+          "valid_end": "2026-06-06T00:00:00Z",
+          "marker": { "lon": -89.5, "lat": 28.0 },
+          "hover_geometry_id": "geom_evt_2026_al05_erin_d2_hover",
+          "bbox": [-94.0, 25.0, -84.0, 32.0],
+          "valid_label": "Day 2 - Landfall"
+        },
+        {
+          "day_index": 3,
+          "valid_start": "2026-06-06T00:00:00Z",
+          "valid_end": "2026-06-07T00:00:00Z",
+          "marker": { "lon": -88.0, "lat": 32.5 },
+          "hover_geometry_id": "geom_evt_2026_al05_erin_d3_hover",
+          "bbox": [-93.0, 29.0, -82.0, 36.0],
+          "valid_label": "Day 3 - Inland"
+        },
+        {
+          "day_index": 4,
+          "valid_start": "2026-06-07T00:00:00Z",
+          "valid_end": "2026-06-08T00:00:00Z",
+          "marker": { "lon": -84.5, "lat": 35.5 },
+          "hover_geometry_id": "geom_evt_2026_al05_erin_d4_hover",
+          "bbox": [-90.0, 32.0, -78.0, 39.0],
+          "valid_label": "Day 4 - Appalachians"
+        },
+        {
+          "day_index": 5,
+          "valid_start": "2026-06-08T00:00:00Z",
+          "valid_end": "2026-06-09T00:00:00Z",
+          "marker": { "lon": -78.0, "lat": 38.0 },
+          "hover_geometry_id": "geom_evt_2026_al05_erin_d5_hover",
+          "bbox": [-85.0, 34.0, -72.0, 42.0],
+          "valid_label": "Day 5 - Mid-Atlantic"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          { "tab_id": "overview", "label": "Overview", "layers": ["nhc_forecast_track", "nhc_cone", "nhc_watches_warnings"] },
+          { "tab_id": "track", "label": "Track", "layers": ["nhc_forecast_track", "nhc_cone"] },
+          { "tab_id": "wind", "label": "Wind", "layers": ["nhc_wind_field", "nhc_34kt_wind_probability", "nhc_64kt_wind_probability"] },
+          { "tab_id": "surge", "label": "Surge", "layers": ["nhc_storm_surge_watch_warning", "nhc_potential_storm_surge_flooding"] },
+          { "tab_id": "rain", "label": "Rainfall", "layers": ["wpc_qpf", "wpc_excessive_rainfall"] },
+          { "tab_id": "radar", "label": "Radar", "layers": ["radar_mosaic"] },
+          { "tab_id": "satellite", "label": "Satellite", "layers": ["satellite_ir"] }
+        ]
+      },
+      "metadata": {
+        "tropical_phase": "approaching_land",
+        "basin": "al",
+        "storm_number": 5,
+        "max_wind_kt": 105,
+        "min_pressure_mb": 965
+      }
+    },
+    {
+      "event_id": "evt_2026_al_invest_92l",
+      "headline": "Tropical Disturbance 92L",
+      "short_name": "Invest 92L",
+      "peril": "tropical",
+      "status": "monitoring",
+      "valid_start": "2026-06-06T00:00:00Z",
+      "valid_end": "2026-06-10T00:00:00Z",
+      "primary_region_label": "Central Atlantic",
+      "severity_score": 1.5,
+      "confidence_score": 0.35,
+      "impact_score": 0.25,
+      "rank_score": 35,
+      "icon_key": "tropical_cyclone",
+      "color_key": "tropical_yellow",
+      "size_class": "small",
+      "source_badges": ["NHC"],
+      "subperils": [],
+      "day_membership": [
+        {
+          "day_index": 3,
+          "valid_start": "2026-06-06T00:00:00Z",
+          "valid_end": "2026-06-07T00:00:00Z",
+          "marker": { "lon": -52.0, "lat": 14.5 },
+          "hover_geometry_id": "geom_evt_2026_al_invest_92l_d3_hover",
+          "bbox": [-58.0, 10.0, -45.0, 20.0],
+          "valid_label": "Day 3"
+        },
+        {
+          "day_index": 4,
+          "valid_start": "2026-06-07T00:00:00Z",
+          "valid_end": "2026-06-08T00:00:00Z",
+          "marker": { "lon": -56.0, "lat": 15.5 },
+          "hover_geometry_id": "geom_evt_2026_al_invest_92l_d4_hover",
+          "bbox": [-62.0, 11.0, -50.0, 21.0],
+          "valid_label": "Day 4"
+        },
+        {
+          "day_index": 5,
+          "valid_start": "2026-06-08T00:00:00Z",
+          "valid_end": "2026-06-09T00:00:00Z",
+          "marker": { "lon": -60.0, "lat": 16.5 },
+          "hover_geometry_id": "geom_evt_2026_al_invest_92l_d5_hover",
+          "bbox": [-66.0, 12.0, -54.0, 22.0],
+          "valid_label": "Day 5"
+        },
+        {
+          "day_index": 6,
+          "valid_start": "2026-06-09T00:00:00Z",
+          "valid_end": "2026-06-10T00:00:00Z",
+          "marker": { "lon": -64.0, "lat": 17.5 },
+          "hover_geometry_id": "geom_evt_2026_al_invest_92l_d6_hover",
+          "bbox": [-70.0, 13.0, -58.0, 23.0],
+          "valid_label": "Day 6"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "gfs",
+        "tabs": [
+          { "tab_id": "overview", "label": "Overview", "layers": ["satellite_ir", "model_mslp_wind_precip"] },
+          { "tab_id": "satellite", "label": "Satellite", "layers": ["satellite_ir"] },
+          { "tab_id": "models", "label": "Models", "layers": ["model_mslp_wind_precip"] }
+        ]
+      },
+      "metadata": {
+        "tropical_phase": "potential_development",
+        "basin": "al",
+        "development_probability_2day": 20,
+        "development_probability_7day": 40
+      }
+    },
+    {
+      "event_id": "evt_20260604_appalachian_rain",
+      "headline": "Southern Appalachians Extreme Rain",
+      "short_name": "Appalachian Rain",
+      "peril": "excessive_rain",
+      "status": "active",
+      "valid_start": "2026-06-04T12:00:00Z",
+      "valid_end": "2026-06-05T12:00:00Z",
+      "primary_region_label": "Southern Appalachians",
+      "severity_score": 4.0,
+      "confidence_score": 0.78,
+      "impact_score": 0.85,
+      "rank_score": 89,
+      "icon_key": "extreme_rain",
+      "color_key": "rain_green",
+      "size_class": "large",
+      "source_badges": ["WPC", "NWS"],
+      "subperils": ["flash_flooding", "debris_flow"],
+      "day_membership": [
+        {
+          "day_index": 1,
+          "valid_start": "2026-06-04T12:00:00Z",
+          "valid_end": "2026-06-05T12:00:00Z",
+          "marker": { "lon": -82.8, "lat": 35.5 },
+          "hover_geometry_id": "geom_evt_20260604_appalachian_rain_d1_hover",
+          "bbox": [-86.0, 33.0, -79.0, 38.0],
+          "valid_label": "Today"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          { "tab_id": "overview", "label": "Overview", "layers": ["wpc_ero", "nws_flash_flood_warnings", "radar_qpe"] },
+          { "tab_id": "ero", "label": "ERO", "layers": ["wpc_ero", "wpc_mpd"] },
+          { "tab_id": "qpf", "label": "QPF", "layers": ["wpc_qpf", "model_qpf_6hr", "model_qpf_24hr"] },
+          { "tab_id": "radar", "label": "Radar", "layers": ["radar_qpe"] },
+          { "tab_id": "alerts", "label": "Alerts", "layers": ["nws_flash_flood_warnings", "nws_flood_watches"] }
+        ]
+      }
+    },
+    {
+      "event_id": "evt_20260605_upper_midwest_rain",
+      "headline": "Upper Midwest Extreme Rain",
+      "short_name": "Upper Midwest Rain",
+      "peril": "excessive_rain",
+      "status": "forecast",
+      "valid_start": "2026-06-05T12:00:00Z",
+      "valid_end": "2026-06-06T12:00:00Z",
+      "primary_region_label": "Upper Midwest",
+      "severity_score": 3.2,
+      "confidence_score": 0.65,
+      "impact_score": 0.68,
+      "rank_score": 74,
+      "icon_key": "extreme_rain",
+      "color_key": "rain_green",
+      "size_class": "medium",
+      "source_badges": ["WPC", "NWS"],
+      "subperils": ["flash_flooding", "urban_flooding"],
+      "day_membership": [
+        {
+          "day_index": 2,
+          "valid_start": "2026-06-05T12:00:00Z",
+          "valid_end": "2026-06-06T12:00:00Z",
+          "marker": { "lon": -93.5, "lat": 44.5 },
+          "hover_geometry_id": "geom_evt_20260605_upper_midwest_rain_d2_hover",
+          "bbox": [-98.0, 42.0, -88.0, 48.0],
+          "valid_label": "Tomorrow"
+        }
+      ],
+      "map_bundle": {
+        "default_tab": "overview",
+        "default_model": "hrrr",
+        "tabs": [
+          { "tab_id": "overview", "label": "Overview", "layers": ["wpc_ero", "nws_flash_flood_warnings", "radar_qpe"] },
+          { "tab_id": "ero", "label": "ERO", "layers": ["wpc_ero", "wpc_mpd"] },
+          { "tab_id": "qpf", "label": "QPF", "layers": ["wpc_qpf", "model_qpf_6hr"] },
+          { "tab_id": "radar", "label": "Radar", "layers": ["radar_qpe"] }
+        ]
+      }
+    }
+  ]
+}
